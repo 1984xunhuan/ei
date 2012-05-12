@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<link href="{base_url}/public/wap/template/{merchant.wap_template}/css/wapcss.css" rel="stylesheet" type="text/css" />
+		<title>{merchant.merchant_name}</title>
+	</head>
+	<body>
+		<div id="main">
+			<div class="header">
+				<center><b class="rtop"><b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b> </b>
+				<div class="header_item">
+					{merchant.merchant_name}
+				</div>
+				</center>
+			</div>
+			<div class="line"></div>
+			<div class="body">
+				<div class="menu">
+				  <!-- list start -->                    	
+						<div class="menu0">
+							{item.item_name}
+						</div>
+						
+						<div class="menu1">
+						  <div class="center">
+						      {news.title}<br/>
+	                          {news.issue_time}<br/>
+	                          &nbsp;&nbsp;&nbsp;&nbsp;<br/>
+						  </div>
+						      {news.content}
+						</div>							
+				</div>
+				
+				<div class="menu_br">
+					<br />
+					<br />
+				</div>
+				<div class="line2"></div>
+				<div class="listbox">
+					   <!-- 
+						<div class="list">
+							<a
+								href='http://wap.me.139mp.com:80/wap/ec_vip_register.jsp?merchantId=2270201619&amp;merchantName=中国民生银行洪山支行&amp;templatePath=template/T000000004/'>注册为企业会员</a>
+							<br />
+						</div>
+					    -->
+					
+					
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="footer">
+				<div class="copyright">
+					{merchant.merchant_name}&copy;
+					<br />
+					<a href="{base_url}/">网站首页</a>
+				</div>
+				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b
+					class="r2"></b><b class="r1"></b> </b>
+			</div>
+		</div>
+	</body>
+</html>

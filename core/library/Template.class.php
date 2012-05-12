@@ -144,15 +144,16 @@ class Template {
 		foreach($template as $t) {
 		    //log::out_print($t);
 			//foreach(explode(PATH_SEPARATOR, get_include_path()) as $path) {
-		    foreach(explode(PATH_SEPARATOR, $this->findPath) as $path) {
+		    foreach(explode("$", $this->findPath) as $path) {
+		    //foreach(explode(PATH_SEPARATOR, $this->findPath) as $path) {
 			//foreach($this->templateDirectories as $templateDirectory) {
 				//$path = ($templateDirectory{0} != '/' ? $this->baseDirectory . $templateDirectory : $templateDirectory);
 				
-		       // log::out_print($path);
+		        //Log::out_print($path);
 		        
 		        $path = $this->appendSeparator($path);		
 
-		       // log::out_print($path);
+		        
 		        
 				if(file_exists($path . $t)) {
 					$out .= $this->bufferedOutput($path, $t);

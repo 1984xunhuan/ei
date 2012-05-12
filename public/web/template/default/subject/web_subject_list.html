@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>{merchant.merchant_name}</title>
+<link rel="stylesheet" style="text/css"
+	href="{base_url}/public/web/template/{merchant.web_template}/css/web.css" />
+</head>
+<body
+	style="background: #FFF url({base_url}/public/web/template/{merchant.web_template}/images/body_bg.jpg) repeat-x;">
+	<div id="home">
+		{include:web_header.html}
+		<div id="content">
+			<div id="left_bar">
+				<div id="help">{include:web_contact_us.html}
+					{include:web_help.html}</div>
+			</div>
+
+			<div id="contenter">
+				<div id="intro">
+					<h3>{item.item_name}</h3>
+
+					<ul
+						style="list-style: none; display: block; margin: 0; padding: 0;">
+						<table>
+							{if:!empty($_SESSION["USER_ID"])}
+							<tr>
+								<td colspan="4"><a
+									href="{base_url}/index.php?SubjectAction/display_web_subject_publish_ui/item_id/{item.item_id}">发帖</a>
+								</td>
+							</tr>
+							{end}
+							<tr>
+								<td>主题</td>
+								<td>作者</td>
+								<td>回帖数</td>
+								<td>发布时间</td>
+							</tr>
+							{if:count(subject_list) > 0} 
+							{foreach:subject_list,$subject}
+							<tr>
+								<td><a
+									href="{base_url}/index.php?PostAction/web_post_list/item_id/{item.item_id}/subject_id/{$subject->subject_id}/current_page/1">{$subject->subject_topic}</a></td>
+								<td>{$subject->user_name}</td>
+								<td>{$subject->subject_reply_num}</td>
+								<td>{$subject->subject_issue_time}</td>
+							</tr>
+							{end} 
+							{end}
+							<tr>
+							</tr>
+						</table>
+					</ul>
+					<ul
+						style="list-style: none; display: block; margin: 0; padding: 0;">
+						<li style="line-height: 20px;">
+							共{page.row_num}条记录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							第{page.current_page}页/共{page.total_page}页
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {if:page.current_page > 1} <a
+							href="{base_url}/index.php?SubjectAction/web_subject_list/item_id/{item.item_id}/current_page/1">首页</a>
+							<a
+							href="{base_url}/index.php?SubjectAction/web_subject_list/item_id/{item.item_id}/current_page/{page.current_page-1}">上一页</a>
+							{end} {if:page.current_page != page.total_page} <a
+							href="{base_url}/index.php?SubjectAction/web_subject_list/item_id/{item.item_id}/current_page/{page.current_page+1}">下一页</a>
+							<a
+							href="{base_url}/index.php?SubjectAction/web_subject_list/item_id/{item.item_id}/current_page/{page.total_page}">尾页</a>
+							{end}
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		{include:web_footer.html}
+	</div>
+</body>
+</html>

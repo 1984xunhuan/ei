@@ -1,0 +1,63 @@
+
+<div id="help">
+<h3>用户登录</h3>
+
+<ul>
+{if:empty($_SESSION["USER_ID"])}
+    <li> {include:web_user_login.html}</li>
+{end}
+
+{if:!empty($_SESSION["USER_ID"])}
+<!-- 
+    <li> {$_SESSION["USER_ID"]}</li>
+ -->
+    <li> 登录用户： {$_SESSION["USER_NAME"]}</li>
+    <li><a href="{base_url}/index.php?UserAction/web_logout">退出</a></li>
+{end}
+</ul>
+</div>
+
+
+{if:count($this->data->pic_news_list)> 0}
+<div class="help">
+<h3>新闻快讯</h3>
+		     <script type="text/javascript">
+						<!-- 
+						var focus_width=270;
+						var focus_height=200;
+						var text_height=0;
+						var swf_height = focus_height+text_height;
+						var pics = "";
+						var links = "";
+						var texts = "";
+						
+					{foreach:pic_news_list, $i, $news}
+						pics += "{base_url}{$news->pic_url}";
+						links += "index.php?NewsAction/web_news_show/item_id/{$news->item_id}/news_id/{$news->news_id}";
+						texts += "";
+						
+					  {if:count($this->data->pic_news_list) != $i+1}
+						pics += "|";
+						links += "|";
+						texts += "|";			
+					  {end}
+					{end}
+						document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+						document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="{base_url}/public/web/template/{merchant.web_template}/flash/focus.swf"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF">');
+						document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+						document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+						document.write('<embed src="{base_url}/public/web/template/{merchant.web_template}/flash/focus.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" ?bgcolor="#ffffff" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');  document.write('</object>');
+						//-->
+						</script>
+		     </div>
+{end}
+		    
+<div id="help">
+<h3>联系我们</h3>
+
+<ul>
+    <li>联系人： {merchant.linkman}</li>
+    <li>联系电话：{merchant.telephone}</li>
+    <li>地址：{merchant.address}</li>
+</ul>
+</div>

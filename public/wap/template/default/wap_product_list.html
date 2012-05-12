@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<link href="{base_url}/public/wap/template/{merchant.wap_template}/css/wapcss.css" rel="stylesheet" type="text/css" />
+		<title>{merchant.merchant_name}</title>
+	</head>
+	<body>
+		<div id="main">
+			<div class="header">
+				<center><b class="rtop"><b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b> </b>
+				<div class="header_item">
+					{merchant.merchant_name}
+				</div>
+				</center>
+			</div>
+			<div class="line"></div>
+			<div class="body">
+				<div class="menu">
+				  <!-- list start -->  
+				    <div class="menu0">
+							{item.item_name}
+				    </div>
+						
+				    {foreach:product_list, $i, $product}
+						<div class="menu{$i%2}">
+							<a href="index.php?ProductAction/wap_product_show/item_id/{item.item_id}/product_id/{$product->product_id}">{$product->product_name}</a>&nbsp;&nbsp;&nbsp;&nbsp;{$product->issue_time}
+						</div>
+			        {end} 
+			        
+			        <div class="menu0">
+			        <ul style="list-style: none; display: block; margin: 0; padding: 0;">
+							<li style="line-height: 20px;">
+								共{page.row_num}条记录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;						       
+								第{page.current_page}页/共{page.total_page}页
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								{if:page.current_page > 1}
+								<a href="index.php?ProductAction/wap_product_list/current_page/1/item_id/{item.item_id}">首页</a>
+								<a href="index.php?ProductAction/wap_product_list/current_page/{page.current_page-1}/item_id/{item.item_id}">上一页</a>
+								{end}
+								{if:page.current_page != page.total_page}
+								<a href="index.php?ProductAction/wap_product_list/current_page/{page.current_page+1}/item_id/{item.item_id}">下一页</a>
+								<a href="index.php?ProductAction/wap_product_list/current_page/{page.total_page}/item_id/{item.item_id}">尾页</a>
+								{end}
+							</li>	
+						</ul>
+			        </div>
+			                   													
+				</div>
+				
+				<div class="menu_br">
+					<br />
+					<br />
+				</div>
+				<div class="line2"></div>
+				<div class="listbox">
+					   <!-- 
+						<div class="list">
+							<a
+								href='http://wap.me.139mp.com:80/wap/ec_vip_register.jsp?merchantId=2270201619&amp;merchantName=中国民生银行洪山支行&amp;templatePath=template/T000000004/'>注册为企业会员</a>
+							<br />
+						</div>
+					    -->
+					
+					
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="footer">
+				<div class="copyright">
+					{merchant.merchant_name}&copy;
+					<br />
+					<a href="{base_url}/">网站首页</a>
+				</div>
+				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b
+					class="r2"></b><b class="r1"></b> </b>
+			</div>
+		</div>
+	</body>
+</html>

@@ -37,8 +37,10 @@ class DB
   //
   function query($sql)
   {
-     $this->querynum++ ;
-     return mysql_query($sql,$this->dblink) ;
+      //Log::out_print($sql."<br/>");
+      
+      $this->querynum++ ;
+      return mysql_query($sql,$this->dblink) ;
   }
   
   //

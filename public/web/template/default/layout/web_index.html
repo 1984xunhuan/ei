@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>{merchant.merchant_name}</title>
+<link rel="stylesheet" style="text/css" href="{base_url}/public/web/template/{merchant.web_template}/css/web.css" />
+</head>
+<body style="background:#FFF url({base_url}/public/web/template/{merchant.web_template}/images/body_bg.jpg) repeat-x;">
+<div id="home">
+  {include:web_header.html}
+  <div id="content">
+    <div id="left_bar">
+       <div id="help">
+	     {include:web_contact_us.html}
+		 {include:web_help.html}
+	   </div>
+	</div> 	 
+    <div id="contenter">
+    {foreach:results, $rs}
+       {if:$rs->item->item_type==1}
+	    <div id="about">
+		     <h3>{$rs->item->item_name}</h3>
+  
+			 <p><img src="{base_url}/public/web/template/{merchant.web_template}/images/about_logo.gif" alt="{$rs->item->item_name}" title="" />{$rs->introduction->introduction_content}</p>
+	    </div>
+       {end}
+                
+        {if:$rs->item->item_type==2}
+        <div id="news">
+		    <h3>{$rs->item->item_name}</h3>
+			<ul>
+			    {if:count($rs->news_list) > 0} 
+			    {foreach:$rs->news_list,$news}
+			    <li>
+			    <span style="float: left;"><a href="index.php?NewsAction/web_news_show/item_id/{$rs->item->item_id}/news_id/{$news->news_id}">{$news->title}</a></span>
+				<span style="float: right;">{$news->issue_time}</span>
+			    </li>
+			    <!-- 
+				<li><a href="index.php?news_action/web_news_show/item_id/{$rs->item->item_id}/news_id/{$news->news_id}">{$news->title}</a></li>	
+			     -->
+				{end}
+				{end}			
+			</ul>
+		 </div>
+		{end}
+                
+        {if:$rs->item->item_type==3}
+        <div id="pruduct">
+		     <h3>{$rs->item->item_name}</h3>
+              <ul>
+                {if:count($rs->product_list) > 0} 
+                {foreach:$rs->product_list,$product}
+                <li><a href="index.php?ProductAction/web_product_show/item_id/{$rs->item->item_id}/product_id/{$product->product_id}"><img src="{base_url}{$product->icon_url}" alt="{$product->product_name}" /><strong>{$product->product_name}</strong></a></li>
+                {end}
+                {end}
+              </ul>  
+		</div>
+        {end}
+        
+        {if:$rs->item->item_type==4}
+        <div id="subject">
+		     <h3>{$rs->item->item_name}</h3>
+              <ul>
+                {if:count($rs->subject_list) > 0} 
+                {foreach:$rs->subject_list,$subject}
+                <li>
+                <span style="float: left;"><a href="{base_url}/index.php?PostAction/web_post_list/item_id/{$rs->item->item_id}/subject_id/{$subject->subject_id}/current_page/1">{$subject->subject_topic}</a></li></span>
+                <span style="float: right;">{$subject->subject_issue_time}</span>
+                {end}
+                {end}
+              </ul>  
+		</div>
+        {end}
+                
+        {if:$rs->item->item_type ==5}
+         <div id="news">
+		    <h3>{$rs->item->item_name}</h3>
+			<ul>
+			  <li>联系人： {$rs->merchant->linkman}</li>
+              <li>联系电话：{$rs->merchant->telephone}</li>
+              <li>地址：{$rs->merchant->address}</li>		
+			</ul>
+		 </div>
+        {end}
+     {end}		
+	</div>
+  </div>
+  {include:web_footer.html}
+</div>
+</body>
+</html>

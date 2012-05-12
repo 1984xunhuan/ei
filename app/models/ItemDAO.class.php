@@ -4,8 +4,8 @@ class ItemDAO extends BaseDAO
 {
 
     /**
-     --item_type: 0锛氭櫘閫� 1锛氫粙缁�  2锛� 鏂伴椈 3锛氫骇鍝�  4锛氳仈绯绘垜浠� 5锛氱暀瑷�
-     --item_up_id: 0: 鏍硅妭鐐� 锛岄粯璁ゅ繀椤绘湁涓�涓负0鐨勩��
+     --item_type: 0 Normal 1 introduction 2 news 3 product  4 bbs  5 link us
+     --item_up_id: 0: root node
      DROP TABLE IF EXISTS `tb_item`;
     
      CREATE TABLE `tb_item` (
@@ -88,30 +88,31 @@ class ItemDAO extends BaseDAO
     
             if ($indexs->item->item_type == 1)
             {
-                //$introduction_dao = new introduction_dao;
+                $introduction_dao = new IntroductionDAO();
     
-               // $indexs->introduction = $introduction_dao->get_introduction_by_item_id($indexs->item->item_id);
+                $indexs->introduction = $introduction_dao->get_introduction_by_item_id($indexs->item->item_id);
             }
             else if ($indexs->item->item_type == 2)
             {
-                //$news_dao = new news_dao();
+                $news_dao = new NewsDAO();
     
-                //$indexs->news_list = $news_dao->get_news_list_by_item_id($indexs->item->item_id, news_dao::$INDEX_FLAG);
+                $indexs->news_list = $news_dao->get_news_list_by_item_id($indexs->item->item_id, NewsDAO::$INDEX_FLAG);
             }
             else if ($indexs->item->item_type == 3)
             {
-               // $product_dao = new product_dao();
+                $product_dao = new ProductDAO();
     
-               // $indexs->product_list = $product_dao->get_product_list_by_item_id($indexs->item->item_id, product_dao::$INDEX_FLAG);
-            }
+                $indexs->product_list = $product_dao->get_product_list_by_item_id($indexs->item->item_id, ProductDAO::$INDEX_FLAG);
+            }       
             else if ($indexs->item->item_type == 4)
             {
-                //$merchant_dao = new merchant_dao();
-                //$indexs->merchant = $merchant_dao->get_merchant();
+                $subject_dao = new SubjectDAO();
+                $indexs->subject_list = $subject_dao->get_subject_list_by_item_id($indexs->item->item_id, SubjectDAO::$INDEX_FLAG);
             }
             else if ($indexs->item->item_type == 5)
             {
-    
+                $merchant_dao = new MerchantDAO();
+                $indexs->merchant = $merchant_dao->get_merchant();
             }
     
             array_push($index_results, $indexs);
