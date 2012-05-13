@@ -142,7 +142,7 @@ class Template {
 		}
 		
 		foreach($template as $t) {
-		    //log::out_print($t);
+		    //Log::out_print($t);
 			//foreach(explode(PATH_SEPARATOR, get_include_path()) as $path) {
 		    foreach(explode("$", $this->findPath) as $path) {
 		    //foreach(explode(PATH_SEPARATOR, $this->findPath) as $path) {
@@ -158,7 +158,7 @@ class Template {
 				if(file_exists($path . $t)) {
 					$out .= $this->bufferedOutput($path, $t);
 					
-					//log::out_print($path);
+					//Log::out_print($path);
 					
 					$foundTemplate = true;
 					break; // found the template, so don't check any more directories
@@ -166,7 +166,10 @@ class Template {
 			}
 		}
 		if(!$foundTemplate)
+		{
+			Log::debug('Template (' . $t . ') not found in ' . $path);
 			die('Template (' . $t . ') not found in ' . $path);
+		}
 		return $out;
 	}
 

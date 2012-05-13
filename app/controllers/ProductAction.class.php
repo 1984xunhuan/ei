@@ -22,7 +22,7 @@ class ProductAction extends BaseAction
         $item_id = $this->get_param_value("item_id");
         $current_page = $this->get_param_value("current_page");
         
-        log::debug("web_product_list function: item_id=".$item_id);
+        Log::debug("web_product_list function: item_id=".$item_id);
         
         $product_list =  $this->product_dao->get_product_list_by_item_id($item_id, ProductDAO::$ALL_FLAG, $this->product_view->page, $current_page);       
         $this->product_view->set_product_list($product_list);   
@@ -42,7 +42,7 @@ class ProductAction extends BaseAction
         $item_id = $this->get_param_value("item_id");
         $current_page = $this->get_param_value("current_page");
     
-        log::debug("wap_product_list function: item_id=".$item_id);
+        Log::debug("wap_product_list function: item_id=".$item_id);
     
         $product_list =  $this->product_dao->get_product_list_by_item_id($item_id, ProductDAO::$ALL_FLAG, $this->product_view->page, $current_page);
         $this->product_view->set_product_list($product_list);
@@ -62,7 +62,7 @@ class ProductAction extends BaseAction
         $item_id = $this->get_param_value("item_id");
         $product_id = $this->get_param_value("product_id");
     
-        log::debug("web_product_list function: product_id=".$product_id);
+        Log::debug("web_product_list function: product_id=".$product_id);
     
         $this->product_view->product =  $this->product_dao->get_product_by_id($product_id);
         
@@ -81,7 +81,7 @@ class ProductAction extends BaseAction
         $item_id = $this->get_param_value("item_id");
         $product_id = $this->get_param_value("product_id");
     
-        log::debug("web_product_list function: product_id=".$product_id);
+        Log::debug("web_product_list function: product_id=".$product_id);
     
         $this->product_view->product =  $this->product_dao->get_product_by_id($product_id);
     

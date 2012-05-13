@@ -8,11 +8,11 @@ class BaseAction
     {
         $count = count($this->params);
         
-        log::debug("get_param_value function: count= ".$count);
+        Log::debug("get_param_value function: count= ".$count);
         
         if($count%2 != 0)
         {
-            log::error("there are params error, please check your input params.");
+            Log::error("there are params error, please check your input params.");
             
             return null;
         }

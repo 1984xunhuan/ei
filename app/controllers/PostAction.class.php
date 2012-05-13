@@ -60,8 +60,8 @@ class PostAction extends BaseAction
     
     public function web_post_publish()
     {
-        $post_dao = new postDAO();
-        $post_view = new postView();
+        $post_dao  = new PostDAO();
+        $post_view = new PostView();
     
         $post_view->post_content    = $_POST["post_content"];
         $post_view->post_user_id    = $_SESSION["USER_ID"];

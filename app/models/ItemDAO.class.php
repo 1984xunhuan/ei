@@ -43,13 +43,13 @@ class ItemDAO extends BaseDAO
         $sql = "SELECT item_id FROM tb_item ";
         $sql .= "WHERE item_up_id= 0 AND item_name='".$site_type."' limit 1";
     
-        log::debug ( $sql );
+        Log::debug ( $sql );
     
         $result = $this->db->query ($sql);
     
         if(empty($result))
         {
-            log::error("item_up_id=0 not found, please check check database");
+            Log::error("item_up_id=0 not found, please check check database");
     
             return null;
         }
@@ -61,18 +61,18 @@ class ItemDAO extends BaseDAO
         $sql = "SELECT item_id, item_type, item_name, item_seq, item_content FROM tb_item ";
         $sql .= "WHERE item_status=0 AND item_up_id=".$item_id." ORDER BY item_seq ASC";
     
-        log::debug ($sql);
+        Log::debug ($sql);
     
         $result  = $this->db->query ($sql);
         //$row_num = $this->db->num_rows($result);
     
-        //log::debug ("row_num=".$row_num);
+        //Log::debug ("row_num=".$row_num);
     
         $index_results = array();
     
         while(($rs = $this->db->fetch_array($result)) != NULL)
         {
-            log::debug('item_id='.$rs['item_id'].'    '.
+            Log::debug('item_id='.$rs['item_id'].'    '.
                     'item_name='.$rs['item_name'].'    '.
                     'item_type='.$rs['item_type'].'    '.
                     'item_seq='.$rs['item_seq'].'    '.
@@ -141,13 +141,13 @@ class ItemDAO extends BaseDAO
         $sql = "SELECT item_id FROM tb_item ";
         $sql .= "WHERE item_up_id= 0 AND item_name='".$site_type."' limit 1";
     
-        log::debug($sql);
+        Log::debug($sql);
     
         $result = $this->db->query($sql);
     
         if(empty($result))
         {
-            log::error("item_up_id=0 not found, please check check database");
+            Log::error("item_up_id=0 not found, please check check database");
     
             return null;
         }
@@ -159,7 +159,7 @@ class ItemDAO extends BaseDAO
         $sql = "SELECT item_id, item_type, item_name, item_seq, item_content FROM tb_item ";
         $sql .= "WHERE item_status=0 AND item_up_id=".$item_id." ORDER BY item_seq ASC";
     
-        log::debug ($sql);
+        Log::debug ($sql);
     
         $result  = $this->db->query($sql);
     
@@ -167,7 +167,7 @@ class ItemDAO extends BaseDAO
     
         while(($rs = $this->db->fetch_array($result)) != NULL)
         {
-            log::debug('item_id='.$rs['item_id'].'    '.
+            Log::debug('item_id='.$rs['item_id'].'    '.
                     'item_name='.$rs['item_name'].'    '.
                     'item_type='.$rs['item_type'].'    '.
                     'item_seq='.$rs['item_seq'].'    '.
@@ -197,7 +197,7 @@ class ItemDAO extends BaseDAO
         $sql = "SELECT item_id, item_type, item_name, item_seq, item_content FROM tb_item ";
         $sql .= "WHERE item_status=0 AND item_up_id=".$item_up_id." ORDER BY item_seq ASC";
     
-        log::debug ($sql);
+        Log::debug ($sql);
     
         $result  = $this->db->query ($sql);
     
@@ -205,7 +205,7 @@ class ItemDAO extends BaseDAO
     
         while(($rs = $this->db->fetch_array($result)) != NULL)
         {
-            log::debug('item_id='.$rs['item_id'].'    '.
+            Log::debug('item_id='.$rs['item_id'].'    '.
                     'item_name='.$rs['item_name'].'    '.
                     'item_type='.$rs['item_type'].'    '.
                     'item_seq='.$rs['item_seq'].'    '.
@@ -235,7 +235,7 @@ class ItemDAO extends BaseDAO
         $sql = "SELECT item_id, item_type, item_name, item_seq, item_content FROM tb_item ";
         $sql .= "WHERE item_status=0 AND item_id=".$item_id." limit 1";
     
-        log::debug ($sql);
+        Log::debug ($sql);
     
         $result  = $this->db->query ($sql);
     
@@ -243,7 +243,7 @@ class ItemDAO extends BaseDAO
     
         while(($rs = $this->db->fetch_array($result)) != NULL)
         {
-            log::debug('item_id='.$rs['item_id'].'    '.
+            Log::debug('item_id='.$rs['item_id'].'    '.
                     'item_name='.$rs['item_name'].'    '.
                     'item_type='.$rs['item_type'].'    '.
                     'item_seq='.$rs['item_seq'].'    '.

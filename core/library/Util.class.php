@@ -33,7 +33,17 @@
 	    	
 	    	$project_name = Config::get_pjname();
 	    	
-	    	$base_url = $http.$_SERVER['SERVER_NAME'].$port."/".$project_name;
+	    	if(empty($project_name))
+	    	{
+	    	    //$base_url = $http.$_SERVER['SERVER_NAME'].$port."/";
+	    	    $base_url = $http.$_SERVER['SERVER_NAME'].$port;
+	    	}
+	    	else
+	    	{
+	    	    //$base_url = $http.$_SERVER['SERVER_NAME'].$port."/".$project_name."/";	
+	    	    $base_url = $http.$_SERVER['SERVER_NAME'].$port."/".$project_name;
+	    	}
+	    	
 	    	
 	    	//$url = $http.$_SERVER['SERVER_NAME'].$port.$_SERVER["REQUEST_URI"];
 	    	

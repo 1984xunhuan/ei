@@ -39,13 +39,13 @@ class MerchantDAO extends BaseDAO
         $sql = "SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant ";
         $sql .= "WHERE merchant_id='".$merchant_id."' limit 1";
         
-        log::debug($sql);
+        Log::debug($sql);
         
         $result = $this->db->query ($sql);
         
         if(empty($result))
         {
-            log::error("merchant_id=$merchant_id not found, please check check database");
+            Log::error("merchant_id=$merchant_id not found, please check check database");
         
             return null;
         }

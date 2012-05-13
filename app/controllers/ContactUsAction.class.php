@@ -20,7 +20,7 @@ class ContactUsAction extends BaseAction
         $item_id         = $this->get_param_value("item_id");
         //$introduction_id = $this->get_param_value("introduction_id");
     
-        log::debug("web_contact_us_show function: item_id=".$item_id);
+        Log::debug("web_contact_us_show function: item_id=".$item_id);
         
         $menus = $this->item_dao->get_web_index_menu();
         $this->contact_us_view->set_menus($menus);
@@ -37,7 +37,7 @@ class ContactUsAction extends BaseAction
         $item_id         = $this->get_param_value("item_id");
         //$introduction_id = $this->get_param_value("introduction_id");
     
-        log::debug("web_contact_us_show function: item_id=".$item_id);
+        Log::debug("web_contact_us_show function: item_id=".$item_id);
     
         $menus = $this->item_dao->get_wap_index_menu();
         $this->contact_us_view->set_menus($menus);

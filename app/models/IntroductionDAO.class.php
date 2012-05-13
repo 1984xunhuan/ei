@@ -18,13 +18,13 @@ class IntroductionDAO extends BaseDAO
         $sql = "SELECT introduction_id, introduction_content, item_id FROM tb_introduction ";
         $sql .= "WHERE introduction_id='".$introduction_id."' limit 1";
         
-        log::debug($sql);
+        Log::debug($sql);
         
         $result = $this->db->query ($sql);
         
         if(empty($result))
         {
-            log::error("introduction_id=$introduction_id not found, please check check database");
+            Log::error("introduction_id=$introduction_id not found, please check check database");
         
             return null;
         }
@@ -51,13 +51,13 @@ class IntroductionDAO extends BaseDAO
         $sql = "SELECT introduction_id, introduction_content, item_id FROM tb_introduction ";
         $sql .= " WHERE item_id='".$item_id."' limit 1";
         
-        log::debug($sql);
+        Log::debug($sql);
         
         $result = $this->db->query ($sql);
         
         if(empty($result))
         {
-            log::error("item_id=$item_id not found, please check check database");
+            Log::error("item_id=$item_id not found, please check check database");
         
             return null;
         }

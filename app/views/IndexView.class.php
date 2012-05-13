@@ -32,9 +32,9 @@ class IndexView extends BaseView
     
     public function display_web_index()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('pic_news_list', $this->pic_news_list);
         $tpl->assign('results', $this->results);
@@ -54,9 +54,9 @@ class IndexView extends BaseView
     
     public function display_wap_index()
     {
-        $tpl = new template ();
+        $tpl = new Template();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('results', $this->results);
         $tpl->assign('menus',   $this->menus);

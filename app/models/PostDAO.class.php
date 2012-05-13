@@ -62,7 +62,7 @@ class PostDAO extends BaseDAO
         $sql .= " AND post_subject_id='".$this->post_view->post_subject_id."'";
         $sql .= " ORDER BY post_issue_time DESC ";
     
-        log::debug($sql);
+        Log::debug($sql);
     
         $result  = $this->db->query($sql);
     
@@ -72,7 +72,7 @@ class PostDAO extends BaseDAO
     
         if($page == NULL)
         {
-            $page = new page();
+            $page = new Page();
         }
     
         $page->set_current_page($current_page);
@@ -85,13 +85,13 @@ class PostDAO extends BaseDAO
         $sql .= " ORDER BY post_issue_time DESC ";
         $sql .= " limit ".$page->start_row.", ".$page->page_size;
     
-        log::debug($sql);
+        Log::debug($sql);
     
         $result = $this->db->query ($sql);
     
         if(empty($result))
         {
-            log::error("Data is not found, please check check database");
+            Log::error("Data is not found, please check check database");
     
             return null;
         }

@@ -22,7 +22,7 @@ class IntroductionAction extends BaseAction
         $item_id         = $this->get_param_value("item_id");
         //$introduction_id = $this->get_param_value("introduction_id");
         
-        log::debug("web_introduction_show function: item_id=".$item_id);
+        Log::debug("web_introduction_show function: item_id=".$item_id);
         
         $this->introduction_view->introduction =  $this->introduction_dao->get_introduction_by_item_id($item_id);
         
@@ -41,7 +41,7 @@ class IntroductionAction extends BaseAction
         $item_id         = $this->get_param_value("item_id");
         //$introduction_id = $this->get_param_value("introduction_id");
     
-        log::debug("web_introduction_show function: item_id=".$item_id);
+        Log::debug("web_introduction_show function: item_id=".$item_id);
     
         $this->introduction_view->introduction =  $this->introduction_dao->get_introduction_by_item_id($item_id);
     

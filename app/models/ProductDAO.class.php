@@ -51,24 +51,24 @@ class ProductDAO extends BaseDAO
             $sql .= "WHERE status ='0' AND item_id='".$item_id."' ORDER BY issue_time DESC";
         }
         
-        log::debug($sql);
+        Log::debug($sql);
         
-         $result  = $this->db->query($sql);
+        $result  = $this->db->query($sql);
         
         $row_num = $this->db->result($result);
         
-        $this->db->free_result($result);
+        Log::debug("row_num=".$row_num);
+        
+        $this->free_result($result);
         
         if($page == NULL)
         {
-            $page = new page();
+            $page = new Page();
         }
 
         $page->set_current_page($current_page);
         $page->set_row_num($row_num);
-        $page->cal();
-        
-        
+        $page->cal(); 
         
         if($flag == self::$INDEX_FLAG)
         {
@@ -88,13 +88,13 @@ class ProductDAO extends BaseDAO
         
         $sql .= " limit ".$page->start_row.", ".$page->page_size;
         
-        log::debug($sql);
+        Log::debug($sql);
     
         $result = $this->db->query ($sql);
     
         if(empty($result))
         {
-            log::error("item_id=$item_id not found, please check check database");
+            Log::error("item_id=$item_id not found, please check check database");
     
             return null;
         }
@@ -133,13 +133,13 @@ class ProductDAO extends BaseDAO
         $sql = "SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product ";
         $sql .= "WHERE status ='0' AND product_id='".$product_id."' limit 1";
     
-        log::debug($sql);
+        Log::debug($sql);
     
         $result = $this->db->query ($sql);
     
         if(empty($result))
         {
-            log::error("product_id=$product_id not found, please check check database");
+            Log::error("product_id=$product_id not found, please check check database");
     
             return null;
         }

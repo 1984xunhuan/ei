@@ -44,9 +44,9 @@ class ProductView extends BaseView
     
     public function display_web_product_list()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('product_list', $this->product_list);
         $tpl->assign('page', $this->page);
@@ -66,9 +66,9 @@ class ProductView extends BaseView
     
     public function display_wap_product_list()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('product_list', $this->product_list);
         $tpl->assign('page', $this->page);
@@ -88,9 +88,9 @@ class ProductView extends BaseView
     
     public function display_web_product_show()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('product', $this->product);
         $tpl->assign('item', $this->item);
@@ -109,9 +109,9 @@ class ProductView extends BaseView
     
     public function display_wap_product_show()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('product', $this->product);
         $tpl->assign('item', $this->item);

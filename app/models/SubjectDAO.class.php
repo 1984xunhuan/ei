@@ -62,13 +62,13 @@ class SubjectDAO extends BaseDAO
         $sql .= " WHERE u.user_id=s.subject_user_id ";
         $sql .= " AND s.subject_id='".$subject_id."'";
         
-        log::debug($sql);
+        Log::debug($sql);
         
         $result = $this->db->query($sql);
         
         if(empty($result))
         {
-            log::error("Data is not found, please check check database");
+            Log::error("Data is not found, please check check database");
         
             return null;
         }
@@ -102,7 +102,7 @@ class SubjectDAO extends BaseDAO
         $sql  = " SELECT COUNT(0) FROM tb_subject s, tb_user u ";
         $sql .= " WHERE u.user_id=s.subject_user_id AND subject_flag = '0' ORDER BY subject_issue_time DESC";
         
-        log::debug($sql);
+        Log::debug($sql);
         
         $result  = $this->db->query($sql);
         
@@ -123,13 +123,13 @@ class SubjectDAO extends BaseDAO
         $sql .= " WHERE u.user_id=s.subject_user_id AND subject_flag = '0' ORDER BY subject_issue_time DESC ";
         $sql .= " limit ".$page->start_row.", ".$page->page_size;
         
-        log::debug($sql);
+        Log::debug($sql);
         
         $result = $this->db->query ($sql);
         
         if(empty($result))
         {
-            log::error("Data is not found, please check check database");
+            Log::error("Data is not found, please check check database");
         
             return null;
         }
@@ -182,7 +182,7 @@ class SubjectDAO extends BaseDAO
             $sql .= " WHERE u.user_id=s.subject_user_id AND subject_item_id='".$item_id."' ORDER BY subject_issue_time DESC";
         }
         
-        log::debug($sql);
+        Log::debug($sql);
         
         $result  = $this->db->query($sql);
         
@@ -192,7 +192,7 @@ class SubjectDAO extends BaseDAO
         
         if($page == NULL)
         {
-            $page = new page();
+            $page = new Page();
         }
         
         $page->set_current_page($current_page);
@@ -219,13 +219,13 @@ class SubjectDAO extends BaseDAO
         
         $sql .= " limit ".$page->start_row.", ".$page->page_size;
         
-        log::debug($sql);
+        Log::debug($sql);
         
         $result = $this->db->query ($sql);
         
         if(empty($result))
         {
-            log::error("item_id=$item_id not found, please check check database");
+            Log::error("item_id=$item_id not found, please check check database");
         
             return null;
         }

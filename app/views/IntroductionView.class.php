@@ -29,9 +29,9 @@ class IntroductionView extends BaseView
     
     public function display_web_introduction_show()
     {
-        $tpl = new template ();
-        
-        $tpl->set('base_url', util::get_base_url());
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
         
         $tpl->assign('introduction', $this->introduction);
         $tpl->assign('item', $this->item);
@@ -51,9 +51,9 @@ class IntroductionView extends BaseView
     
     public function display_wap_introduction_show()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('introduction', $this->introduction);
         $tpl->assign('item', $this->item);

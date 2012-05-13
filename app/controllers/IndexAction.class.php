@@ -18,8 +18,12 @@ class IndexAction extends BaseAction
 
     public function main()
     {
-        if (util::is_mobile ())
+        Log::debug("Invoke main function of IndexAction class.");
+        
+        if (Util::is_mobile ())
         {
+            Log::debug("enter wap index page.");
+            
             $results = $this->item_dao->get_wap_index_info();            
             $this->index_view->set_results($results);
             
@@ -30,6 +34,8 @@ class IndexAction extends BaseAction
         }
         else
         { 
+            Log::debug("enter web index page.");
+            
             $results = $this->item_dao->get_web_index_info();            
             $this->index_view->set_results($results);
             

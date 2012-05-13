@@ -15,7 +15,7 @@
     		
     		foreach ($path as $p)
     		{
-    			Log::debug("<h2>path=".$p."<br/></h2>");
+    			Log::debug("path=".$p);
     		}
     		 		
     		if(!isset($path[0]))

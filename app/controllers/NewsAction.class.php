@@ -22,7 +22,7 @@ class NewsAction extends BaseAction
         $item_id      = $this->get_param_value("item_id");
         $current_page = $this->get_param_value("current_page");
         
-        log::debug("web_news_list function: item_id=".$item_id);
+        Log::debug("web_news_list function: item_id=".$item_id);
         
         $news_list =  $this->news_dao->get_news_list_by_item_id($item_id, NewsDAO::$ALL_FLAG, $this->news_view->page, $current_page);       
         $this->news_view->set_news_list($news_list);   
@@ -42,7 +42,7 @@ class NewsAction extends BaseAction
         $item_id = $this->get_param_value("item_id");
         $current_page = $this->get_param_value("current_page");
     
-        log::debug("web_news_list function: item_id=".$item_id);
+        Log::debug("web_news_list function: item_id=".$item_id);
     
         $news_list =  $this->news_dao->get_news_list_by_item_id($item_id, NewsDAO::$ALL_FLAG, $this->news_view->page, $current_page); 
         $this->news_view->set_news_list($news_list);
@@ -62,7 +62,7 @@ class NewsAction extends BaseAction
         $item_id = $this->get_param_value("item_id");
         $news_id = $this->get_param_value("news_id");
     
-        log::debug("web_news_list function: news_id=".$news_id);
+        Log::debug("web_news_list function: news_id=".$news_id);
     
         $this->news_view->news =  $this->news_dao->get_news_by_id($news_id);
         
@@ -81,7 +81,7 @@ class NewsAction extends BaseAction
         $item_id = $this->get_param_value("item_id");
         $news_id = $this->get_param_value("news_id");
     
-        log::debug("web_news_list function: news_id=".$news_id);
+        Log::debug("web_news_list function: news_id=".$news_id);
     
         $this->news_view->news =  $this->news_dao->get_news_by_id($news_id);
     

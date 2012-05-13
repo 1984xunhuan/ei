@@ -43,9 +43,9 @@ class NewsView extends BaseView
     
     public function display_web_news_list()
     {
-        $tpl = new template ();
-        
-        $tpl->set('base_url', util::get_base_url());
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
         
         $tpl->assign('news_list', $this->news_list);
         $tpl->assign('page', $this->page);
@@ -65,9 +65,9 @@ class NewsView extends BaseView
     
     public function display_wap_news_list()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('news_list', $this->news_list);
         $tpl->assign('page', $this->page);
@@ -87,9 +87,9 @@ class NewsView extends BaseView
     
     public function display_web_news_show()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('news', $this->news);
         $tpl->assign('item', $this->item);
@@ -110,9 +110,9 @@ class NewsView extends BaseView
     
     public function display_wap_news_show()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('news', $this->news);
         $tpl->assign('item', $this->item);

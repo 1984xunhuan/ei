@@ -34,13 +34,13 @@ class NewsDAO extends BaseDAO
         $sql = "SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news ";
         $sql .= "WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10";
         
-        log::debug($sql);
+        Log::debug($sql);
         
         $result = $this->db->query ($sql);
         
         if(empty($result))
         {
-            log::error("picture news is not found, please check check database");
+            Log::error("picture news is not found, please check check database");
         
             return null;
         }
@@ -98,15 +98,19 @@ class NewsDAO extends BaseDAO
             $sql .= "WHERE status ='0' AND item_id='".$item_id."' ORDER BY issue_time DESC";
         }
         
+        Log::debug($sql);
+        
         $result  = $this->db->query($sql);
         
         $row_num = $this->db->result($result);
         
-        $this->db->free_result($result);
+        Log::debug("row_num=".$row_num);
+        
+        $this->free_result($result);
         
         if($page == NULL)
         {
-            $page = new page();
+            $page = new Page();
         }
 
         $page->set_current_page($current_page);
@@ -137,13 +141,13 @@ class NewsDAO extends BaseDAO
         
         $sql .= " limit ".$page->start_row.", ".$page->page_size;
         
-        log::debug($sql);
+        Log::debug($sql);
         
         $result = $this->db->query ($sql);
         
         if(empty($result))
         {
-            log::error("item_id=$item_id not found, please check check database");
+            Log::error("item_id=$item_id not found, please check check database");
         
             return null;
         }
@@ -181,13 +185,13 @@ class NewsDAO extends BaseDAO
         $sql = "SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news ";
         $sql .= "WHERE status ='0' AND news_id='".$news_id."' limit 1";
     
-        log::debug($sql);
+        Log::debug($sql);
     
         $result = $this->db->query ($sql);
     
         if(empty($result))
         {
-            log::error("news_id=$news_id not found, please check check database");
+            Log::error("news_id=$news_id not found, please check check database");
     
             return null;
         }

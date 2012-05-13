@@ -23,9 +23,9 @@ class ContactUsView extends BaseView
     
     public function display_web_contact_us_show()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('item', $this->item);
         $tpl->assign('menus', $this->menus);
@@ -43,9 +43,9 @@ class ContactUsView extends BaseView
     
     public function display_wap_contact_us_show()
     {
-        $tpl = new template ();
+        $tpl = new Template ();
     
-        $tpl->set('base_url', util::get_base_url());
+        $tpl->set('base_url', Util::get_base_url());
     
         $tpl->assign('item', $this->item);
         $tpl->assign('menus', $this->menus);
