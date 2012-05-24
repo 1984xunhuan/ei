@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- 
+<link rel="stylesheet" style="text/css" href="{base_url}/public/admin/css/main.css" />
+ -->
+<link rel="stylesheet" style="text/css" href="{base_url}/public/admin/js/dtree/dtree.css"  />
+
+<script type="text/javascript">
+
+function dTree(objName) {
+
+	this.config = {
+
+		target					: null,
+
+		folderLinks			: true,
+
+		useSelection		: true,
+
+		useCookies			: true,
+
+		useLines				: true,
+
+		useIcons				: true,
+
+		useStatusText		: false,
+
+		closeSameLevel	: false,
+
+		inOrder					: false
+
+	}
+
+	this.icon = {
+
+		root				: '{base_url}/public/admin/js/dtree/img/base.gif',
+
+		folder			: '{base_url}/public/admin/js/dtree/img/folder.gif',
+
+		folderOpen	: '{base_url}/public/admin/js/dtree/img/folderopen.gif',
+
+		node				: '{base_url}/public/admin/js/dtree/img/page.gif',
+
+		empty				: '{base_url}/public/admin/js/dtree/img/empty.gif',
+
+		line				: '{base_url}/public/admin/js/dtree/img/line.gif',
+
+		join				: '{base_url}/public/admin/js/dtree/img/join.gif',
+
+		joinBottom	: '{base_url}/public/admin/js/dtree/img/joinbottom.gif',
+
+		plus				: '{base_url}/public/admin/js/dtree/img/plus.gif',
+
+		plusBottom	: '{base_url}/public/admin/js/dtree/img/plusbottom.gif',
+
+		minus				: '{base_url}/public/admin/js/dtree/img/minus.gif',
+
+		minusBottom	: '{base_url}/public/admin/js/dtree/img/minusbottom.gif',
+
+		nlPlus			: '{base_url}/public/admin/js/dtree/img/nolines_plus.gif',
+
+		nlMinus			: '{base_url}/public/admin/js/dtree/img/nolines_minus.gif'
+
+	};
+
+	this.obj = objName;
+
+	this.aNodes = [];
+
+	this.aIndent = [];
+
+	this.root = new Node(-1);
+
+	this.selectedNode = null;
+
+	this.selectedFound = false;
+
+	this.completed = false;
+
+};
+
+</script>
+<script type="text/javascript" src="{base_url}/public/admin/js/dtree/dtree.js"></script>
+
+
+<title>Admin Index</title>
+</head>
+
+<body>
+<div class="dtree">
+
+	<script type="text/javascript">
+		<!--
+
+		d = new dTree('d');
+		
+		{foreach:menus, $it}
+		
+		{if:$it->item_type == 0}
+	        d.add({$it->item_id}, {$it->item_up_id},'{$it->item_name}','{base_url}/index.php?ItemAction/item_info/item_id/{$it->item_id}', '{$it->item_name}', 'main');
+	    {end}
+		
+		{if:$it->item_type == 1}
+		    d.add({$it->item_id}, {$it->item_up_id},'{$it->item_name}','{base_url}/index.php?IntroductionAction/introduction_list/item_id/{$it->item_id}', '{$it->item_name}', 'main');
+		{end}
+		
+		{if:$it->item_type == 2}
+	        d.add({$it->item_id}, {$it->item_up_id},'{$it->item_name}','{base_url}/index.php?NewsAction/news_list/current_page/1/item_id/{$it->item_id}', '{$it->item_name}', 'main');
+	    {end}
+	    
+	    {if:$it->item_type == 3}
+	        d.add({$it->item_id}, {$it->item_up_id},'{$it->item_name}','{base_url}/index.php?ProductAction/product_list/current_page/1/item_id/{$it->item_id}', '{$it->item_name}', 'main');
+	    {end}
+	
+	    {if:$it->item_type == 4}
+            d.add({$it->item_id}, {$it->item_up_id},'{$it->item_name}','{base_url}/index.php?SubjectAction/subject_list/current_page/1/item_id/{$it->item_id}', '{$it->item_name}', 'main');
+        {end}
+        
+        {if:$it->item_type == 5}
+            d.add({$it->item_id}, {$it->item_up_id},'{$it->item_name}','{base_url}/index.php?ContactUsAction/contact_us_show/item_id/{$it->item_id}', '{$it->item_name}', 'main');
+        {end}
+		
+		{end}
+
+		document.write(d);
+
+		//-->
+	</script>
+
+</div>
+</body>
+
+</html>

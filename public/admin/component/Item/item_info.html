@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>item information</title>
+</head>
+<body>
+{item.item_id}  <br/>
+{item.item_name} <br/>
+
+{if:item.item_type == 0}
+<a href="{base_url}/index.php?ItemAction/item_add_ui/item_id/{item.item_id}">add item</a>
+{end}
+<a href="{base_url}/index.php?ItemAction/item_update_ui/item_id/{item.item_id}">update item</a>
+<a href="{base_url}/index.php?ItemAction/item_delete/item_id/{item.item_id}">delete item</a>
+</body>
+</html>

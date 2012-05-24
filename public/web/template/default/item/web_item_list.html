@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>{merchant.merchant_name}</title>
+<link rel="stylesheet" style="text/css" href="{base_url}/public/web/template/{merchant.web_template}/css/web.css" />
+</head>
+<body style="background:#FFF url({base_url}/public/web/template/{merchant.web_template}/images/body_bg.jpg) repeat-x;">
+<div id="home">
+  {include:web_header.html}
+  <div id="content">
+    <div id="left_bar">
+       <div id="help">
+	     {include:web_contact_us.html}
+		 {include:web_help.html}
+	   </div>
+	</div> 
+		 
+    <div id="contenter">
+       <div id="intro">
+		   <h3>{item.item_name}</h3>
+		  <ul style="list-style: none; display: block; margin: 0; padding: 0;">   
+			{foreach:sub_menus, $it}
+		        {if:$it->item_type == 0}
+			    <li><a href="index.php?ItemAction/web_sub_item/item_id/{$it->item_id}/item_up_id/{$it->item_up_id}">{$it->item_name}</a></li>
+			    {end}
+			    {if:$it->item_type == 1}
+			    <li><a href="index.php?IntroductionAction/web_introduction_show/item_id/{$it->item_id}">{$it->item_name}</a></li>
+			    {end}
+			    {if:$it->item_type == 2}
+			    <li><a href="index.php?NewsAction/web_news_list/current_page/1/item_id/{$it->item_id}">{$it->item_name}</a></li>
+			    {end}
+			    {if:$it->item_type == 3}
+			    <li><a href="index.php?ProductAction/web_product_list/item_id/{$it->item_id}">{$it->item_name}</a></li>
+			    {end}
+			    {if:$it->item_type == 4}
+			    <li><a href="index.php?SubjectAction/web_subject_list/item_id/{$it->item_id}">{$it->item_name}</a></li>
+			    {end}
+			    {if:$it->item_type == 5}
+			    <li><a href="index.php?ContactUsAction/web_contact_us_show/item_id/{$it->item_id}">{$it->item_name}</a></li>
+			    {end}
+    		{end}
+    	</ul>
+  </div>
+    {include:web_footer.html}
+</div>
+</body>
+</html>
+  

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>item add</title>
+</head>
+<body>
+<form action="{base_url}/index.php?ItemAction/item_update" method="POST">
+<input type="hidden" name="item_id" value="{item.item_id}"/> <br/>
+item_name<input type="text" name="item_name" value="{item.item_name}"/> <br/>
+item_seq<input type="text" name="item_seq" value="{item.item_seq}"/> <br/>
+item_content<input type="text" name="item_content" value="{item.item_content}"/> <br/>
+item_type
+<!-- 
+ --item_type: 0 Normal 1 introduction 2 news 3 product  4 bbs  5 contact us
+ -->
+ <!-- 
+  -->
+<select name="item_type">
+{if:item.item_type == 0}
+<option value="0" selected>Normal</option>
+<option value="1">introduction</option>
+<option value="2">news</option>
+<option value="3">product</option>
+<option value="4">bbs</option>
+<option value="5">contact us</option>
+{end}
+{if:item.item_type == 1}
+<option value="0">Normal</option>
+<option value="1" selected>introduction</option>
+<option value="2">news</option>
+<option value="3">product</option>
+<option value="4">bbs</option>
+<option value="5">contact us</option>
+{end}
+{if:item.item_type == 2}
+<option value="0">Normal</option>
+<option value="1">introduction</option>
+<option value="2" selected>news</option>
+<option value="3">product</option>
+<option value="4">bbs</option>
+<option value="5">contact us</option>
+{end}
+{if:item.item_type == 3}
+<option value="0">Normal</option>
+<option value="1">introduction</option>
+<option value="2">news</option>
+<option value="3" selected>product</option>
+<option value="4">bbs</option>
+<option value="5">contact us</option>
+{end}
+{if:item.item_type == 4}
+<option value="0">Normal</option>
+<option value="1">introduction</option>
+<option value="2">news</option>
+<option value="3">product</option>
+<option value="4" selected>bbs</option>
+<option value="5">contact us</option>
+{end}
+{if:item.item_type == 5}
+<option value="0">Normal</option>
+<option value="1">introduction</option>
+<option value="2">news</option>
+<option value="3">product</option>
+<option value="4">bbs</option>
+<option value="5" selected>contact us</option>
+{end}
+</select>
+<br/>
+<input type="submit" value="submit"/> <input type="reset"  value="reset"/><br/>
+</form>
+</body>
+</html>
