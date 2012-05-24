@@ -129,6 +129,60 @@ class NewsView extends BaseView
     
         $tpl->display("wap_news_show.html");
     }
+    
+    public function display_news_list()
+    {
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+    
+        $tpl->assign('news_list', $this->news_list);
+        $tpl->assign('page', $this->page);
+        $tpl->assign('item', $this->item);
+    
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+        
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+        $tpl->display("news_list.html");
+    }
+    
+    public function display_news_show()
+    {
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+    
+        $tpl->assign('news', $this->news);
+        $tpl->assign('item', $this->item);
+    
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+        
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+        $tpl->display("news_show.html");
+    }
+    
+    public function display_news_save_ui()
+    {
+        $tpl = new Template ();
+        
+        $tpl->set('base_url', Util::get_base_url());
+        
+        $tpl->assign('item_id', $this->item_id);
+        
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+        
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+        
+        $tpl->display("news_add.html");
+    }
 }
 
 ?>

@@ -54,6 +54,17 @@ class IntroductionAction extends BaseAction
     
         $this->introduction_view->display_wap_introduction_show();
     }
+    
+    public function introduction_list()
+    {
+        $item_id         = $this->get_param_value("item_id");
+    
+        $this->introduction_view->introduction =  $this->introduction_dao->get_introduction_by_item_id($item_id);
+    
+        $this->introduction_view->item = $this->item_dao->get_item_by_id($item_id);
+    
+        $this->introduction_view->display_introduction_list();
+    }
 }
 
 ?>

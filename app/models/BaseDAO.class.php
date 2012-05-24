@@ -46,6 +46,7 @@ class BaseDAO {
 	
 	public function close_connect()
 	{
+	    //Log::debug(__FILE__.":".__LINE__."    close connect....");
 	    Log::debug("close connect....");
 	    
 	    $this->db->close();

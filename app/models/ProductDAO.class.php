@@ -92,10 +92,12 @@ class ProductDAO extends BaseDAO
     
         $result = $this->db->query ($sql);
     
-        if(empty($result))
+        if($result ==  null || empty($result) || $this->db->num_rows($result) == 0)
         {
             Log::error("item_id=$item_id not found, please check check database");
-    
+        
+            $this->close_connect();
+        
             return null;
         }
     
@@ -136,11 +138,13 @@ class ProductDAO extends BaseDAO
         Log::debug($sql);
     
         $result = $this->db->query ($sql);
-    
-        if(empty($result))
+        
+        if($result ==  null || empty($result) || $this->db->num_rows($result) == 0)
         {
             Log::error("product_id=$product_id not found, please check check database");
-    
+        
+            $this->close_connect();
+        
             return null;
         }
     
@@ -165,6 +169,32 @@ class ProductDAO extends BaseDAO
         $this->close_connect();
     
         return $product_view;
+    }
+    
+    public function save_product($product_view)
+    {
+        $this->open_connect();
+        
+        $sql  = " INSERT INTO `tb_product`(`product_name`,`description`,`promulgator`,`issue_time`,`click_times`,`status`,`flag`,`icon_url`,`pic_url`,`item_id`)";
+        $sql .= " VALUES (";
+        $sql .= "'".$product_view->product_name."',";
+        $sql .= "'".$product_view->description."',";
+        $sql .= "'".$product_view->promulgator."',now(),'0',";
+        $sql .= "'".$product_view->status."',";
+        $sql .= "'".$product_view->flag."',";
+        $sql .= "'".$product_view->icon_url."',";
+        $sql .= "'".$product_view->pic_url."',";
+        $sql .= "'".$product_view->item_id."')";
+        
+        Log::debug ($sql);
+        
+        Log::out_print($sql);
+        
+        $this->db->query ($sql);
+        
+        $this->close_connect();
+        
+        return true;
     }
 }
 

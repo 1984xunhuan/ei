@@ -38,9 +38,11 @@ class NewsDAO extends BaseDAO
         
         $result = $this->db->query ($sql);
         
-        if(empty($result))
+        if($result ==  null || empty($result) || $this->db->num_rows($result) == 0)
         {
             Log::error("picture news is not found, please check check database");
+        
+            $this->close_connect();
         
             return null;
         }
@@ -145,9 +147,11 @@ class NewsDAO extends BaseDAO
         
         $result = $this->db->query ($sql);
         
-        if(empty($result))
+        if($result ==  null || empty($result) || $this->db->num_rows($result) == 0)
         {
             Log::error("item_id=$item_id not found, please check check database");
+        
+            $this->close_connect();
         
             return null;
         }
@@ -188,11 +192,13 @@ class NewsDAO extends BaseDAO
         Log::debug($sql);
     
         $result = $this->db->query ($sql);
-    
-        if(empty($result))
+        
+        if($result ==  null || empty($result) || $this->db->num_rows($result) == 0)
         {
             Log::error("news_id=$news_id not found, please check check database");
-    
+        
+            $this->close_connect();
+        
             return null;
         }
     
@@ -216,6 +222,29 @@ class NewsDAO extends BaseDAO
         $this->close_connect();
     
         return $news_view;
+    }
+    
+    public function save_news($news_view)
+    {
+        $this->open_connect();
+        
+        $sql  = " INSERT INTO `tb_news`(`title`,`content`,`promulgator`,`issue_time`,`click_times`,`status`,`flag`,`pic_url`,`item_id`)";
+        $sql .= " VALUES (";
+        $sql .= "'".$news_view->title."',";
+        $sql .= "'".$news_view->content."',";
+        $sql .= "'".$news_view->promulgator."',now(),'0',";
+        $sql .= "'".$news_view->status."',";
+        $sql .= "'".$news_view->flag."',";
+        $sql .= "'".$news_view->pic_url."',";
+        $sql .= "'".$news_view->item_id."')";
+    
+        Log::debug ($sql);
+    
+        $this->db->query ($sql);
+    
+        $this->close_connect();
+    
+        return true;
     }
 }
 

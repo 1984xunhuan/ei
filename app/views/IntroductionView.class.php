@@ -71,6 +71,25 @@ class IntroductionView extends BaseView
         $tpl->display("wap_introduction_show.html");
     }
     
+    public function display_introduction_list()
+    {
+         $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+    
+        $tpl->assign('item',$this->item);
+        $tpl->assign('introduction', $this->introduction);
+        
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+    
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+        $tpl->display("introduction_list.html");
+    }
+    
+    
     
 }
 

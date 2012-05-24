@@ -15,16 +15,19 @@ class IntroductionDAO extends BaseDAO
     {
         $this->open_connect();
         
-        $sql = "SELECT introduction_id, introduction_content, item_id FROM tb_introduction ";
-        $sql .= "WHERE introduction_id='".$introduction_id."' limit 1";
+        $sql  = " SELECT introduction_id, introduction_content, item_id FROM tb_introduction ";
+        $sql .= " WHERE introduction_id='".$introduction_id."' limit 1";
         
         Log::debug($sql);
         
         $result = $this->db->query ($sql);
         
-        if(empty($result))
+        if($result ==  null || empty($result) || $this->db->num_rows($result) == 0)
         {
             Log::error("introduction_id=$introduction_id not found, please check check database");
+            
+            $this->free_result($result);
+            $this->close_connect();
         
             return null;
         }
@@ -48,17 +51,22 @@ class IntroductionDAO extends BaseDAO
     {
         $this->open_connect();
         
-        $sql = "SELECT introduction_id, introduction_content, item_id FROM tb_introduction ";
+        $sql  = " SELECT introduction_id, introduction_content, item_id FROM tb_introduction ";
         $sql .= " WHERE item_id='".$item_id."' limit 1";
         
         Log::debug($sql);
         
         $result = $this->db->query ($sql);
         
-        if(empty($result))
+        if($result ==  null || empty($result) || $this->db->num_rows($result) == 0)
         {
-            Log::error("item_id=$item_id not found, please check check database");
-        
+            Log::error(__FILE__.":".__LINE__."   item_id=$item_id not found, please check check database");
+            
+            
+            //$this->free_result($result);
+            
+            $this->close_connect();
+            
             return null;
         }
         

@@ -21,7 +21,7 @@
 	    <div id="about">
 		     <h3>{$rs->item->item_name}</h3>
   
-			 <p><img src="{base_url}/public/web/template/{merchant.web_template}/images/about_logo.gif" alt="{$rs->item->item_name}" title="" />{$rs->introduction->introduction_content}</p>
+			 <p>{$rs->introduction->introduction_content}</p>
 	    </div>
        {end}
                 
@@ -64,8 +64,9 @@
                 {if:count($rs->subject_list) > 0} 
                 {foreach:$rs->subject_list,$subject}
                 <li>
-                <span style="float: left;"><a href="{base_url}/index.php?PostAction/web_post_list/item_id/{$rs->item->item_id}/subject_id/{$subject->subject_id}/current_page/1">{$subject->subject_topic}</a></li></span>
+                <span style="float: left;"><a href="{base_url}/index.php?PostAction/web_post_list/item_id/{$rs->item->item_id}/subject_id/{$subject->subject_id}/current_page/1">{$subject->subject_topic}</a></span>
                 <span style="float: right;">{$subject->subject_issue_time}</span>
+                </li>
                 {end}
                 {end}
               </ul>  

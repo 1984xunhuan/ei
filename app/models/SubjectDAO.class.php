@@ -66,9 +66,11 @@ class SubjectDAO extends BaseDAO
         
         $result = $this->db->query($sql);
         
-        if(empty($result))
+        if($result ==  null || empty($result) || $this->db->num_rows($result) == 0)
         {
             Log::error("Data is not found, please check check database");
+        
+            $this->close_connect();
         
             return null;
         }
@@ -223,9 +225,11 @@ class SubjectDAO extends BaseDAO
         
         $result = $this->db->query ($sql);
         
-        if(empty($result))
+        if($result ==  null || empty($result) || $this->db->num_rows($result) == 0)
         {
             Log::error("item_id=$item_id not found, please check check database");
+        
+            $this->close_connect();
         
             return null;
         }

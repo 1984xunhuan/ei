@@ -26,6 +26,13 @@ class MerchantDAO extends BaseDAO
      )
      * */
     
+    public static function get_merchant_id()
+    {
+        $merchant_id = 'M0001';
+        
+        return $merchant_id;
+    }
+    
     public function get_merchant()
     {
         $merchant_id = 'M0001';
@@ -36,16 +43,18 @@ class MerchantDAO extends BaseDAO
     {   
         $this->open_connect();
         
-        $sql = "SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant ";
-        $sql .= "WHERE merchant_id='".$merchant_id."' limit 1";
+        $sql  = " SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant ";
+        $sql .= " WHERE merchant_id='".$merchant_id."' limit 1";
         
         Log::debug($sql);
         
         $result = $this->db->query ($sql);
         
-        if(empty($result))
+        if($result ==  null || empty($result) || $this->db->num_rows($result) == 0)
         {
             Log::error("merchant_id=$merchant_id not found, please check check database");
+        
+            $this->close_connect();
         
             return null;
         }

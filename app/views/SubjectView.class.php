@@ -73,6 +73,24 @@ class SubjectView extends BaseView
     
         $tpl->display("web_subject_list.html");
     }
+    
+    public function display_subject_list()
+    {
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+        $tpl->assign('subject_list', $this->subject_list);
+        $tpl->assign('page', $this->page);
+        $tpl->assign('item', $this->item);
+        
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+  
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+        $tpl->display("subject_list.html");
+    }
 }
 
 ?>

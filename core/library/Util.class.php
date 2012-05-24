@@ -69,6 +69,106 @@
 	    
 	    	return $is_mobile;
 	    }
+	    
+	    public static function delete_directory($dir) 
+	    {
+	        if(!is_dir($dir))
+	        {
+	            return false;
+	        }
+	        
+	        $dh=opendir($dir);
+	        
+	        while (($file = readdir($dh)) != false)
+	        {
+	            if($file!="." && $file!="..") 
+	            {
+	                $fullpath=$dir."/".$file;
+	                
+	                if(!is_dir($fullpath)) 
+	                {
+	                    unlink($fullpath);
+	                } 
+	                else 
+	                {
+	                    Util::delete_directory($fullpath);
+	                }
+	            }
+	        }
+	    
+	        closedir($dh);
+	    
+	        if(rmdir($dir)) 
+	        {
+	            return true;
+	        }
+	        else 
+	        {
+	            return false;
+	        }
+	    }
+	    
+	    public static function make_directory($path)
+	    {
+	        $paths = split("/", $path);
+	    
+	        $tmp_path='';
+	    
+	        foreach ($paths as $p)
+	        {
+	            if(!empty($p))
+	            {
+	                $tmp_path.=$p.'/';
+	    
+	                if(!file_exists($tmp_path))
+	                {
+	                    mkdir($tmp_path);
+	                }
+	            }
+	        }
+	    }
+	    
+	    public static function upload_image($path, $filename)
+	    {
+	        if ((($_FILES["file"]["type"] == "image/gif")
+	                ||($_FILES["file"]["type"] == "image/jpeg")
+	                ||($_FILES["file"]["type"] == "image/pjpeg"))
+	                && ($_FILES["file"]["size"] < 204800))
+	        {
+	            if ($_FILES["file"]["error"] > 0)
+	            {
+	                echo "Return Code: " . $_FILES["file"]["error"] . "<br />";
+	            }
+	            else
+	            {
+	                echo "Upload: " . $_FILES["file"]["name"] . "<br />";
+	                echo "Type: " . $_FILES["file"]["type"] . "<br />";
+	                echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
+	                echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br />";
+	               
+	                if (file_exists($path.$filename))
+	                {
+	                    echo $_FILES["file"]["name"] . " already exists. ";
+	                }
+	                else
+	                {
+	                    if(!is_dir($path) || !file_exists($path))
+	                    {
+	                        Util::make_directory($path);
+	                    }
+	                    
+	                    move_uploaded_file($_FILES["file"]["tmp_name"], $path.$filename);
+	                    
+	                    echo "Stored in: " . $path.$filename;
+	                }
+	            }
+	        }
+	        else
+	        {
+	            echo "Invalid file";
+	        }
+	        
+	    }
     }
 
 ?>

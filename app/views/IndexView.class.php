@@ -71,6 +71,21 @@ class IndexView extends BaseView
     
         $tpl->display("wap_index.html");
     }
+    
+    public function display_admin_index()
+    {
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+    
+        $tpl->assign('menus',   $this->menus);
+        $tpl->assign('merchant',$this->merchant);
+    
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+        $tpl->display("admin_layout.html");
+    }
 }
 
 ?>

@@ -48,6 +48,17 @@ class ContactUsAction extends BaseAction
     
         $this->contact_us_view->display_wap_contact_us_show();
     }
+    
+    public function contact_us_show()
+    {
+        $item_id         = $this->get_param_value("item_id");
+    
+        $this->contact_us_view->item = $this->item_dao->get_item_by_id($item_id);
+    
+        $this->contact_us_view->merchant = $this->merchant_dao->get_merchant();
+    
+        $this->contact_us_view->display_contact_us_show();
+    }
 }
 
 ?>

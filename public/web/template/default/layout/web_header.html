@@ -6,6 +6,9 @@
         <li class="nav_home"><a href="{base_url}/">首页</a></li>
          <!-- list start -->
     {foreach:menus, $it}
+        {if:$it->item_type == 0}
+	    <li><a href="index.php?ItemAction/web_sub_item/item_id/{$it->item_id}/item_up_id/{$it->item_up_id}">{$it->item_name}</a></li>
+	    {end}
 	    {if:$it->item_type == 1}
 	    <li><a href="index.php?IntroductionAction/web_introduction_show/item_id/{$it->item_id}">{$it->item_name}</a></li>
 	    {end}

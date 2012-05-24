@@ -36,19 +36,22 @@ class IndexAction extends BaseAction
         { 
             Log::debug("enter web index page.");
             
-            $results = $this->item_dao->get_web_index_info();            
+            $results = $this->item_dao->get_web_index_info();   
             $this->index_view->set_results($results);
             
-            //$this->index_view->menus = $this->item_dao->get_web_index_menu();
-            $this->index_view->merchant = $this->merchant_dao->get_merchant();
-            
-            $menus = $this->item_dao->get_web_index_menu();
-            $this->index_view->set_menus($menus);
-     
+            $this->index_view->menus         = $this->item_dao->get_web_index_menu();
+            $this->index_view->merchant      = $this->merchant_dao->get_merchant();    
             $this->index_view->pic_news_list = $this->news_dao->get_web_index_pic_news_list();
-            
+    
             $this->index_view->display_web_index();
         }
+    }   
+    
+    public function admin()
+    {
+        $menus = $this->item_dao->get_admin_menu('1');
+        $this->index_view->set_menus($menus);
+        $this->index_view->display_admin_index();
     }
 }
 ?>

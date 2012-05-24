@@ -66,6 +66,24 @@ class ContactUsView extends BaseView
     
         $tpl->display("wap_contact_us_show.html");
     }
+    
+    public function display_contact_us_show()
+    {
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+    
+        $tpl->assign('item', $this->item);
+        $tpl->assign('merchant', $this->merchant);
+        
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+    
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+        $tpl->display("contact_us_show.html");
+    }
 }
 
 ?>

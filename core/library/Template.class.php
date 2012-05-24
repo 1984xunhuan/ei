@@ -71,7 +71,7 @@ class Template {
 	}
 
 	public function compilePath($path) {
-	       	// prepend with base path if specified path doesn't start with a slash
+	    // prepend with base path if specified path doesn't start with a slash
 		$temp = $this->appendSeparator($path);
 		$this->compileDirectory = ($temp{0} == '/' ? $this->baseDirectory . substr($temp, 1) : $temp);
 	}

@@ -3,8 +3,8 @@
 
 class DB
 {
-  var $querynum = 0 ; 
-  var $dblink ;       
+  private $querynum = 0 ; 
+  private $dblink   = null;       
   
   function __construct()
   {
@@ -16,6 +16,7 @@ class DB
   {
      $func = empty($pconnect) ? 'mysql_connect' : 'mysql_pconnect' ;
      $this->dblink = @$func($dbhost,$dbuser,$dbpw) ;
+     
      if ($halt && !$this->dblink)
      {
         $this->halt("�޷�������ݿ⣄1�7");
@@ -98,7 +99,12 @@ class DB
   //
   function close()
   {
-     return mysql_close($this->dblink) ;
+      if(mysql_stat($this->dblink) != null)
+      {
+          return mysql_close($this->dblink);
+      }
+      
+      return true;
   }
   
   //

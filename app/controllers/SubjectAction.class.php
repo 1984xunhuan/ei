@@ -59,6 +59,24 @@ class SubjectAction extends BaseAction
         Header("Location: $url");
     }
     
+    
+    public function subject_list()
+    {
+        $item_id = $this->get_param_value("item_id");
+        $current_page = $this->get_param_value("current_page");
+    
+        $subject_dao = new SubjectDAO();
+        $subject_view = new SubjectView();
+    
+        $item_dao     = new ItemDAO();
+    
+        $subject_view->subject_list =  $subject_dao->get_subject_list_by_item_id($item_id, SubjectDAO::$ALL_FLAG, $subject_view->page, $current_page);
+    
+        $subject_view->item = $item_dao->get_item_by_id($item_id);
+    
+        $subject_view->display_subject_list();
+    }
+    
 }
 
 ?>
