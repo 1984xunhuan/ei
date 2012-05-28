@@ -73,7 +73,7 @@ class IntroductionView extends BaseView
     
     public function display_introduction_list()
     {
-         $tpl = new Template ();
+        $tpl = new Template ();
     
         $tpl->set('base_url', Util::get_base_url());
     
@@ -87,6 +87,24 @@ class IntroductionView extends BaseView
         $tpl->setFindPath($findPath);
     
         $tpl->display("introduction_list.html");
+    }
+    
+    public function display_introduction_save_ui()
+    {
+        $tpl = new Template ();
+        
+        $tpl->set('base_url', Util::get_base_url());
+        
+        $tpl->assign('item_id',$this->item_id);
+        $tpl->assign('introduction', $this->introduction);
+        
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+        
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+        
+        $tpl->display("introduction_add.html");
     }
     
     

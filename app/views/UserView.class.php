@@ -13,6 +13,11 @@ class UserView extends BaseView
     public $user_login_ip;
     public $user_last_active_time;
     public $user_last_login_time;
+    public $user_type;
+    
+    //
+    public $user_list;
+    public $page;
     
     public function display_login_success()
     {
@@ -80,7 +85,7 @@ class UserView extends BaseView
         $tpl->display("web_user_msg.html");
     }
     
-    public function display_login_ui()
+    public function display_web_login_ui()
     {
         $tpl = new Template ();
         
@@ -114,6 +119,38 @@ class UserView extends BaseView
         $tpl->display("web_user_register.html");
     }
     
+    public function display_user_list()
+    {
+        $tpl = new Template ();
+        
+        $tpl->set('base_url', Util::get_base_url());
+        $tpl->assign('user_list', $this->user_list);
+        $tpl->assign('page', $this->page);
+        
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+        
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+        
+        $tpl->display("user_list.html");
+    }
+    
+    public function display_login_ui()
+    {
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+        
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+        
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+    
+        $tpl->display("user_login.html");
+    }
     
 }
 

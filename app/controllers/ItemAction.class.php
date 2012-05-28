@@ -99,16 +99,18 @@ class ItemAction extends BaseAction
         
         $item = $item_dao->get_item_by_id($item_view->item_up_id);
         
-        Log::out_print("item->item_level=".$item->item_level);
+        //Log::out_print("item->item_level=".$item->item_level);
         
         $item_view->item_level = $item->item_level + 1;
         $item_view->item_site  = $item->item_site;
         
-        Log::out_print("item_view->item_level=".$item_view->item_level);
+        //Log::out_print("item_view->item_level=".$item_view->item_level);
         
         $item_dao->set_item_view($item_view);
         
         $item_dao->save_item();
+        
+        $this->refresh_tree();
     }
     
     public function item_update_ui()
@@ -142,6 +144,8 @@ class ItemAction extends BaseAction
         $item_dao->set_item_view($item_view);
     
         $item_dao->update_item();
+        
+        $this->refresh_tree();
     }
     
     public function item_delete()
@@ -152,7 +156,22 @@ class ItemAction extends BaseAction
         
         $merchant_id = MerchantDAO::get_merchant_id();
     
-        $item_dao->delete_item($item_id, $merchant_id);
+        //$item_dao->delete_item($item_id, $merchant_id);
+        
+        //delete selfnode and subnode.
+        $item_dao->delete_sub_tree($item_id, $merchant_id);
+        
+        $this->refresh_tree();
+    }
+    
+    private function refresh_tree()
+    {
+        $js="<script language='javascript'>if(typeof(window.parent.frames['left']) == 'undefined'){window.parent.parent.frames['left'].location.reload();}else{window.parent.frames['left'].location.reload();}</script>";
+        //$js="<script language='javascript'>alert(window.parent.frames['left']);</script>";
+        //$js="<script language='javascript'>window.parent.frames['left'].location.reload();</script>";
+        //$js="<script language='javascript'>window.parent.parent.frames['left'].location.reload();</script>";
+        
+        echo $js;
     }
 }
 

@@ -384,14 +384,14 @@ class ItemDAO extends BaseDAO
     public function save_item()
     { 
         //print_r($this->item_view);
+        /*
         Log::out_print($this->item_view->item_name);
         Log::out_print($this->item_view->item_seq);
         Log::out_print($this->item_view->item_level);
         Log::out_print($this->item_view->item_up_id);
         Log::out_print($this->item_view->item_content);
         Log::out_print($this->item_view->item_type);
-
-            
+        */        
         $this->open_connect();
         
         $sql  = " INSERT INTO `tb_item`(`item_name`,`item_seq`,`item_level`,`item_up_id`,`item_content`,`item_reg_time`,`item_status`,`item_type`,`item_site`)";
@@ -407,7 +407,7 @@ class ItemDAO extends BaseDAO
        
         Log::debug ($sql);
         
-        Log::out_print($sql);
+        //Log::out_print($sql);
         
         $this->db->query ($sql);
        
@@ -450,12 +450,19 @@ class ItemDAO extends BaseDAO
         */
         $item = $this->get_item_by_id($item_id);
         
+        if($item->item_up_id == null || empty($item->item_up_id))
+        {
+            return false;
+        }
+        
         if($item->item_up_id == -1)
         {
             Log::debug("Root node don't delete.");
             
             return false;
-        }      
+        }    
+
+        //Log::out_print("delete_item ====>> $item->item_id <br/>");
         
         $delpath = '';
         
@@ -529,6 +536,37 @@ class ItemDAO extends BaseDAO
         
     
         return true;
+    }
+    
+    public function delete_sub_tree($item_id, $merchant_id)
+    {
+        $item = $this->get_item_by_id($item_id);
+        
+        //Log::out_print("item_up_id = $item->item_up_id, $item->item_name <br/>");
+        
+        if($item->item_up_id == -1)
+        {
+            Log::debug("Root node don't delete.");
+        
+            return;
+        }
+        
+        $item_list = $this->get_item_by_up_id($item_id);
+        
+        foreach ($item_list as $it)
+        {
+            //Log::out_print("sub item, item_id = $it->item_id, $it->item_name <br/>");
+            
+            Log::out_print("Delete sub item, item_id = $it->item_id, $it->item_name <br/>");
+            
+            $this->delete_item($it->item_id, $merchant_id);
+            
+            $this->delete_sub_tree($it->item_id, $merchant_id);
+        }
+        
+        Log::out_print("Delete item, item_id = $item_id, $item->item_name <br/>");
+        
+        $this->delete_item($item_id, $merchant_id);
     }
 }
 

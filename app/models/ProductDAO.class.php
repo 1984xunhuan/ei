@@ -188,11 +188,28 @@ class ProductDAO extends BaseDAO
         
         Log::debug ($sql);
         
-        Log::out_print($sql);
+        $this->db->query ($sql);
+        
+        $this->close_connect();
+        
+        return true;
+    }
+    
+    public function delete_product($product_view)
+    {
+        $this->open_connect();
+        
+        $sql = "DELETE FROM tb_product where product_id='".$product_view->product_id."'";
+        
+        Log::debug ($sql);
         
         $this->db->query ($sql);
         
         $this->close_connect();
+        
+        //remove picture from folder
+        Util::delete_directory(Util::get_deploy_path().$product_view->icon_url);
+        Util::delete_directory(Util::get_deploy_path().$product_view->pic_url);
         
         return true;
     }

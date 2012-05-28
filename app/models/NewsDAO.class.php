@@ -246,6 +246,24 @@ class NewsDAO extends BaseDAO
     
         return true;
     }
+    
+    public function delete_news($news_view)
+    {
+        $this->open_connect();
+        
+        $sql = "DELETE FROM tb_news where news_id='".$news_view->news_id."'";
+        
+        Log::debug ($sql);
+        
+        $this->db->query ($sql);
+               
+        $this->close_connect();
+               
+        //remove picture from folder
+        Util::delete_directory(Util::get_deploy_path().$news_view->pic_url);
+        
+        return true;
+    }
 }
 
 ?>

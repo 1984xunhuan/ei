@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Product add</title>
+</head>
+<body>
+<form action="{base_url}/index.php?IntroductionAction/introduction_save" method="POST">
+<input type="hidden" name="item_id" value={item_id}> 
+<input type="hidden" name="introduction_id" value={introduction.introduction_id}> 
+content:<textarea rows="20" cols="40" name="introduction_content">{introduction.introduction_content}</textarea><br/>
+<input type="submit"/><input type="reset"/> <br/>
+</form>
+</body>
+</html>

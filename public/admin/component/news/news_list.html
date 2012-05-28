@@ -14,18 +14,18 @@
 </tr>
 <tr>
 <td>
-<ul style="list-style: none; display: block; margin: 0; padding: 0;">
-	{if:count(news_list) > 0} 
+   <table width="100%">
+   {if:count(news_list) > 0} 
        {foreach:news_list,$news}
-		<li style="line-height: 20px;">
-	    <span style="float: left;">
-		 <a href="index.php?NewsAction/news_show/item_id/{item.item_id}/news_id/{$news->news_id}">{$news->title}</a>
-	    </span>
-	    <span style="float: right;">{$news->issue_time}</span><br/>
-		</li>
-		{end}
+   <tr>
+   <td width="70%"><a href="{base_url}/index.php?NewsAction/news_show/item_id/{item.item_id}/news_id/{$news->news_id}">{$news->title}</a></td>
+   <td width="20%">{$news->issue_time}</td>
+   <td width="10%"><a href="{base_url}/index.php?NewsAction/news_delete/news_id/{$news->news_id}/current_page/1/item_id/{item.item_id}">删除</a></td>
+   </tr>
+   	{end}
 	{end}
-</ul>
+   <tr>
+   <td colspan="3">
 {if:page.row_num > 0}
 <ul style="list-style: none; display: block; margin: 0; padding: 0;">
 				<li style="line-height: 20px;">
@@ -43,6 +43,10 @@
 				</li>	
 			</ul>
 {end}
+</td>
+</tr>
+</table>
+
 </td>
 </tr>
 </table>

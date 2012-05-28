@@ -77,6 +77,19 @@ class SubjectAction extends BaseAction
         $subject_view->display_subject_list();
     }
     
+    public function subject_delete()
+    {
+        $subject_id = $this->get_param_value("subject_id");
+    
+        $subject_dao = new SubjectDAO();
+    
+        $subject_view = $subject_dao->get_subject_by_id($subject_id);
+    
+        $subject_dao->delete_subject($subject_view);
+        
+        $this->subject_list();
+    }
+    
 }
 
 ?>

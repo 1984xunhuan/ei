@@ -67,6 +67,25 @@ class PostView extends BaseView
     
         $tpl->display("web_post_publish.html");
     } 
+    
+    public function display_post_list()
+    {
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+        $tpl->assign('subject_view', $this->subject_view);
+        $tpl->assign('post_list', $this->post_list);
+        $tpl->assign('page', $this->page);
+        $tpl->assign('item', $this->item);
+    
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+  
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+        $tpl->display("post_list.html");
+    }
 }
 
 ?>

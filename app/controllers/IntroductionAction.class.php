@@ -65,6 +65,44 @@ class IntroductionAction extends BaseAction
     
         $this->introduction_view->display_introduction_list();
     }
+    
+    public function introduction_save_ui()
+    {
+        $item_id = $this->get_param_value("item_id");
+        
+        $introductionView = new IntroductionView();
+        $introductionView->item_id = $item_id;
+        
+        $introduction_dao  = new IntroductionDAO();
+        
+        $introductionView->introduction = $introduction_dao->get_introduction_by_item_id($item_id);
+        
+        $introductionView->display_introduction_save_ui();
+    }
+    
+    public function introduction_save()
+    {
+        $introduction_view = new IntroductionView();
+        $introduction_dao  = new IntroductionDAO();
+        
+        $introduction_view->introduction_id      = $_POST["introduction_id"];
+        $introduction_view->introduction_content = $_POST["introduction_content"];
+        $introduction_view->item_id              = $_POST["item_id"];
+        
+        if($introduction_view->introduction_id  == null || empty($introduction_view->introduction_id ))
+        {
+            $introduction_dao->save_introduction($introduction_view);
+        }
+        else
+        {
+            $introduction_dao->update_introduction($introduction_view);
+        }
+        
+        $this->set_param_value("item_id", $introduction_view->item_id);
+        
+        $this->introduction_list();
+    }
+
 }
 
 ?>

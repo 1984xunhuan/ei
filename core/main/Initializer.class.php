@@ -11,6 +11,7 @@
     		set_include_path(get_include_path().PATH_SEPARATOR."app/controllers");
     		set_include_path(get_include_path().PATH_SEPARATOR."app/models");
     		set_include_path(get_include_path().PATH_SEPARATOR."app/views");
+    		set_include_path(get_include_path().PATH_SEPARATOR."public/admin");
     		set_include_path(get_include_path().PATH_SEPARATOR."public/web");
     		set_include_path(get_include_path().PATH_SEPARATOR."public/wap");
     	}

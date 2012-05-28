@@ -2,9 +2,40 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>User List</title>
 </head>
 <body>
-
+<table width="100%">
+   {if:count(user_list) > 0} 
+       {foreach:user_list,$user}
+   <tr>
+   <td width="70%"><a href="{base_url}/index.php?UserAction/user_show/item_id/{item.item_id}/user_id/{$user->user_id}">{$user->user_name}</a></td>
+   <td width="20%">{$user->user_reg_time}</td>
+   <td width="10%"><a href="{base_url}/index.php?UserAction/user_delete/user_id/{$user->user_id}/current_page/1">删除</a></td>
+   </tr>
+   	{end}
+	{end}
+   <tr>
+   <td colspan="3">
+{if:page.row_num > 0}
+<ul style="list-style: none; display: block; margin: 0; padding: 0;">
+				<li style="line-height: 20px;">
+					共{page.row_num}条记录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;						       
+					第{page.current_page}页/共{page.total_page}页
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					{if:page.current_page > 1}
+					<a href="{base_url}/index.php?UserAction/user_list/current_page/1">首页</a>
+					<a href="{base_url}/index.php?UserAction/user_list/current_page/{page.current_page-1}">上一项</a>
+					{end}
+					{if:page.current_page != page.total_page}
+					<a href="{base_url}/index.php?UserAction/user_list/current_page/{page.current_page+1}">下一页</a>
+					<a href="{base_url}/index.php?UserAction/user_list/current_page/{page.total_page}">尾页</a>
+					{end}
+				</li>	
+			</ul>
+{end}
+</td>
+</tr>
+</table>
 </body>
 </html>

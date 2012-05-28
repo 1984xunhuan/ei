@@ -9,7 +9,12 @@
 <body>
 <div id="header">
 	<ul>
-		<li></li>
+		<li>
+		
+{if:!empty($_SESSION["ADMIN_USER"])}
+ {$_SESSION["ADMIN_USER"]->user_name}&nbsp;&nbsp;<a href="{base_url}/index.php?UserAction/login_system">退出</a>
+{end}
+		</li>
 	</ul>
 </div>
 <div id="contents">
@@ -38,8 +43,8 @@
 					<li id="now24"><a href="{base_url}/" onClick="go_cmdurl('模板管理',this);" target="content3" title="WAP模板管理">WAP模板管理</a></li>	
 				</ul>
 				<ul id="dleft_tab3" style="display:none;">
-					<li id="now31" class="Selected"><a href="{base_url}/" onClick="go_cmdurl('用户管理',this);" target="content3" title="注册用户管理">注册用户管理</a></li>
-					<li id="now32"><a href="{base_url}/" onClick="go_cmdurl('用户管理',this);" target="content3" title="系统用户管理">系统用户管理</a></li>	
+					<li id="now31" class="Selected"><a href="{base_url}/index.php?UserAction/user_list/user_type/0/current_page/1" onClick="go_cmdurl('用户管理',this);" target="content3" title="注册用户管理">注册用户管理</a></li>
+					<li id="now32"><a href="{base_url}/index.php?UserAction/user_list/user_type/1/current_page/1" onClick="go_cmdurl('用户管理',this);" target="content3" title="系统用户管理">系统用户管理</a></li>	
 				</ul>
 				<ul id="dleft_tab4" style="display:none;">
 					<li id="now41" class="Selected"><a href="{base_url}/" onClick="go_cmdurl('流量统计',this)" target="content3" title="WEB流量统计">WEB流量统计</a></li>

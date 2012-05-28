@@ -74,6 +74,13 @@
 	    {
 	        if(!is_dir($dir))
 	        {
+	            if(is_file($dir))
+	            {
+	                unlink($dir);
+	                
+	                return true;
+	            }
+	            
 	            return false;
 	        }
 	        

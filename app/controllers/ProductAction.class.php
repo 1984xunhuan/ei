@@ -132,19 +132,40 @@ class ProductAction extends BaseAction
         $product_view->flag         = $_POST["flag"];
         $product_view->item_id      = $_POST["item_id"];
         
-        $path = "/public/data/".MerchantDAO::get_merchant_id()."/product/".$product_view->item_id."/";
-        
-        $filename = md5( microtime(true) . rand(1000, 9999) );
-        $filename .= ($_FILES["file"]["type"] == "image/gif") ? ".gif" : ".jpg";
-        
-        $product_view->icon_url = $path.$filename;
-        $product_view->pic_url  = $path.$filename;       
-        
-        $path =Util::get_deploy_path().$path;
-        
-        Util::upload_image($path, $filename);
+        if($_FILES["file"]["name"] != null)
+        {
+            $path = "/public/data/".MerchantDAO::get_merchant_id()."/product/".$product_view->item_id."/";
+            
+            $filename = md5( microtime(true) . rand(1000, 9999) );
+            $filename .= ($_FILES["file"]["type"] == "image/gif") ? ".gif" : ".jpg";
+            
+            $product_view->icon_url = $path.$filename;
+            $product_view->pic_url  = $path.$filename;       
+            
+            $path =Util::get_deploy_path().$path;
+            
+            Util::upload_image($path, $filename);
+        }
         
         $product_dao->save_product($product_view);
+        
+        $this->set_param_value("item_id", $product_view->item_id);
+        $this->set_param_value("current_page", "1");
+        
+        $this->product_list();    
+    }
+    
+    public function product_delete()
+    {
+        $product_id = $this->get_param_value("product_id");
+    
+        $product_dao  = new ProductDAO();
+    
+        $product_view = $product_dao->get_product_by_id($product_id);
+    
+        $product_dao->delete_product($product_view);
+        
+        $this->product_list();
     }
     
 }

@@ -85,6 +85,42 @@ class IntroductionDAO extends BaseDAO
         return $introduction_view;
     }
     
+    public function save_introduction($introduction_view)
+    {
+        $this->open_connect();
+        
+        $sql  = " INSERT INTO `tb_introduction`(`introduction_content`,`item_id`)";
+        $sql .= " VALUES (";
+        $sql .= "'".$introduction_view->introduction_content."',";
+        $sql .= "'".$introduction_view->item_id."')";
+        
+        Log::debug ($sql);
+        
+        $this->db->query ($sql);
+        
+        $this->close_connect();
+        
+        return true;
+    }
+    
+    public function update_introduction($introduction_view)
+    {
+        $this->open_connect();
+    
+        $sql  = " UPDATE `tb_introduction` SET ";
+        $sql .= " introduction_content =";
+        $sql .= "'".$introduction_view->introduction_content."'";
+        $sql .= " WHERE introduction_id='".$introduction_view->introduction_id."'";
+    
+        Log::debug ($sql);
+    
+        $this->db->query ($sql);
+    
+        $this->close_connect();
+    
+        return true;
+    }
+    
 }
 
 ?>

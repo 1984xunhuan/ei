@@ -90,6 +90,44 @@ class PostAction extends BaseAction
         */
         
     }
+    
+    public function post_list()
+    {
+        $current_page = $this->get_param_value("current_page");
+        $subject_id   = $this->get_param_value("subject_id");
+        $item_id      = $this->get_param_value("item_id");
+    
+        $post_dao  = new PostDAO();
+        $post_view = new PostView();
+    
+        $subject_dao = new SubjectDAO();  
+        $item_dao     = new ItemDAO();
+    
+        $post_view->subject_view = $subject_dao->get_subject_by_id($subject_id);
+    
+        $post_view->post_subject_id = $subject_id;
+    
+        $post_dao->set_post_view($post_view);
+        $post_view->post_list = $post_dao->post_list($post_view->page, $current_page);
+    
+        $post_view->item = $item_dao->get_item_by_id($item_id);
+              
+        $post_view->display_post_list();
+    }
+    
+    public function post_delete()
+    {
+        $post_id = $this->get_param_value("post_id");
+    
+        $post_dao = new PostDAO();
+    
+        $post_view = $post_dao->get_post_by_id($post_id);
+    
+        $post_dao->delete_post($post_view);
+        
+        $this->post_list();
+    }
+    
 }
 
 ?>

@@ -143,19 +143,40 @@ class NewsAction extends BaseAction
         $news_view->status      = $_POST["status"];
         $news_view->flag        = $_POST["flag"];
         $news_view->item_id     = $_POST["item_id"];
-                
-        $path = "/public/data/".MerchantDAO::get_merchant_id()."/news/".$news_view->item_id."/";
-        
-        $filename = md5( microtime(true) . rand(1000, 9999) );
-	    $filename .= ($_FILES["file"]["type"] == "image/gif") ? ".gif" : ".jpg";
-        
-        $news_view->pic_url = $path.$filename;
-        
-        $path =Util::get_deploy_path().$path;
-        
-        Util::upload_image($path, $filename);
+
+        if($_FILES["file"]["name"] != null)
+        {
+            $path = "/public/data/".MerchantDAO::get_merchant_id()."/news/".$news_view->item_id."/";
+            
+            $filename = md5( microtime(true) . rand(1000, 9999) );
+    	    $filename .= ($_FILES["file"]["type"] == "image/gif") ? ".gif" : ".jpg";
+            
+            $news_view->pic_url = $path.$filename;
+            
+            $path =Util::get_deploy_path().$path;
+            
+            Util::upload_image($path, $filename);
+        }
         
         $news_dao->save_news($news_view);
+        
+        $this->set_param_value("item_id", $news_view->item_id);
+        $this->set_param_value("current_page", "1");
+        
+        $this->news_list();
+    }
+    
+    public function news_delete()
+    {
+        $news_id = $this->get_param_value("news_id");
+        
+        $news_dao  = new NewsDAO();
+        
+        $news_view = $news_dao->get_news_by_id($news_id);
+        
+        $news_dao->delete_news($news_view);
+        
+        $this->news_list();
     }
 }
 

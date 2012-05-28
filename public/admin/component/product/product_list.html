@@ -16,18 +16,39 @@
 </tr>
 <tr>
 <td>
+   <table width="100%">
+   {if:count(product_list) > 0} 
+        {foreach:product_list,$product}
+   <tr>
+   <td width="70%"><a href="{base_url}/index.php?ProductAction/web_product_show/item_id/{item.item_id}/product_id/{$product->product_id}">{$product->product_name}</a></td>
+   <td width="20%">{$product->issue_time}</td>
+   <td width="10%"><a href="{base_url}/index.php?ProductAction/product_delete/product_id/{$product->product_id}/current_page/1/item_id/{item.item_id}">删除</a></td>
+   </tr>
+   	{end}
+	{end}
+   <tr>
+   <td colspan="3">
+{if:page.row_num > 0}
 <ul style="list-style: none; display: block; margin: 0; padding: 0;">
-  {if:count(product_list) > 0} 
-					       {foreach:product_list,$product}
-							<li style="line-height: 20px;">
-							    <span style="float: left;">
-								 <a href="{base_url}/index.php?ProductAction/web_product_show/item_id/{item.item_id}/product_id/{$product->product_id}">{$product->product_name}</a>
-							    </span>
-							    <span style="float: right;">{$product->issue_time}</span><br/>
-							</li>
-							{end}
-							{end}
-							</ul>
+				<li style="line-height: 20px;">
+					共{page.row_num}条记录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;						       
+					第{page.current_page}页/共{page.total_page}页
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					{if:page.current_page > 1}
+					<a href="index.php?ProductAction/product_list/current_page/1/item_id/{item.item_id}">首页</a>
+					<a href="index.php?ProductAction/product_list/current_page/{page.current_page-1}/item_id/{item.item_id}">上一项</a>
+					{end}
+					{if:page.current_page != page.total_page}
+					<a href="index.php?ProductAction/product_list/current_page/{page.current_page+1}/item_id/{item.item_id}">下一页</a>
+					<a href="index.php?ProductAction/product_list/current_page/{page.total_page}/item_id/{item.item_id}">尾页</a>
+					{end}
+				</li>	
+			</ul>
+{end}
+							
+   </td>
+</tr>
+</table>
 </td>
 </tr>
 </table>

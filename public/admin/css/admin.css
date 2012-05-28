@@ -54,10 +54,12 @@ a:active {text-decoration:none;color:#999;}
 #contents .left ul.bigbtu {margin:0;height:45px;}
 #contents .left ul.bigbtu li {float:left;}
 #contents .left ul.bigbtu li a {display:block;margin:7px;height:32px;width:86px;text-indent:-9999px;}
+
 #contents .left ul.bigbtu li#now01 a {background: url("../images/Folder_bigbtu.png") no-repeat 0 top;}
 #contents .left ul.bigbtu li#now01 a:hover {background: url("../images/Folder_bigbtu.png") no-repeat -86px top;}
 #contents .left ul.bigbtu li#now02 a {background: url("../images/Folder_bigbtu.png") no-repeat 0 -32px;}
 #contents .left ul.bigbtu li#now02 a:hover {background: url("../images/Folder_bigbtu.png") no-repeat -86px -32px;}
+
 /* 左测菜单 */
 #contents .menu_top {height:11px;width:200px;background:#fff url("../images/left_tabid_cnt_top.png") no-repeat right bottom;}
 #contents .menu_end {height:18px;width:200px;background:#fff url("../images/border_end.png") no-repeat left top;}

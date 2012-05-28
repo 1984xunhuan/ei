@@ -259,6 +259,28 @@ class SubjectDAO extends BaseDAO
         
         return $subject_list;
     }
+    
+    public function delete_subject($subject_view)
+    {
+        $this->open_connect();
+        
+        $this->db->query("BEGIN");
+    
+        $sql = "DELETE FROM tb_subject where subject_id='".$subject_view->subject_id."'";  
+        Log::debug ($sql);
+        $this->db->query ($sql);
+        
+        $sql = "DELETE FROM tb_post where post_subject_id='".$subject_view->subject_id."'";
+        Log::debug ($sql);
+        $this->db->query ($sql);
+        
+        $this->db->query("COMMIT");
+        $this->db->query("END");
+    
+        $this->close_connect();
+    
+        return true;
+    }
 }
 
 ?>

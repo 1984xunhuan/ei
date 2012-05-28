@@ -81,6 +81,9 @@ class IndexView extends BaseView
         $tpl->assign('menus',   $this->menus);
         $tpl->assign('merchant',$this->merchant);
     
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+        
         $findPath = $this->get_admin_find_path();
         $tpl->setFindPath($findPath);
     
