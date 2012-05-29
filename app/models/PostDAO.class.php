@@ -164,10 +164,19 @@ class PostDAO extends BaseDAO
     public function delete_post($post_view)
     {
         $this->open_connect();
+        
+        $this->db->query("BEGIN");
     
         $sql = "DELETE FROM tb_post where post_id='".$post_view->post_id."'";
         Log::debug ($sql);
         $this->db->query ($sql);
+        
+        $sql = "UPDATE tb_subject SET subject_reply_num=subject_reply_num-1 WHERE subject_id='".$post_view->post_subject_id."'";
+        Log::debug ($sql);
+        $this->db->query($sql);
+        
+        $this->db->query("COMMIT");
+        $this->db->query("END");
  
         $this->close_connect();
     

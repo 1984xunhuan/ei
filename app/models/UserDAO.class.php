@@ -229,7 +229,7 @@ class UserDAO extends BaseDAO
     {
         $this->open_connect();
     
-        $sql  = " SELECT `user_id`,`user_name`,`user_password`,`user_reg_time`,`user_level`,`user_status`,`user_reg_ip`,`user_login_ip`,`user_last_active_time`,`user_last_login_time` FROM tb_user u ";
+        $sql  = " SELECT `user_id`,`user_name`,`user_password`,`user_reg_time`,`user_level`,`user_status`,`user_reg_ip`,`user_login_ip`,`user_last_active_time`,`user_last_login_time`,`user_type` FROM tb_user u ";
         $sql .= " WHERE user_id='".$user_id."' LIMIT 1";
     
         Log::debug($sql);
@@ -260,6 +260,7 @@ class UserDAO extends BaseDAO
             $user_view->user_login_ip         = $rs['user_login_ip'];
             $user_view->user_last_active_time = $rs['user_last_active_time'];
             $user_view->user_last_login_time  = $rs['user_last_login_time'];
+            $user_view->user_type             = $rs['user_type'];
         }
     
         $this->free_result($result);
@@ -268,6 +269,60 @@ class UserDAO extends BaseDAO
         return $user_view;
     }
     
+    public function delete_user($user_id)
+    {
+        $this->open_connect();
+        
+        $this->db->query("BEGIN");
+    
+        //delete tb_user
+        $sql  = " DELETE FROM tb_user";
+        $sql .= " WHERE user_id='".$user_id."'";
+    
+        Log::debug($sql);    
+        $this->db->query ($sql);
+        
+        //delete tb_post that user reply
+        $sql  = " DELETE FROM tb_post ";
+        $sql .= " WHERE ";
+        $sql .= " post_subject_id IN (";
+        $sql .= " SELECT subject_id FROM tb_subject";
+        $sql .= " WHERE subject_user_id='$user_id')";
+        
+        Log::debug($sql);
+        $this->db->query ($sql);
+        
+        //delete tb_subject
+        $sql  = " DELETE FROM tb_subject";
+        $sql .= " WHERE subject_user_id='".$user_id."'";
+        
+        Log::debug($sql);
+        $this->db->query ($sql);
+        
+        //update subject_reply_num of tb_subject 
+        $sql  = " UPDATE tb_subject s SET  subject_reply_num=subject_reply_num-(SELECT count(post_id) FROM tb_post p WHERE p.post_subject_id = s.subject_id AND post_user_id='$user_id') ";
+        $sql .= " WHERE ";
+        $sql .= " subject_id IN( ";
+        $sql .= " SELECT post_subject_id FROM tb_post ";
+        $sql .= " WHERE post_user_id='$user_id') ";
+        
+        Log::debug($sql);
+        $this->db->query ($sql);
+        
+        //delete tb_post
+        $sql  = " DELETE FROM tb_post";
+        $sql .= " WHERE post_user_id='".$user_id."'";
+        
+        Log::debug($sql);
+        $this->db->query ($sql);
+        
+        $this->db->query("COMMIT");
+        $this->db->query("END");
+
+        $this->close_connect();
+    
+        return true;
+    }   
 }
 
 ?>

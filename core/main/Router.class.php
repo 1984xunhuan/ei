@@ -7,9 +7,13 @@
     	private $action;
     	private $params;
     	
+    	private $default_controller;
+    	private $default_action;
+    	
     	public function __construct()
     	{
-    		$default_controller = "IndexAction";
+    		$this->default_controller = Config::get_pjcontroller();
+    		$this->default_action     = Config::get_pjaction();
     		
     		$path = array_keys($_GET);
     		
@@ -20,9 +24,9 @@
     		 		
     		if(!isset($path[0]))
     		{
-    			if(!empty($default_controller))
+    			if(!empty($this->default_controller))
     			{
-    				$path[0] = $default_controller;
+    				$path[0] = $this->default_controller;
     			}
     			else
     			{
@@ -34,7 +38,13 @@
     		$this->route = $route;
     		$routeParts = split("/", $route);
     		$this->controller = $routeParts[0];
-    		$this->action = isset($routeParts[1]) ? $routeParts[1]:main;
+
+    		if(empty($this->default_action))
+    		{
+    		    $this->default_action = "main";
+    		}
+
+    		$this->action = isset($routeParts[1]) ? $routeParts[1]:$this->default_action;
     		array_shift($routeParts);
     		array_shift($routeParts);
     		$this->params = $routeParts;
@@ -51,11 +61,6 @@
     	
     	public function getAction()
     	{
-    		if(empty($this->action))
-    		{
-    			$this->action = "main";
-    		}
-    		
     		return $this->action;
     	}
     	

@@ -5,13 +5,18 @@
 <title>User List</title>
 </head>
 <body>
+
+{if:$this->data->user_type == 1}
+<a href="{base_url}/index.php?UserAction/register_ui">add administrator</a>
+{end}
+
 <table width="100%">
    {if:count(user_list) > 0} 
        {foreach:user_list,$user}
    <tr>
    <td width="70%"><a href="{base_url}/index.php?UserAction/user_show/item_id/{item.item_id}/user_id/{$user->user_id}">{$user->user_name}</a></td>
    <td width="20%">{$user->user_reg_time}</td>
-   <td width="10%"><a href="{base_url}/index.php?UserAction/user_delete/user_id/{$user->user_id}/current_page/1">删除</a></td>
+   <td width="10%"><a href="{base_url}/index.php?UserAction/user_delete/user_id/{$user->user_id}/user_type/{$user->user_type}">删除</a></td>
    </tr>
    	{end}
 	{end}

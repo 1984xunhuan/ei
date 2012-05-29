@@ -10,5 +10,4 @@ Initializer::initialize();
 $router = Loader::load("Router");
 Dispatcher::dispatch($router);
 
-
 ?>

@@ -16,13 +16,25 @@
     		
     		$controllerfile = "app/controllers/{$controller}.class.php";
     		
-    		Log::debug("controllerfile=".$controllerfile);
+    		Log::debug("controllerfile=".$controllerfile.", action=".$action);
     		
     		if(file_exists($controllerfile))
     		{
+    			if(Config::get_pjcontroller() == "UserAction" && Config::get_pjaction() == "login_system")
+    			{
+    			    $amdin_user = $_SESSION['ADMIN_USER'];
+    			    
+    			    if($amdin_user == null || empty($amdin_user))
+    			    {
+    			        $controller = Config::get_pjcontroller();
+    			        $action     = Config::get_pjaction();
+    			    }
+    			}
+    			
     			require_once($controllerfile);
+    			
     			$app = new $controller();
-    			$app->setParams($params);
+    			$app->setParams($params);			
     			$app->$action();
     			
     			if(isset($start))

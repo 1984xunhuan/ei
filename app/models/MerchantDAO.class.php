@@ -85,6 +85,73 @@ class MerchantDAO extends BaseDAO
         
         return $merchant_view;
     }
+    
+    public function save_merchant($merchant_view)
+    {
+        $sql  = " INSERT INTO ";
+        $sql .= " `tb_merchant`(`merchant_id`,`merchant_name`,`key_word`,`wap_domain`,`web_domain`,`wap_template`,`web_template`,`email`,`linkman`,`address`,`telephone`,`fax`,`click_times`,`reg_time`,`merchant_seq`) ";
+        $sql .= " VALUES (";
+        $sql .= "'".$merchant_view->merchant_id."', ";
+        $sql .= "'".$merchant_view->merchant_name."', ";
+        $sql .= "'".$merchant_view->key_word."', ";
+        $sql .= "'".$merchant_view->wap_domain."', ";
+        $sql .= "'".$merchant_view->web_domain."', ";
+        $sql .= "'".$merchant_view->wap_template."', ";
+        $sql .= "'".$merchant_view->web_template."', ";
+        $sql .= "'".$merchant_view->email."', ";
+        $sql .= "'".$merchant_view->linkman."', ";
+        $sql .= "'".$merchant_view->address."', ";
+        $sql .= "'".$merchant_view->telephone."', ";
+        $sql .= "'".$merchant_view->fax."', ";
+        $sql .= "'".$merchant_view->click_times."', ";
+        $sql .= "".$merchant_view->reg_time.", ";
+        $sql .= "'".$merchant_view->merchant_seq."' ";
+        $sql .= ")";
+    
+        Log::debug($sql);
+        Log::out_print($sql);
+    
+        $this->open_connect();
+   
+        $this->db->query($sql);
+    
+        $this->close_connect();
+        
+        return true;
+    }
+    
+    public function update_merchant($merchant_view)
+    {
+        $sql  = " UPDATE ";
+        $sql .= " `tb_merchant` ";
+        $sql .= " SET ";
+        $sql .= " merchant_name='".$merchant_view->merchant_name."', ";
+        $sql .= " key_word='".$merchant_view->key_word."', ";
+        $sql .= " wap_domain='".$merchant_view->wap_domain."', ";
+        $sql .= " web_domain='".$merchant_view->web_domain."', ";
+        $sql .= " wap_template='".$merchant_view->wap_template."', ";
+        $sql .= " web_template='".$merchant_view->web_template."', ";
+        $sql .= " email='".$merchant_view->email."', ";
+        $sql .= " linkman='".$merchant_view->linkman."', ";
+        $sql .= " address='".$merchant_view->address."', ";
+        $sql .= " telephone='".$merchant_view->telephone."', ";
+        $sql .= " fax='".$merchant_view->fax."', ";
+        $sql .= " merchant_seq='".$merchant_view->merchant_seq."' ";
+        $sql .= " WHERE ";
+        $sql .= " merchant_id='".$merchant_view->merchant_id."'";
+    
+        Log::debug($sql);
+        Log::out_print($sql);
+    
+        $this->open_connect();
+    
+        $this->db->query($sql);
+    
+        $this->close_connect();
+    
+        return true;
+    }
+    
 
 }
 

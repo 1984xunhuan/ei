@@ -57,6 +57,7 @@ class BaseView
     {
         $findPath = Util::get_deploy_path()."/public/admin/layout/"."$";
         $findPath.= Util::get_deploy_path()."/public/admin/component/item/"."$";
+        $findPath.= Util::get_deploy_path()."/public/admin/component/merchant/"."$";
         $findPath.= Util::get_deploy_path()."/public/admin/component/contact_us/"."$";
         $findPath.= Util::get_deploy_path()."/public/admin/component/introduction/"."$";
         $findPath.= Util::get_deploy_path()."/public/admin/component/news/"."$";

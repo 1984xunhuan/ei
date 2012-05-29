@@ -5,6 +5,8 @@
         //project
         private static $pj_name;
         private static $pj_tmp_dir;
+        private static $pj_action;
+        private static $pj_controller;
         
         //database
     	private static $db_dburl;
@@ -33,8 +35,10 @@
     	    $cfg = parse_ini_file("config.ini", true);
     	
     	    //project
-    	    self::$pj_name    = $cfg['project']['pj_name'];
-    	    self::$pj_tmp_dir = $cfg['project']['pj_tmp_dir'];
+    	    self::$pj_name       = $cfg['project']['pj_name'];
+    	    self::$pj_tmp_dir    = $cfg['project']['pj_tmp_dir'];
+    	    self::$pj_controller = $cfg['project']['pj_colltroller'];
+    	    self::$pj_action     = $cfg['project']['pj_action'];
     	    
     	    //database
     	    self::$db_dburl    = $cfg['database']['db_url'];
@@ -46,20 +50,30 @@
     	    //log
     	    self::$log_path  = $cfg['log']['log_path'];
     	    self::$log_size  = $cfg['log']['log_size'];
-    	    self::$log_level = $cfg['log']['log_level'];   	     
+    	    self::$log_level = $cfg['log']['log_level'];   
+
+    	    //self::print_config_info();
     	}
     	
     	public static function print_config_info()
     	{
-    	   Log::out_print("db_url=".self::get_dburl()."<br/>");
-    	   Log::out_print("db_name=".self::get_dbname()."<br/>");
-    	   Log::out_print("db_username=".self::get_dbusername()."<br/>");
-    	   Log::out_print("db_password=".self::get_dbpassword()."<br/>");
-    	   Log::out_print("db_charset=".self::get_dbcharset()."<br/>");
+    	    //project information
+    	    Log::out_print("pj_name=".self::get_pjname()."<br/>");
+    	    Log::out_print("pj_tmp_dir=".self::get_pjtmpdir()."<br/>");
+    	    Log::out_print("pj_colltroller=".self::get_pjcontroller()."<br/>");
+    	    Log::out_print("pj_action=".self::get_pjaction()."<br/>");
     	    
-    	   Log::out_print("log_path=".self::get_logpath()."<br/>");
-    	   Log::out_print("log_size=".self::get_logsize()."<br/>");
-    	   Log::out_print("log_level=".self::get_loglevel()."<br/>");
+    	    //database information
+    	    Log::out_print("db_url=".self::get_dburl()."<br/>");
+    	    Log::out_print("db_name=".self::get_dbname()."<br/>");
+    	    Log::out_print("db_username=".self::get_dbusername()."<br/>");
+    	    Log::out_print("db_password=".self::get_dbpassword()."<br/>");
+    	    Log::out_print("db_charset=".self::get_dbcharset()."<br/>");
+    	    
+    	    //log information
+    	    Log::out_print("log_path=".self::get_logpath()."<br/>");
+    	    Log::out_print("log_size=".self::get_logsize()."<br/>");
+    	    Log::out_print("log_level=".self::get_loglevel()."<br/>");
     	}
     	
     	public static function log_config_info()
@@ -84,6 +98,16 @@
     	{
     	    return self::$pj_tmp_dir;
     	}
+    	
+    	public static function get_pjcontroller()
+    	{
+    	    return self::$pj_controller;
+    	}
+    	
+    	public static function get_pjaction()
+    	{
+    	    return self::$pj_action;
+    	}	
     	
     	public static function get_dburl()
     	{	

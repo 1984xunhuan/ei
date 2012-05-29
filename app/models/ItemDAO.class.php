@@ -246,11 +246,19 @@ class ItemDAO extends BaseDAO
         $sql .= "WHERE item_status=0 AND ((item_up_id='-1' AND item_site='".$site_type."') OR item_up_id=".$item_id.") ORDER BY item_seq ASC";
         */
         
+        /*
         $sql  = " SELECT b.item_id, b.item_up_id, b.item_type, b.item_name, b.item_seq, b.item_content,b.item_site FROM tb_item a, tb_item b ";
         $sql .= " WHERE a.item_id = b.item_up_id and  b.item_site=$site_type ";
         $sql .= " UNION (";
         $sql .= " SELECT c.item_id, c.item_up_id, c.item_type, c.item_name, c.item_seq, c.item_content, c.item_site FROM tb_item c";
         $sql .= " WHERE c.item_up_id=-1 and c.item_site=$site_type )";
+        */
+        
+        $sql  = " SELECT d.item_id, d.item_up_id, d.item_type, d.item_name, d.item_seq, d.item_content,d.item_site FROM (";
+        $sql .= " SELECT b.item_id, b.item_up_id, b.item_type, b.item_name, b.item_seq, b.item_content,b.item_site FROM tb_item a, tb_item b";
+        $sql .= " WHERE a.item_id = b.item_up_id and b.item_site=$site_type";
+        $sql .= " UNION ( SELECT c.item_id, c.item_up_id, c.item_type, c.item_name, c.item_seq, c.item_content, c.item_site FROM tb_item c";
+        $sql .= " WHERE c.item_up_id=-1 and c.item_site=$site_type )) d order by d.item_seq";
         
         /*
         $sql  = " SELECT b.item_id, b.item_type, b.item_name, b.item_seq, b.item_content, b.item_up_id FROM tb_item a, tb_item b";

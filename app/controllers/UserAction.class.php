@@ -72,13 +72,20 @@ class UserAction extends BaseAction
         $user_view->user_last_login_time  = "NOW()";
         $user_view->user_level = "1";
         $user_view->user_login_ip = Util::get_client_ip_address();
-        $user_view->user_name = $_POST["user_name"];;
-        $user_view->user_password = $_POST["user_password"];;
+        $user_view->user_name = $_POST["user_name"];
+        $user_view->user_password = $_POST["user_password"];
         $user_view->user_reg_ip = Util::get_client_ip_address();
         $user_view->user_reg_time = "NOW()";
         $user_view->user_status = "0";
-        $user_view->user_type = UserDAO::$REGISTER_USER;
         
+        $user_type = $_POST["user_type"];
+        
+        if($user_type == null || empty($user_type))
+        {
+            $user_type = UserDAO::$REGISTER_USER;
+        }
+        
+        $user_view->user_type = $user_type;      
         
         $user_dao->set_user_view($user_view);
         
@@ -139,6 +146,43 @@ class UserAction extends BaseAction
         {
             $user_view->display_login_ui();
         }
+    }
+    
+    public function register_ui()
+    {
+        $user_view = new UserView();
+    
+        $user_view->display_register_ui();
+    }
+    
+    public function user_show()
+    {
+        $user_id    = $this->get_param_value("user_id");
+        
+        $user_view = new UserView();
+        $user_dao = new UserDAO();
+        
+        $user_view->user = $user_dao->get_user_by_id($user_id);
+    
+        $user_view->display_user_show();
+    }
+    
+    public function user_delete()
+    {
+        $user_id    = $this->get_param_value("user_id");
+        
+        if($_SESSION['USER_ID'] == $user_id)
+        {
+            unset($_SESSION['USER_ID']);
+        }
+
+        $user_dao = new UserDAO();
+        $user_dao->delete_user($user_id);
+        
+        $this->set_param_value("current_page", "1");
+        $this->set_param_value("user_type", "");
+        
+        $this->user_list();
     }
 }
 

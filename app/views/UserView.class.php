@@ -16,6 +16,7 @@ class UserView extends BaseView
     public $user_type;
     
     //
+    public $user;
     public $user_list;
     public $page;
     
@@ -32,7 +33,9 @@ class UserView extends BaseView
         
         $tpl_id = $this->get_web_template_id();
         $tpl->setTemplateId($tpl_id);
-        $tpl->setFindPath(util::get_deploy_path()."/public/web/template/".$tpl_id."/user/");   
+       
+        $findPath = $this->get_web_find_path();
+        $tpl->setFindPath($findPath);
         
         $tpl->display("web_user_msg.html");
     }
@@ -48,7 +51,9 @@ class UserView extends BaseView
         
         $tpl_id = $this->get_web_template_id();
         $tpl->setTemplateId($tpl_id);
-        $tpl->setFindPath(util::get_deploy_path()."/public/web/template/".$tpl_id."/user/");
+        
+        $findPath = $this->get_web_find_path();
+        $tpl->setFindPath($findPath);
         
         $tpl->display("web_user_msg.html");
     }
@@ -64,7 +69,9 @@ class UserView extends BaseView
         
         $tpl_id = $this->get_web_template_id();
         $tpl->setTemplateId($tpl_id);
-        $tpl->setFindPath(util::get_deploy_path()."/public/web/template/".$tpl_id."/user/");
+        
+        $findPath = $this->get_web_find_path();
+        $tpl->setFindPath($findPath);
         
         $tpl->display("web_user_msg.html");
     }
@@ -80,7 +87,9 @@ class UserView extends BaseView
         
         $tpl_id = $this->get_web_template_id();
         $tpl->setTemplateId($tpl_id);
-        $tpl->setFindPath(util::get_deploy_path()."/public/web/template/".$tpl_id."/user/");
+        
+        $findPath = $this->get_web_find_path();
+        $tpl->setFindPath($findPath);
         
         $tpl->display("web_user_msg.html");
     }
@@ -95,9 +104,8 @@ class UserView extends BaseView
         
         $tpl_id = $this->get_web_template_id();
         
-        $tpl->setTemplateId($tpl_id);
-        $tpl->setFindPath(util::get_deploy_path()."/public/web/template/".$tpl_id."/user/");
-        
+        $findPath = $this->get_web_find_path();
+        $tpl->setFindPath($findPath);         
         
         $tpl->display("web_user_login.html");
     }
@@ -113,8 +121,9 @@ class UserView extends BaseView
         $tpl->assign('template_id', $tpl_id);
     
         $tpl->setTemplateId($tpl_id);
-        $tpl->setFindPath(util::get_deploy_path()."/public/web/template/".$tpl_id."/user/");
-    
+        
+        $findPath = $this->get_web_find_path();
+        $tpl->setFindPath($findPath);  
     
         $tpl->display("web_user_register.html");
     }
@@ -125,6 +134,7 @@ class UserView extends BaseView
         
         $tpl->set('base_url', Util::get_base_url());
         $tpl->assign('user_list', $this->user_list);
+        $tpl->assign('user_type', $this->user_type);
         $tpl->assign('page', $this->page);
         
         $tpl_id = $this->get_admin_template_id();
@@ -146,12 +156,42 @@ class UserView extends BaseView
         $tpl->setTemplateId($tpl_id);
         
         $findPath = $this->get_admin_find_path();
-        $tpl->setFindPath($findPath);
-    
+        $tpl->setFindPath($findPath);  
     
         $tpl->display("user_login.html");
     }
     
+    public function display_register_ui()
+    {
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+    
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+    
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+        $tpl->display("user_register.html");
+    }
+    
+    public function display_user_show()
+    {
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+        $tpl->assign('user', $this->user);
+    
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+    
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+        $tpl->display("user_show.html");
+    }
+  
 }
 
 ?>

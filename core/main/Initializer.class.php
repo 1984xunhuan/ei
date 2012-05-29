@@ -14,6 +14,8 @@
     		set_include_path(get_include_path().PATH_SEPARATOR."public/admin");
     		set_include_path(get_include_path().PATH_SEPARATOR."public/web");
     		set_include_path(get_include_path().PATH_SEPARATOR."public/wap");
+    		
+    		Config::get_configure_info();
     	}
     }
 ?>
