@@ -50,6 +50,10 @@ a:active {text-decoration:none;color:#999;}
 #contents {clear:both;height:92%;width:auto;margin:5px 5px 0 5px;}
 /* 鍐呭宸﹀眰 */
 #contents .left {width:200px;height:87%;}
+
+#contents .left ul.user_info {margin:0;height:45px;}
+#contents .left ul.user_info li#admin {margin-top:20px;height:45px;font-size: 14px;}
+
 /* 澶ф寜鎵� */
 #contents .left ul.bigbtu {margin:0;height:45px;}
 #contents .left ul.bigbtu li {float:left;}
@@ -57,6 +61,7 @@ a:active {text-decoration:none;color:#999;}
 
 #contents .left ul.bigbtu li#now01 a {background: url("../images/Folder_bigbtu.png") no-repeat 0 top;}
 #contents .left ul.bigbtu li#now01 a:hover {background: url("../images/Folder_bigbtu.png") no-repeat -86px top;}
+
 #contents .left ul.bigbtu li#now02 a {background: url("../images/Folder_bigbtu.png") no-repeat 0 -32px;}
 #contents .left ul.bigbtu li#now02 a:hover {background: url("../images/Folder_bigbtu.png") no-repeat -86px -32px;}
 

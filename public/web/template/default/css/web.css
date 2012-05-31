@@ -88,12 +88,12 @@ body{
 	background:#FFF;
 }
 
-#left_bar #help{
+#left_bar .help{
     margin-top:0px;
     background:#FFF;
 	border:0px solid #ccc;
 }
-#left_bar #help h3{
+#left_bar .help h3{
     font-size:1.1em;
 	font-weight:bold;
 	padding:0 10px;
@@ -103,12 +103,12 @@ body{
 	letter-spacing:1px;
 }
 
-#left_bar #help li{
+#left_bar .help li{
     margin:6px 0;
 	padding:0 10px;
     letter-spacing:2px;
 }
-#left_bar #help li a:hover{
+#left_bar .help li a:hover{
     background:#f7f7f7;
 }
 
@@ -159,6 +159,7 @@ body{
 }
 
 #about{
+	margin-bottom:10px;
     background:#FFF;
 	border:1px solid #ccc;
 }
@@ -201,7 +202,7 @@ body{
 }
 
 #pruduct{
-    margin-top:10px;
+    margin-bottom:10px;
     background:#FFF;
 	height:158px;
 	border:1px solid #ccc;
@@ -252,7 +253,7 @@ body{
 }
 
 #news{
-    margin-top:10px;
+    margin-bottom:10px;
     background:#FFF;
 	border:1px solid #ccc;
 }
@@ -301,7 +302,7 @@ body{
 
 
 #subject{
-    margin-top:10px;
+    margin-bottom:10px;
     background:#FFF;
 	border:1px solid #ccc;
 }

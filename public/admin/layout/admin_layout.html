@@ -10,50 +10,68 @@
 <div id="header">
 	<ul>
 		<li>
-		
+<!-- 
 {if:!empty($_SESSION["ADMIN_USER"])}
  {$_SESSION["ADMIN_USER"]->user_name}&nbsp;&nbsp;<a href="{base_url}/index.php?UserAction/login_system">退出</a>
 {end}
+ -->		
 		</li>
 	</ul>
 </div>
 <div id="contents">
 	<div class="left">
-		<ul class="bigbtu">
+		<ul class="user_info">
+		    <li id="admin">
+			{if:!empty($_SESSION["ADMIN_USER"])}
+			 用户: {$_SESSION["ADMIN_USER"]->user_name}&nbsp;&nbsp;<a href="{base_url}/index.php?UserAction/login_system">退出</a>
+			{end}
+			</li>
+		    <!-- 
 			<li id="now01"><a href="{base_url}admin-templates/" onClick="go_cmdurl('统计管理',this);border_left('TabPage2','left_tab2');" title="统计管理" target="content3">统计管理</a></li>
 			<li id="now02"><a href="{base_url}admin-templates/" onClick="go_cmdurl('系统设置',this);border_left('TabPage2','left_tab3');" title="系统设置" target="content3">系统设置</a></li>
+		     -->
 		</ul>
 		<div class="menu_top"></div>
 		<div class="menu" id="TabPage3">
 			<ul id="TabPage2">
 				<li id="left_tab1" class="Selected" onClick="javascript:border_left('TabPage2','left_tab1');" title="栏目">栏目</li>
+				<!-- 
 				<li id="left_tab2" onClick="javascript:border_left('TabPage2','left_tab2');" title="模板">模板</li>
+				 -->
 				<li id="left_tab3" onClick="javascript:border_left('TabPage2','left_tab3');" title="用户">用户</li>
+				<!-- 
 				<li id="left_tab4" onClick="javascript:border_left('TabPage2','left_tab4');" title="统计">统计</li>		
+				 -->
 				<li id="left_tab5" onClick="javascript:border_left('TabPage2','left_tab5');" title="设置">设置</li>
 				
 			</ul>
 			<div id="left_menu_cnt">
 				<ul id="dleft_tab1">
-					<li id="now11" class="Selected"><a href="{base_url}/index.php?ItemAction/item_layout/type/WEB" onClick="go_cmdurl('栏目管理',this);" target="content3" title="WEB栏目管理">WEB栏目管理</a></li>
-					<li id="now13"><a href="{base_url}/index.php?ItemAction/item_layout/type/WAP" onClick="go_cmdurl('栏目管理',this);" target="content3" title="WAP栏目管理">WAP栏目管理</a></li>									
+					<li id="now11" class="Selected"><a href="{base_url}/index.php?ItemAction/item_layout/type/WEB" onClick="go_cmdurl('栏目管理',this);" target="content1" title="WEB栏目管理">WEB栏目管理</a></li>
+					<li id="now13"><a href="{base_url}/index.php?ItemAction/item_layout/type/WAP" onClick="go_cmdurl('栏目管理',this);" target="content1" title="WAP栏目管理">WAP栏目管理</a></li>									
 				</ul>
-					<ul id="dleft_tab2" style="display:none;">
-					<li id="now23" class="Selected"><a href="{base_url}/" onClick="go_cmdurl('模板管理',this);" target="content3" title="WEB模板管理">WEB模板管理</a></li>
-					<li id="now24"><a href="{base_url}/" onClick="go_cmdurl('模板管理',this);" target="content3" title="WAP模板管理">WAP模板管理</a></li>	
+				<!-- 
+				<ul id="dleft_tab2" style="display:none;">
+					<li id="now23" class="Selected"><a href="{base_url}/" onClick="go_cmdurl('模板管理',this);" target="content1" title="WEB模板管理">WEB模板管理</a></li>
+					<li id="now24"><a href="{base_url}/" onClick="go_cmdurl('模板管理',this);" target="content1" title="WAP模板管理">WAP模板管理</a></li>	
 				</ul>
+				 -->
 				<ul id="dleft_tab3" style="display:none;">
-					<li id="now31" class="Selected"><a href="{base_url}/index.php?UserAction/user_list/user_type/0/current_page/1" onClick="go_cmdurl('用户管理',this);" target="content3" title="注册用户管理">注册用户管理</a></li>
-					<li id="now32"><a href="{base_url}/index.php?UserAction/user_list/user_type/1/current_page/1" onClick="go_cmdurl('用户管理',this);" target="content3" title="系统用户管理">系统用户管理</a></li>	
+					<li id="now31" class="Selected"><a href="{base_url}/index.php?UserAction/user_list/user_type/0/current_page/1" onClick="go_cmdurl('用户管理',this);" target="content1" title="注册用户管理">注册用户管理</a></li>
+					<li id="now32"><a href="{base_url}/index.php?UserAction/user_list/user_type/1/current_page/1" onClick="go_cmdurl('用户管理',this);" target="content1" title="系统用户管理">系统用户管理</a></li>	
 				</ul>
+				<!-- 
 				<ul id="dleft_tab4" style="display:none;">
-					<li id="now41" class="Selected"><a href="{base_url}/" onClick="go_cmdurl('流量统计',this)" target="content3" title="WEB流量统计">WEB流量统计</a></li>
-					<li id="now42"><a href="{base_url}/" onClick="go_cmdurl('流量统计',this)" target="content3" title="WAP流量统计">WAP流量统计</a></li>
+					<li id="now41" class="Selected"><a href="{base_url}/" onClick="go_cmdurl('流量统计',this)" target="content1" title="WEB流量统计">WEB流量统计</a></li>
+					<li id="now42"><a href="{base_url}/" onClick="go_cmdurl('流量统计',this)" target="content1" title="WAP流量统计">WAP流量统计</a></li>
 				</ul>
+				 -->
 				<ul id="dleft_tab5" style="display:none;">
-					<li id="now51" class="Selected"><a href="{base_url}/" onClick="go_cmdurl('系统参数',this)" target="content3" title="系统参数">系统参数</a></li>
-					<li id="now52"><a href="{base_url}/" onClick="go_cmdurl('系统用户',this)" target="content3" title="相片管理">系统用户</a></li>
-					<li id="now53"><a href="{base_url}/index.php?MerchantAction/merchant_save_ui/merchant_id/M0001" onClick="go_cmdurl('商户信息',this)" target="content3" title="商户信息">商户信息</a></li>
+				    <!-- 
+					<li id="now51" class="Selected"><a href="{base_url}/" onClick="go_cmdurl('系统参数',this)" target="content1" title="系统参数">系统参数</a></li>
+					<li id="now52"><a href="{base_url}/" onClick="go_cmdurl('系统用户',this)" target="content1" title="相片管理">系统用户</a></li>
+				     -->
+					<li id="now53" class="Selected"><a href="{base_url}/index.php?MerchantAction/merchant_save_ui/merchant_id/M0001" onClick="go_cmdurl('商户信息',this)" target="content1" title="商户信息">商户信息</a></li>
 				</ul>
 			</div>
 			<div class="clear"></div>
@@ -62,16 +80,20 @@
 	</div>
 	<div class="right">
 	   <ul id="TabPage1">
-			<li id="Tab1" class="Selected" onClick="javascript:switchTab('TabPage1','Tab1');" title="首页">首页</li>
+			<li id="Tab1" class="Selected" onClick="javascript:switchTab('TabPage1','Tab1');" title="首页"><span id="dnow99" style="display:block">栏目管理</span></li>
+			<!-- 
 			<li id="Tab3" onClick="javascript:switchTab('TabPage1','Tab3');"><span id="dnow99" style="display:block">空白</span></li>
+			 -->
 	   </ul>
 		<div id="cnt">
 		  <div id="dTab1" class="Box">
-		  <iframe src="#" name="content1" frameborder="0" scrolling="auto"></iframe>
+		  <iframe src="{base_url}/index.php?ItemAction/item_layout/type/WEB" name="content1" frameborder="0" scrolling="auto"></iframe>
 		  </div>
+		  <!-- 
 			<div id="dTab3" class="HackBox Box">
 			<iframe src="iFrame打开地址" name="content3" id="content3" frameborder="0" scrolling="auto"></iframe>
 			</div>
+		   -->
 		</div>
 	</div>
 	<div class="clear"></div>

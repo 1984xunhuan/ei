@@ -1,7 +1,7 @@
 <?php
 
     class Util 
-    {
+    {   
         public static function get_client_ip_address()
         {
             return $_SERVER["REMOTE_ADDR"];

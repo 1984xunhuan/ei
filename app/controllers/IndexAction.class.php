@@ -15,6 +15,32 @@ class IndexAction extends BaseAction
         $this->merchant_dao = new MerchantDAO();
         $this->index_view   = new IndexView();
     }
+    public function display_web()
+    {
+        Log::debug("enter web index page.");
+        
+        $results = $this->item_dao->get_web_index_info();
+        $this->index_view->set_results($results);
+        
+        $this->index_view->menus         = $this->item_dao->get_web_index_menu();
+        $this->index_view->merchant      = $this->merchant_dao->get_merchant();
+        $this->index_view->pic_news_list = $this->news_dao->get_web_index_pic_news_list();
+        
+        $this->index_view->display_web_index();
+    }
+    
+    public function display_wap()
+    {
+        Log::debug("enter wap index page.");
+        
+        $results = $this->item_dao->get_wap_index_info();
+        $this->index_view->set_results($results);
+        
+        $this->index_view->menus = $this->item_dao->get_wap_index_menu();
+        $this->index_view->merchant = $this->merchant_dao->get_merchant();
+        
+        $this->index_view->display_wap_index();
+    }
 
     public function main()
     {
@@ -22,28 +48,11 @@ class IndexAction extends BaseAction
         
         if (Util::is_mobile ())
         {
-            Log::debug("enter wap index page.");
-            
-            $results = $this->item_dao->get_wap_index_info();            
-            $this->index_view->set_results($results);
-            
-            $this->index_view->menus = $this->item_dao->get_wap_index_menu();
-            $this->index_view->merchant = $this->merchant_dao->get_merchant();
-
-            $this->index_view->display_wap_index();
+            $this->display_wap();
         }
         else
         { 
-            Log::debug("enter web index page.");
-            
-            $results = $this->item_dao->get_web_index_info();   
-            $this->index_view->set_results($results);
-            
-            $this->index_view->menus         = $this->item_dao->get_web_index_menu();
-            $this->index_view->merchant      = $this->merchant_dao->get_merchant();    
-            $this->index_view->pic_news_list = $this->news_dao->get_web_index_pic_news_list();
-    
-            $this->index_view->display_web_index();
+            $this->display_web();
         }
     }   
     

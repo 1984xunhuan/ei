@@ -11,12 +11,12 @@ class ItemAction extends BaseAction
         if($type == "WEB")
         {
             $item_view->left_url  = Util::get_base_url()."/index.php?ItemAction/web_item_list";
-            $item_view->right_url = "#";
+            $item_view->right_url = Util::get_base_url()."/index.php?IndexAction/display_web";
         }
         else if($type == "WAP")
         {    
-            $item_view->left_url = Util::get_base_url()."/index.php?ItemAction/wap_item_list";
-            $item_view->right_url = "#";
+            $item_view->left_url  = Util::get_base_url()."/index.php?ItemAction/wap_item_list";
+            $item_view->right_url = Util::get_base_url()."/index.php?IndexAction/display_wap";
         }
     
         $item_view->display_item_layout();
