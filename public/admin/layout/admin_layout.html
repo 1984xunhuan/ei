@@ -22,6 +22,7 @@
 	<div class="left">
 		<ul class="user_info">
 		    <li id="admin">
+		    <br/>
 			{if:!empty($_SESSION["ADMIN_USER"])}
 			 用户: {$_SESSION["ADMIN_USER"]->user_name}&nbsp;&nbsp;<a href="{base_url}/index.php?UserAction/login_system">退出</a>
 			{end}

@@ -52,7 +52,7 @@ a:active {text-decoration:none;color:#999;}
 #contents .left {width:200px;height:87%;}
 
 #contents .left ul.user_info {margin:0;height:45px;}
-#contents .left ul.user_info li#admin {margin-top:20px;height:45px;font-size: 14px;}
+#contents .left ul.user_info li #admin {float:left;margin:0px; height:45px; font-size: 14px;}
 
 /* 澶ф寜鎵� */
 #contents .left ul.bigbtu {margin:0;height:45px;}
