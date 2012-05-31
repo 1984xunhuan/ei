@@ -535,7 +535,7 @@ class ItemDAO extends BaseDAO
         $this->db->query("END");
 
         //remove files
-        if($item->item_type == 2 || $item->item_type == 3)
+        if(!empty($delpath) && ($item->item_type == 2 || $item->item_type == 3))
         {
             Util::delete_directory(Util::get_deploy_path().$delpath);
         }
