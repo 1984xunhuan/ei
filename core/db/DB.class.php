@@ -19,7 +19,7 @@ class DB
      
      if ($halt && !$this->dblink)
      {
-        $this->halt("�޷�������ݿ⣄1�7");
+        $this->halt("system halt.");
      }
      
      //
@@ -114,7 +114,7 @@ class DB
      $message .= "<meta content='text/html;charset=gb2312'>\n" ;
      $message .= "</head>\n" ;
      $message .= "<body>\n" ;
-     $message .= "��ݿ��ￄ1�7".htmlspecialchars($msg)."\n" ;
+     $message .= "Message: htmlspecialchars($msg)"."\n" ;
      $message .= "</body>\n" ;
      $message .= "</html>" ;
      
