@@ -4,7 +4,7 @@ class ProductDAO extends BaseDAO
 {
 
     /**
-     --flag: 0: æ™®é€š 1ï¼š é¦–é¡µ 
+     --flag: 0: æ™®é„1¤7„1¤7 1ï¼„1¤7 é¦–é¡µ 
     
      DROP TABLE IF EXISTS `tb_product`;
     
@@ -132,10 +132,11 @@ class ProductDAO extends BaseDAO
     {
         $this->open_connect();
     
-        $sql = "SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product ";
-        $sql .= "WHERE status ='0' AND product_id='".$product_id."' limit 1";
+        $sql  = " SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product ";
+        $sql .= " WHERE status ='0' AND product_id='".$product_id."' limit 1";
     
         Log::debug($sql);
+        //Log::out_print($sql);
     
         $result = $this->db->query ($sql);
         

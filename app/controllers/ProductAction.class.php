@@ -99,15 +99,18 @@ class ProductAction extends BaseAction
     {
         $item_id = $this->get_param_value("item_id");
         $current_page = $this->get_param_value("current_page");
+        
+        $product_view = new ProductView();
+        $product_dao  = new ProductDAO();
+        $item_dao     = new ItemDAO();
     
     
-        $product_list =  $this->product_dao->get_product_list_by_item_id($item_id, ProductDAO::$ALL_FLAG, $this->product_view->page, $current_page);
-        $this->product_view->set_product_list($product_list);
+        $product_list =  $product_dao->get_product_list_by_item_id($item_id, ProductDAO::$ALL_FLAG, $this->product_view->page, $current_page);
+        $product_view->set_product_list($product_list);
     
- 
-        $this->product_view->item = $this->item_dao->get_item_by_id($item_id);
+        $product_view->item = $item_dao->get_item_by_id($item_id);
     
-        $this->product_view->display_product_list();
+        $product_view->display_product_list();
     }
     
     public function product_save_ui()
@@ -166,6 +169,21 @@ class ProductAction extends BaseAction
         $product_dao->delete_product($product_view);
         
         $this->product_list();
+    }
+    
+    public function product_show()
+    {
+        $item_id    = $this->get_param_value("item_id");
+        $product_id = $this->get_param_value("product_id");
+        
+        $product_view = new ProductView();
+        $product_dao  = new ProductDAO();
+        $item_dao     = new ItemDAO();
+
+        $product_view->product = $product_dao->get_product_by_id($product_id);
+        $product_view->item    = $item_dao->get_item_by_id($item_id);
+    
+        $product_view->display_product_show();
     }
     
 }

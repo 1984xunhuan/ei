@@ -164,6 +164,25 @@ class ProductView extends BaseView
         $tpl->display("product_add.html");
     }
     
+    
+    public function display_product_show()
+    {
+        $tpl = new Template ();
+    
+        $tpl->set('base_url', Util::get_base_url());
+    
+        $tpl->assign('item', $this->item);
+        $tpl->assign('product', $this->product);
+    
+        $tpl_id = $this->get_admin_template_id();
+        $tpl->setTemplateId($tpl_id);
+    
+        $findPath = $this->get_admin_find_path();
+        $tpl->setFindPath($findPath);
+    
+        $tpl->display("product_show.html");
+    }
+    
 }
 
 ?>

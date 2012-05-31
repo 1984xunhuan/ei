@@ -20,7 +20,7 @@
    {if:count(product_list) > 0} 
         {foreach:product_list,$product}
    <tr>
-   <td width="70%"><a href="{base_url}/index.php?ProductAction/web_product_show/item_id/{item.item_id}/product_id/{$product->product_id}">{$product->product_name}</a></td>
+   <td width="70%"><a href="{base_url}/index.php?ProductAction/product_show/item_id/{item.item_id}/product_id/{$product->product_id}">{$product->product_name}</a></td>
    <td width="20%">{$product->issue_time}</td>
    <td width="10%"><a href="{base_url}/index.php?ProductAction/product_delete/product_id/{$product->product_id}/current_page/1/item_id/{item.item_id}">删除</a></td>
    </tr>
