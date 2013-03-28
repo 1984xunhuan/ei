@@ -36,7 +36,7 @@
     		
     		$route = $path[0];
     		$this->route = $route;
-    		$routeParts = split("/", $route);
+    		$routeParts = preg_split("/[\s\/]+/", $route);
     		$this->controller = $routeParts[0];
 
     		if(empty($this->default_action))

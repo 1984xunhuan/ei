@@ -18,7 +18,7 @@
 </div>
 
 
-{if:count($this->data->pic_news_list)> 0}
+{if:isset($this->data->pic_news_list) && count($this->data->pic_news_list)> 0}
 <div class="help">
 <h3>新闻快讯</h3>
 		     <script type="text/javascript">

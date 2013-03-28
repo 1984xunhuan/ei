@@ -187,7 +187,7 @@ class Template {
 	
 	private function make_directory($path)
 	{   
-	    $paths = split("/", $path);
+	    $paths = preg_split("/[\s\/]+/", $path);
 	    
 	    $tmp_path='';
 	    
@@ -229,7 +229,7 @@ class Template {
 		$newLines = array();
 		$matches = null;
 		foreach($lines as $line)  {
-			$num = preg_match_all('/\{([^{}]+)\}/', $line, &$matches);
+			$num = preg_match_all('/\{([^{}]+)\}/', $line, $matches);
 			if($num > 0) {
 				for($i = 0; $i < $num; $i++) {
 					$match = $matches[0][$i];

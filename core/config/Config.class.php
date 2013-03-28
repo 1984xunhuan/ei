@@ -119,7 +119,7 @@
     		return self::$db_dbname;
     	}
     	
-    	public function get_dbusername()
+    	public static function get_dbusername()
     	{
     		return self::$db_username;
     	}
