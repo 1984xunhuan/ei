@@ -78,7 +78,7 @@ class UserAction extends BaseAction
         $user_view->user_reg_time = "NOW()";
         $user_view->user_status = "0";
         
-        $user_type = $_POST["user_type"];
+        $user_type = !empty($_POST["user_type"])?$_POST["user_type"]:null;
         
         if($user_type == null || empty($user_type))
         {

@@ -56,15 +56,17 @@ class PostView extends BaseView
     public function display_web_post_publish_ui()
     {
         $tpl = new Template ();
+        
+        $tpl_id = $this->get_web_template_id();    
     
         $tpl->set('base_url', Util::get_base_url());
         $tpl->assign('subject_id', $this->post_subject_id);
         $tpl->assign('item', $this->item);
-    
-        $tpl_id = $this->get_web_template_id();
+        $tpl->assign('template_id', $tpl_id);
+        
         $tpl->setTemplateId($tpl_id);
         $tpl->setFindPath(util::get_deploy_path()."/public/web/template/".$tpl_id."/post/");
-    
+        
         $tpl->display("web_post_publish.html");
     } 
     
