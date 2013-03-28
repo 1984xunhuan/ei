@@ -43,8 +43,7 @@ class IntroductionView extends BaseView
         $tpl->setTemplateId($tpl_id);
         
         $findPath = $this->get_web_find_path();        
-        $tpl->setFindPath($findPath);
-        
+        $tpl->setFindPath($findPath);       
         
         $tpl->display("web_introduction_show.html");
     }

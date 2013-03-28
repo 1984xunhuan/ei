@@ -1,0 +1,1782 @@
+
+[DEBUG 2013-03-28 03:45:59] path=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:45:59] route=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:45:59] controller=IntroductionAction
+[DEBUG 2013-03-28 03:45:59] action=web_introduction_show
+[DEBUG 2013-03-28 03:45:59] params=item_id
+[DEBUG 2013-03-28 03:45:59] params=3
+[DEBUG 2013-03-28 03:45:59] controllerfile=app/controllers/IntroductionAction.class.php, action=web_introduction_show
+[DEBUG 2013-03-28 03:45:59] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:45:59] web_introduction_show function: item_id=3
+[DEBUG 2013-03-28 03:45:59] open connect....
+[DEBUG 2013-03-28 03:45:59]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 03:45:59] close connect....
+[DEBUG 2013-03-28 03:46:00] open connect....
+[DEBUG 2013-03-28 03:46:00] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:46:00] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:46:00] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:46:00] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:46:00] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:46:00] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:46:00] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:46:00] close connect....
+[DEBUG 2013-03-28 03:46:00] open connect....
+[DEBUG 2013-03-28 03:46:00] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=3 limit 1
+[DEBUG 2013-03-28 03:46:00] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:46:00] close connect....
+[DEBUG 2013-03-28 03:46:00] open connect....
+[DEBUG 2013-03-28 03:46:00]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:46:00] close connect....
+[DEBUG 2013-03-28 03:46:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:46:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:46:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:46:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:46:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:46:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:46:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:46:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:46:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:46:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:46:00] Total time for dispatching is: 0.14012002944946seconds.
+[DEBUG 2013-03-28 03:52:56] path=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:52:56] route=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:52:56] controller=IntroductionAction
+[DEBUG 2013-03-28 03:52:56] action=web_introduction_show
+[DEBUG 2013-03-28 03:52:56] params=item_id
+[DEBUG 2013-03-28 03:52:56] params=3
+[DEBUG 2013-03-28 03:52:56] controllerfile=app/controllers/IntroductionAction.class.php, action=web_introduction_show
+[DEBUG 2013-03-28 03:52:56] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:52:56] web_introduction_show function: item_id=3
+[DEBUG 2013-03-28 03:52:56] open connect....
+[DEBUG 2013-03-28 03:52:56]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 03:52:56] close connect....
+[DEBUG 2013-03-28 03:52:56] open connect....
+[DEBUG 2013-03-28 03:52:56] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:52:56] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:52:56] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:52:56] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:52:56] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:52:56] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:52:56] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:52:56] close connect....
+[DEBUG 2013-03-28 03:52:56] open connect....
+[DEBUG 2013-03-28 03:52:56] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=3 limit 1
+[DEBUG 2013-03-28 03:52:56] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:52:56] close connect....
+[DEBUG 2013-03-28 03:52:56] open connect....
+[DEBUG 2013-03-28 03:52:56]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:52:56] close connect....
+[DEBUG 2013-03-28 03:52:58] path=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:52:58] route=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:52:58] controller=IntroductionAction
+[DEBUG 2013-03-28 03:52:58] action=web_introduction_show
+[DEBUG 2013-03-28 03:52:58] params=item_id
+[DEBUG 2013-03-28 03:52:58] params=3
+[DEBUG 2013-03-28 03:52:58] controllerfile=app/controllers/IntroductionAction.class.php, action=web_introduction_show
+[DEBUG 2013-03-28 03:52:58] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:52:58] web_introduction_show function: item_id=3
+[DEBUG 2013-03-28 03:52:58] open connect....
+[DEBUG 2013-03-28 03:52:58]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 03:52:58] close connect....
+[DEBUG 2013-03-28 03:52:58] open connect....
+[DEBUG 2013-03-28 03:52:58] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:52:58] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:52:58] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:52:58] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:52:58] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:52:58] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:52:58] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:52:58] close connect....
+[DEBUG 2013-03-28 03:52:58] open connect....
+[DEBUG 2013-03-28 03:52:58] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=3 limit 1
+[DEBUG 2013-03-28 03:52:58] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:52:58] close connect....
+[DEBUG 2013-03-28 03:52:58] open connect....
+[DEBUG 2013-03-28 03:52:58]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:52:58] close connect....
+[DEBUG 2013-03-28 03:53:00] route=IndexAction
+[DEBUG 2013-03-28 03:53:00] controller=IndexAction
+[DEBUG 2013-03-28 03:53:00] action=main
+[DEBUG 2013-03-28 03:53:00] controllerfile=app/controllers/IndexAction.class.php, action=main
+[DEBUG 2013-03-28 03:53:00] Invoke main function of IndexAction class.
+[DEBUG 2013-03-28 03:53:00] enter web index page.
+[DEBUG 2013-03-28 03:53:00] open connect....
+[DEBUG 2013-03-28 03:53:00]  SELECT item_id FROM tb_item  WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:00]  SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item  WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:00] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:00] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:00] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:00] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:00] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:00] close connect....
+[DEBUG 2013-03-28 03:53:00] open connect....
+[DEBUG 2013-03-28 03:53:00]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 03:53:00] close connect....
+[DEBUG 2013-03-28 03:53:00] open connect....
+[DEBUG 2013-03-28 03:53:00] SELECT count(0) FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 03:53:00] row_num=4
+[DEBUG 2013-03-28 03:53:00] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 03:53:00] close connect....
+[DEBUG 2013-03-28 03:53:00] open connect....
+[DEBUG 2013-03-28 03:53:00] SELECT count(0) FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 03:53:00] row_num=12
+[DEBUG 2013-03-28 03:53:00] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 03:53:00] close connect....
+[DEBUG 2013-03-28 03:53:00] open connect....
+[DEBUG 2013-03-28 03:53:00]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 03:53:00]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 03:53:00] close connect....
+[DEBUG 2013-03-28 03:53:00] open connect....
+[DEBUG 2013-03-28 03:53:00]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:00] close connect....
+[DEBUG 2013-03-28 03:53:00] open connect....
+[DEBUG 2013-03-28 03:53:00] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:00] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:00] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:00] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:00] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:00] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:00] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:00] close connect....
+[DEBUG 2013-03-28 03:53:00] open connect....
+[DEBUG 2013-03-28 03:53:00]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:00] close connect....
+[DEBUG 2013-03-28 03:53:00] open connect....
+[DEBUG 2013-03-28 03:53:00] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 03:53:00] close connect....
+[DEBUG 2013-03-28 03:53:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:00] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:00] Total time for dispatching is: 0.23935317993164seconds.
+[DEBUG 2013-03-28 03:53:01] path=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:53:01] route=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:53:01] controller=IntroductionAction
+[DEBUG 2013-03-28 03:53:01] action=web_introduction_show
+[DEBUG 2013-03-28 03:53:01] params=item_id
+[DEBUG 2013-03-28 03:53:01] params=3
+[DEBUG 2013-03-28 03:53:01] controllerfile=app/controllers/IntroductionAction.class.php, action=web_introduction_show
+[DEBUG 2013-03-28 03:53:01] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:53:01] web_introduction_show function: item_id=3
+[DEBUG 2013-03-28 03:53:01] open connect....
+[DEBUG 2013-03-28 03:53:01]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 03:53:01] close connect....
+[DEBUG 2013-03-28 03:53:01] open connect....
+[DEBUG 2013-03-28 03:53:01] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:01] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:01] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:01] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:01] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:01] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:01] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:01] close connect....
+[DEBUG 2013-03-28 03:53:01] open connect....
+[DEBUG 2013-03-28 03:53:01] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=3 limit 1
+[DEBUG 2013-03-28 03:53:01] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:01] close connect....
+[DEBUG 2013-03-28 03:53:01] open connect....
+[DEBUG 2013-03-28 03:53:01]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:01] close connect....
+[DEBUG 2013-03-28 03:53:41] path=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:53:41] route=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:53:41] controller=IntroductionAction
+[DEBUG 2013-03-28 03:53:41] action=web_introduction_show
+[DEBUG 2013-03-28 03:53:41] params=item_id
+[DEBUG 2013-03-28 03:53:41] params=3
+[DEBUG 2013-03-28 03:53:41] controllerfile=app/controllers/IntroductionAction.class.php, action=web_introduction_show
+[DEBUG 2013-03-28 03:53:41] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:53:41] web_introduction_show function: item_id=3
+[DEBUG 2013-03-28 03:53:41] open connect....
+[DEBUG 2013-03-28 03:53:41]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 03:53:41] close connect....
+[DEBUG 2013-03-28 03:53:41] open connect....
+[DEBUG 2013-03-28 03:53:41] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:41] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:41] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:41] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:41] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:41] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:41] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:41] close connect....
+[DEBUG 2013-03-28 03:53:41] open connect....
+[DEBUG 2013-03-28 03:53:41] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=3 limit 1
+[DEBUG 2013-03-28 03:53:42] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:42] close connect....
+[DEBUG 2013-03-28 03:53:42] open connect....
+[DEBUG 2013-03-28 03:53:42]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:42] close connect....
+[DEBUG 2013-03-28 03:53:42] open connect....
+[DEBUG 2013-03-28 03:53:42] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 03:53:42] close connect....
+[DEBUG 2013-03-28 03:53:42] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:42] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:42] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:42] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:42] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:42] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:42] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:42] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:42] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:42] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:42] Total time for dispatching is: 0.15693998336792seconds.
+[DEBUG 2013-03-28 03:53:45] path=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 03:53:45] route=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 03:53:45] controller=NewsAction
+[DEBUG 2013-03-28 03:53:45] action=web_news_list
+[DEBUG 2013-03-28 03:53:45] params=current_page
+[DEBUG 2013-03-28 03:53:45] params=1
+[DEBUG 2013-03-28 03:53:45] params=item_id
+[DEBUG 2013-03-28 03:53:45] params=4
+[DEBUG 2013-03-28 03:53:45] controllerfile=app/controllers/NewsAction.class.php, action=web_news_list
+[DEBUG 2013-03-28 03:53:45] get_param_value function: count= 4
+[DEBUG 2013-03-28 03:53:45] get_param_value function: count= 4
+[DEBUG 2013-03-28 03:53:45] web_news_list function: item_id=4
+[DEBUG 2013-03-28 03:53:45] open connect....
+[DEBUG 2013-03-28 03:53:45] SELECT count(0) FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 03:53:45] row_num=10
+[DEBUG 2013-03-28 03:53:45] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 03:53:45] close connect....
+[DEBUG 2013-03-28 03:53:46] open connect....
+[DEBUG 2013-03-28 03:53:46] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:46] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:46] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:46] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:46] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:46] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:46] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:46] close connect....
+[DEBUG 2013-03-28 03:53:46] open connect....
+[DEBUG 2013-03-28 03:53:46] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=4 limit 1
+[DEBUG 2013-03-28 03:53:46] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:46] close connect....
+[DEBUG 2013-03-28 03:53:46] open connect....
+[DEBUG 2013-03-28 03:53:46]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:46] close connect....
+[DEBUG 2013-03-28 03:53:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:46] Total time for dispatching is: 0.13487100601196seconds.
+[DEBUG 2013-03-28 03:53:48] path=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 03:53:48] route=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 03:53:48] controller=ProductAction
+[DEBUG 2013-03-28 03:53:48] action=web_product_list
+[DEBUG 2013-03-28 03:53:48] params=item_id
+[DEBUG 2013-03-28 03:53:48] params=5
+[DEBUG 2013-03-28 03:53:48] controllerfile=app/controllers/ProductAction.class.php, action=web_product_list
+[DEBUG 2013-03-28 03:53:48] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:53:48] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:53:48] web_product_list function: item_id=5
+[DEBUG 2013-03-28 03:53:48] open connect....
+[DEBUG 2013-03-28 03:53:48] SELECT count(0) FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 03:53:48] row_num=12
+[DEBUG 2013-03-28 03:53:48] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 03:53:48] close connect....
+[DEBUG 2013-03-28 03:53:48] open connect....
+[DEBUG 2013-03-28 03:53:48] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:48] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:48] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:48] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:48] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:48] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:48] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:48] close connect....
+[DEBUG 2013-03-28 03:53:48] open connect....
+[DEBUG 2013-03-28 03:53:48] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=5 limit 1
+[DEBUG 2013-03-28 03:53:48] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:48] close connect....
+[DEBUG 2013-03-28 03:53:48] open connect....
+[DEBUG 2013-03-28 03:53:48]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:48] close connect....
+[DEBUG 2013-03-28 03:53:48] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:48] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:48] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:48] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:48] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:48] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:48] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:48] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:48] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:48] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:48] Total time for dispatching is: 0.18274307250977seconds.
+[DEBUG 2013-03-28 03:53:49] path=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 03:53:49] route=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 03:53:49] controller=SubjectAction
+[DEBUG 2013-03-28 03:53:49] action=web_subject_list
+[DEBUG 2013-03-28 03:53:49] params=item_id
+[DEBUG 2013-03-28 03:53:49] params=12
+[DEBUG 2013-03-28 03:53:49] controllerfile=app/controllers/SubjectAction.class.php, action=web_subject_list
+[DEBUG 2013-03-28 03:53:49] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:53:49] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:53:49] open connect....
+[DEBUG 2013-03-28 03:53:49]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 03:53:49]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 03:53:49] close connect....
+[DEBUG 2013-03-28 03:53:49] open connect....
+[DEBUG 2013-03-28 03:53:49] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:49] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:49] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:49] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:49] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:49] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:49] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:49] close connect....
+[DEBUG 2013-03-28 03:53:49] open connect....
+[DEBUG 2013-03-28 03:53:49] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=12 limit 1
+[DEBUG 2013-03-28 03:53:49] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:49] close connect....
+[DEBUG 2013-03-28 03:53:49] open connect....
+[DEBUG 2013-03-28 03:53:49]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:49] close connect....
+[DEBUG 2013-03-28 03:53:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:49] Total time for dispatching is: 0.19182300567627seconds.
+[DEBUG 2013-03-28 03:53:50] path=ContactUsAction/web_contact_us_show/item_id/6
+[DEBUG 2013-03-28 03:53:50] route=ContactUsAction/web_contact_us_show/item_id/6
+[DEBUG 2013-03-28 03:53:50] controller=ContactUsAction
+[DEBUG 2013-03-28 03:53:50] action=web_contact_us_show
+[DEBUG 2013-03-28 03:53:50] params=item_id
+[DEBUG 2013-03-28 03:53:50] params=6
+[DEBUG 2013-03-28 03:53:50] controllerfile=app/controllers/ContactUsAction.class.php, action=web_contact_us_show
+[DEBUG 2013-03-28 03:53:50] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:53:50] web_contact_us_show function: item_id=6
+[DEBUG 2013-03-28 03:53:50] open connect....
+[DEBUG 2013-03-28 03:53:50] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:50] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:50] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:50] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:50] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:50] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:50] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:50] close connect....
+[DEBUG 2013-03-28 03:53:50] open connect....
+[DEBUG 2013-03-28 03:53:50] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=6 limit 1
+[DEBUG 2013-03-28 03:53:50] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:50] close connect....
+[DEBUG 2013-03-28 03:53:50] open connect....
+[DEBUG 2013-03-28 03:53:50]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:50] close connect....
+[DEBUG 2013-03-28 03:53:50] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:50] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:50] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:50] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:50] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:50] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:50] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:50] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:50] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:50] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:50] Total time for dispatching is: 0.11964201927185seconds.
+[DEBUG 2013-03-28 03:53:51] path=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:53:51] route=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 03:53:51] controller=IntroductionAction
+[DEBUG 2013-03-28 03:53:51] action=web_introduction_show
+[DEBUG 2013-03-28 03:53:51] params=item_id
+[DEBUG 2013-03-28 03:53:51] params=3
+[DEBUG 2013-03-28 03:53:51] controllerfile=app/controllers/IntroductionAction.class.php, action=web_introduction_show
+[DEBUG 2013-03-28 03:53:51] get_param_value function: count= 2
+[DEBUG 2013-03-28 03:53:51] web_introduction_show function: item_id=3
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:51] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:51] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=3 limit 1
+[DEBUG 2013-03-28 03:53:51] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] Total time for dispatching is: 0.19631600379944seconds.
+[DEBUG 2013-03-28 03:53:51] route=IndexAction
+[DEBUG 2013-03-28 03:53:51] controller=IndexAction
+[DEBUG 2013-03-28 03:53:51] action=main
+[DEBUG 2013-03-28 03:53:51] controllerfile=app/controllers/IndexAction.class.php, action=main
+[DEBUG 2013-03-28 03:53:51] Invoke main function of IndexAction class.
+[DEBUG 2013-03-28 03:53:51] enter web index page.
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51]  SELECT item_id FROM tb_item  WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:51]  SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item  WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:51] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51] SELECT count(0) FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 03:53:51] row_num=4
+[DEBUG 2013-03-28 03:53:51] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51] SELECT count(0) FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 03:53:51] row_num=12
+[DEBUG 2013-03-28 03:53:51] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 03:53:51]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 03:53:51] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 03:53:51] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 03:53:51] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] open connect....
+[DEBUG 2013-03-28 03:53:51] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 03:53:51] close connect....
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] D:\PHPProject\ei
+[DEBUG 2013-03-28 03:53:51] Total time for dispatching is: 0.24126505851746seconds.
+[DEBUG 2013-03-28 04:52:47] path=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 04:52:47] route=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 04:52:47] controller=NewsAction
+[DEBUG 2013-03-28 04:52:47] action=web_news_list
+[DEBUG 2013-03-28 04:52:47] params=current_page
+[DEBUG 2013-03-28 04:52:47] params=1
+[DEBUG 2013-03-28 04:52:47] params=item_id
+[DEBUG 2013-03-28 04:52:47] params=4
+[DEBUG 2013-03-28 04:52:47] controllerfile=app/controllers/NewsAction.class.php, action=web_news_list
+[DEBUG 2013-03-28 04:52:47] get_param_value function: count= 4
+[DEBUG 2013-03-28 04:52:47] get_param_value function: count= 4
+[DEBUG 2013-03-28 04:52:47] web_news_list function: item_id=4
+[DEBUG 2013-03-28 04:52:47] open connect....
+[DEBUG 2013-03-28 04:52:47] SELECT count(0) FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 04:52:47] row_num=10
+[DEBUG 2013-03-28 04:52:47] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:52:47] close connect....
+[DEBUG 2013-03-28 04:52:47] open connect....
+[DEBUG 2013-03-28 04:52:47] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:52:47] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:52:47] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:52:47] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:52:47] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:52:47] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:52:47] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:52:47] close connect....
+[DEBUG 2013-03-28 04:52:47] open connect....
+[DEBUG 2013-03-28 04:52:47] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=4 limit 1
+[DEBUG 2013-03-28 04:52:47] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:52:47] close connect....
+[DEBUG 2013-03-28 04:52:47] open connect....
+[DEBUG 2013-03-28 04:52:47]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:52:47] close connect....
+[DEBUG 2013-03-28 04:52:47] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:52:47] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:52:47] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:52:47] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:52:47] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:52:47] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:52:47] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:52:47] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:52:47] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:52:47] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:52:47] Total time for dispatching is: 0.1628589630127seconds.
+[DEBUG 2013-03-28 04:54:01] path=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 04:54:01] route=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 04:54:01] controller=NewsAction
+[DEBUG 2013-03-28 04:54:01] action=web_news_list
+[DEBUG 2013-03-28 04:54:01] params=current_page
+[DEBUG 2013-03-28 04:54:01] params=1
+[DEBUG 2013-03-28 04:54:01] params=item_id
+[DEBUG 2013-03-28 04:54:01] params=4
+[DEBUG 2013-03-28 04:54:01] controllerfile=app/controllers/NewsAction.class.php, action=web_news_list
+[DEBUG 2013-03-28 04:54:01] get_param_value function: count= 4
+[DEBUG 2013-03-28 04:54:01] get_param_value function: count= 4
+[DEBUG 2013-03-28 04:54:01] web_news_list function: item_id=4
+[DEBUG 2013-03-28 04:54:01] open connect....
+[DEBUG 2013-03-28 04:54:01] SELECT count(0) FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 04:54:01] row_num=10
+[DEBUG 2013-03-28 04:54:01] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:54:01] close connect....
+[DEBUG 2013-03-28 04:54:01] open connect....
+[DEBUG 2013-03-28 04:54:01] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:54:01] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:54:01] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:54:01] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:54:01] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:54:01] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:54:01] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:54:01] close connect....
+[DEBUG 2013-03-28 04:54:01] open connect....
+[DEBUG 2013-03-28 04:54:01] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=4 limit 1
+[DEBUG 2013-03-28 04:54:01] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:54:01] close connect....
+[DEBUG 2013-03-28 04:54:01] open connect....
+[DEBUG 2013-03-28 04:54:01]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:54:01] close connect....
+[DEBUG 2013-03-28 04:54:01] open connect....
+[DEBUG 2013-03-28 04:54:01] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 04:54:01] close connect....
+[DEBUG 2013-03-28 04:54:01] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:54:01] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:54:01] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:54:01] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:54:01] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:54:01] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:54:01] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:54:01] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:54:01] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:54:01] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:54:01] Total time for dispatching is: 0.14339900016785seconds.
+[DEBUG 2013-03-28 04:59:27] path=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 04:59:27] route=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 04:59:27] controller=ProductAction
+[DEBUG 2013-03-28 04:59:27] action=web_product_list
+[DEBUG 2013-03-28 04:59:27] params=item_id
+[DEBUG 2013-03-28 04:59:27] params=5
+[DEBUG 2013-03-28 04:59:27] controllerfile=app/controllers/ProductAction.class.php, action=web_product_list
+[DEBUG 2013-03-28 04:59:27] get_param_value function: count= 2
+[DEBUG 2013-03-28 04:59:27] get_param_value function: count= 2
+[DEBUG 2013-03-28 04:59:27] web_product_list function: item_id=5
+[DEBUG 2013-03-28 04:59:27] open connect....
+[DEBUG 2013-03-28 04:59:27] SELECT count(0) FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 04:59:27] row_num=12
+[DEBUG 2013-03-28 04:59:27] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:59:27] close connect....
+[DEBUG 2013-03-28 04:59:27] open connect....
+[DEBUG 2013-03-28 04:59:27] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:59:27] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:59:27] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:27] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:27] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:27] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:27] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:27] close connect....
+[DEBUG 2013-03-28 04:59:27] open connect....
+[DEBUG 2013-03-28 04:59:27] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=5 limit 1
+[DEBUG 2013-03-28 04:59:27] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:27] close connect....
+[DEBUG 2013-03-28 04:59:27] open connect....
+[DEBUG 2013-03-28 04:59:27]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:59:27] close connect....
+[DEBUG 2013-03-28 04:59:27] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:27] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:27] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:27] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:27] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:27] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:27] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:27] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:27] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:27] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:27] Total time for dispatching is: 0.1228129863739seconds.
+[DEBUG 2013-03-28 04:59:29] path=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 04:59:29] route=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 04:59:29] controller=NewsAction
+[DEBUG 2013-03-28 04:59:29] action=web_news_list
+[DEBUG 2013-03-28 04:59:29] params=current_page
+[DEBUG 2013-03-28 04:59:29] params=1
+[DEBUG 2013-03-28 04:59:29] params=item_id
+[DEBUG 2013-03-28 04:59:29] params=4
+[DEBUG 2013-03-28 04:59:29] controllerfile=app/controllers/NewsAction.class.php, action=web_news_list
+[DEBUG 2013-03-28 04:59:29] get_param_value function: count= 4
+[DEBUG 2013-03-28 04:59:29] get_param_value function: count= 4
+[DEBUG 2013-03-28 04:59:29] web_news_list function: item_id=4
+[DEBUG 2013-03-28 04:59:29] open connect....
+[DEBUG 2013-03-28 04:59:29] SELECT count(0) FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 04:59:29] row_num=10
+[DEBUG 2013-03-28 04:59:29] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:59:29] close connect....
+[DEBUG 2013-03-28 04:59:29] open connect....
+[DEBUG 2013-03-28 04:59:29] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:59:29] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:59:29] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:29] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:29] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:29] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:29] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:29] close connect....
+[DEBUG 2013-03-28 04:59:29] open connect....
+[DEBUG 2013-03-28 04:59:29] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=4 limit 1
+[DEBUG 2013-03-28 04:59:29] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:29] close connect....
+[DEBUG 2013-03-28 04:59:29] open connect....
+[DEBUG 2013-03-28 04:59:29]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:59:29] close connect....
+[DEBUG 2013-03-28 04:59:29] open connect....
+[DEBUG 2013-03-28 04:59:29] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 04:59:29] close connect....
+[DEBUG 2013-03-28 04:59:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:30] Total time for dispatching is: 0.14238810539246seconds.
+[DEBUG 2013-03-28 04:59:31] path=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 04:59:31] route=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 04:59:31] controller=SubjectAction
+[DEBUG 2013-03-28 04:59:31] action=web_subject_list
+[DEBUG 2013-03-28 04:59:31] params=item_id
+[DEBUG 2013-03-28 04:59:31] params=12
+[DEBUG 2013-03-28 04:59:31] controllerfile=app/controllers/SubjectAction.class.php, action=web_subject_list
+[DEBUG 2013-03-28 04:59:31] get_param_value function: count= 2
+[DEBUG 2013-03-28 04:59:31] get_param_value function: count= 2
+[DEBUG 2013-03-28 04:59:31] open connect....
+[DEBUG 2013-03-28 04:59:31]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 04:59:31]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:59:31] close connect....
+[DEBUG 2013-03-28 04:59:31] open connect....
+[DEBUG 2013-03-28 04:59:31] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:59:31] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:59:31] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:31] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:31] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:31] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:31] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:31] close connect....
+[DEBUG 2013-03-28 04:59:31] open connect....
+[DEBUG 2013-03-28 04:59:31] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=12 limit 1
+[DEBUG 2013-03-28 04:59:31] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:31] close connect....
+[DEBUG 2013-03-28 04:59:31] open connect....
+[DEBUG 2013-03-28 04:59:31]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:59:31] close connect....
+[DEBUG 2013-03-28 04:59:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:31] Total time for dispatching is: 0.13120698928833seconds.
+[DEBUG 2013-03-28 04:59:32] path=ContactUsAction/web_contact_us_show/item_id/6
+[DEBUG 2013-03-28 04:59:32] route=ContactUsAction/web_contact_us_show/item_id/6
+[DEBUG 2013-03-28 04:59:32] controller=ContactUsAction
+[DEBUG 2013-03-28 04:59:32] action=web_contact_us_show
+[DEBUG 2013-03-28 04:59:32] params=item_id
+[DEBUG 2013-03-28 04:59:32] params=6
+[DEBUG 2013-03-28 04:59:32] controllerfile=app/controllers/ContactUsAction.class.php, action=web_contact_us_show
+[DEBUG 2013-03-28 04:59:32] get_param_value function: count= 2
+[DEBUG 2013-03-28 04:59:32] web_contact_us_show function: item_id=6
+[DEBUG 2013-03-28 04:59:32] open connect....
+[DEBUG 2013-03-28 04:59:32] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:59:32] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:59:32] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:32] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:32] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:32] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:32] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:32] close connect....
+[DEBUG 2013-03-28 04:59:32] open connect....
+[DEBUG 2013-03-28 04:59:32] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=6 limit 1
+[DEBUG 2013-03-28 04:59:32] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:32] close connect....
+[DEBUG 2013-03-28 04:59:32] open connect....
+[DEBUG 2013-03-28 04:59:32]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:59:32] close connect....
+[DEBUG 2013-03-28 04:59:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:32] Total time for dispatching is: 0.089210033416748seconds.
+[DEBUG 2013-03-28 04:59:33] path=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 04:59:33] route=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 04:59:33] controller=SubjectAction
+[DEBUG 2013-03-28 04:59:33] action=web_subject_list
+[DEBUG 2013-03-28 04:59:33] params=item_id
+[DEBUG 2013-03-28 04:59:33] params=12
+[DEBUG 2013-03-28 04:59:33] controllerfile=app/controllers/SubjectAction.class.php, action=web_subject_list
+[DEBUG 2013-03-28 04:59:33] get_param_value function: count= 2
+[DEBUG 2013-03-28 04:59:33] get_param_value function: count= 2
+[DEBUG 2013-03-28 04:59:33] open connect....
+[DEBUG 2013-03-28 04:59:33]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 04:59:33]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:59:33] close connect....
+[DEBUG 2013-03-28 04:59:33] open connect....
+[DEBUG 2013-03-28 04:59:33] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:59:33] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:59:33] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:33] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:33] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:33] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:33] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:33] close connect....
+[DEBUG 2013-03-28 04:59:33] open connect....
+[DEBUG 2013-03-28 04:59:33] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=12 limit 1
+[DEBUG 2013-03-28 04:59:33] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:33] close connect....
+[DEBUG 2013-03-28 04:59:33] open connect....
+[DEBUG 2013-03-28 04:59:33]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:59:33] close connect....
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] Total time for dispatching is: 0.12448883056641seconds.
+[DEBUG 2013-03-28 04:59:34] path=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 04:59:34] route=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 04:59:34] controller=ProductAction
+[DEBUG 2013-03-28 04:59:34] action=web_product_list
+[DEBUG 2013-03-28 04:59:34] params=item_id
+[DEBUG 2013-03-28 04:59:34] params=5
+[DEBUG 2013-03-28 04:59:34] controllerfile=app/controllers/ProductAction.class.php, action=web_product_list
+[DEBUG 2013-03-28 04:59:34] get_param_value function: count= 2
+[DEBUG 2013-03-28 04:59:34] get_param_value function: count= 2
+[DEBUG 2013-03-28 04:59:34] web_product_list function: item_id=5
+[DEBUG 2013-03-28 04:59:34] open connect....
+[DEBUG 2013-03-28 04:59:34] SELECT count(0) FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 04:59:34] row_num=12
+[DEBUG 2013-03-28 04:59:34] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:59:34] close connect....
+[DEBUG 2013-03-28 04:59:34] open connect....
+[DEBUG 2013-03-28 04:59:34] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:59:34] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:59:34] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:34] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:34] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:34] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:34] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:34] close connect....
+[DEBUG 2013-03-28 04:59:34] open connect....
+[DEBUG 2013-03-28 04:59:34] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=5 limit 1
+[DEBUG 2013-03-28 04:59:34] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:34] close connect....
+[DEBUG 2013-03-28 04:59:34] open connect....
+[DEBUG 2013-03-28 04:59:34]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:59:34] close connect....
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] Total time for dispatching is: 0.18463802337646seconds.
+[DEBUG 2013-03-28 04:59:34] path=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 04:59:34] route=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 04:59:34] controller=NewsAction
+[DEBUG 2013-03-28 04:59:34] action=web_news_list
+[DEBUG 2013-03-28 04:59:34] params=current_page
+[DEBUG 2013-03-28 04:59:34] params=1
+[DEBUG 2013-03-28 04:59:34] params=item_id
+[DEBUG 2013-03-28 04:59:34] params=4
+[DEBUG 2013-03-28 04:59:34] controllerfile=app/controllers/NewsAction.class.php, action=web_news_list
+[DEBUG 2013-03-28 04:59:34] get_param_value function: count= 4
+[DEBUG 2013-03-28 04:59:34] get_param_value function: count= 4
+[DEBUG 2013-03-28 04:59:34] web_news_list function: item_id=4
+[DEBUG 2013-03-28 04:59:34] open connect....
+[DEBUG 2013-03-28 04:59:34] SELECT count(0) FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 04:59:34] row_num=10
+[DEBUG 2013-03-28 04:59:34] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:59:34] close connect....
+[DEBUG 2013-03-28 04:59:34] open connect....
+[DEBUG 2013-03-28 04:59:34] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:59:34] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:59:34] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:34] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:34] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:34] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:34] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:34] close connect....
+[DEBUG 2013-03-28 04:59:34] open connect....
+[DEBUG 2013-03-28 04:59:34] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=4 limit 1
+[DEBUG 2013-03-28 04:59:34] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:34] close connect....
+[DEBUG 2013-03-28 04:59:34] open connect....
+[DEBUG 2013-03-28 04:59:34]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:59:34] close connect....
+[DEBUG 2013-03-28 04:59:34] open connect....
+[DEBUG 2013-03-28 04:59:34] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 04:59:34] close connect....
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:34] Total time for dispatching is: 0.16361212730408seconds.
+[DEBUG 2013-03-28 04:59:35] path=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 04:59:35] route=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 04:59:35] controller=IntroductionAction
+[DEBUG 2013-03-28 04:59:35] action=web_introduction_show
+[DEBUG 2013-03-28 04:59:35] params=item_id
+[DEBUG 2013-03-28 04:59:35] params=3
+[DEBUG 2013-03-28 04:59:35] controllerfile=app/controllers/IntroductionAction.class.php, action=web_introduction_show
+[DEBUG 2013-03-28 04:59:35] get_param_value function: count= 2
+[DEBUG 2013-03-28 04:59:35] web_introduction_show function: item_id=3
+[DEBUG 2013-03-28 04:59:35] open connect....
+[DEBUG 2013-03-28 04:59:35]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 04:59:35] close connect....
+[DEBUG 2013-03-28 04:59:35] open connect....
+[DEBUG 2013-03-28 04:59:35] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:59:35] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:59:35] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:35] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:35] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:35] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:35] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:35] close connect....
+[DEBUG 2013-03-28 04:59:35] open connect....
+[DEBUG 2013-03-28 04:59:35] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=3 limit 1
+[DEBUG 2013-03-28 04:59:35] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:35] close connect....
+[DEBUG 2013-03-28 04:59:35] open connect....
+[DEBUG 2013-03-28 04:59:35]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:59:35] close connect....
+[DEBUG 2013-03-28 04:59:35] open connect....
+[DEBUG 2013-03-28 04:59:35] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 04:59:35] close connect....
+[DEBUG 2013-03-28 04:59:35] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:35] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:35] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:35] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:35] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:35] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:35] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:35] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:35] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:35] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:35] Total time for dispatching is: 0.17449903488159seconds.
+[DEBUG 2013-03-28 04:59:36] route=IndexAction
+[DEBUG 2013-03-28 04:59:36] controller=IndexAction
+[DEBUG 2013-03-28 04:59:36] action=main
+[DEBUG 2013-03-28 04:59:36] controllerfile=app/controllers/IndexAction.class.php, action=main
+[DEBUG 2013-03-28 04:59:36] Invoke main function of IndexAction class.
+[DEBUG 2013-03-28 04:59:36] enter web index page.
+[DEBUG 2013-03-28 04:59:36] open connect....
+[DEBUG 2013-03-28 04:59:36]  SELECT item_id FROM tb_item  WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:59:36]  SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item  WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:59:36] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:36] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:36] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:36] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:36] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:36] close connect....
+[DEBUG 2013-03-28 04:59:36] open connect....
+[DEBUG 2013-03-28 04:59:36]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 04:59:36] close connect....
+[DEBUG 2013-03-28 04:59:36] open connect....
+[DEBUG 2013-03-28 04:59:36] SELECT count(0) FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 04:59:36] row_num=4
+[DEBUG 2013-03-28 04:59:36] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:59:36] close connect....
+[DEBUG 2013-03-28 04:59:36] open connect....
+[DEBUG 2013-03-28 04:59:36] SELECT count(0) FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 04:59:36] row_num=12
+[DEBUG 2013-03-28 04:59:36] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:59:36] close connect....
+[DEBUG 2013-03-28 04:59:37] open connect....
+[DEBUG 2013-03-28 04:59:37]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 04:59:37]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 04:59:37] close connect....
+[DEBUG 2013-03-28 04:59:37] open connect....
+[DEBUG 2013-03-28 04:59:37]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:59:37] close connect....
+[DEBUG 2013-03-28 04:59:37] open connect....
+[DEBUG 2013-03-28 04:59:37] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 04:59:37] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 04:59:37] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 04:59:37] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 04:59:37] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 04:59:37] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 04:59:37] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 04:59:37] close connect....
+[DEBUG 2013-03-28 04:59:37] open connect....
+[DEBUG 2013-03-28 04:59:37]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 04:59:37] close connect....
+[DEBUG 2013-03-28 04:59:37] open connect....
+[DEBUG 2013-03-28 04:59:37] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 04:59:37] close connect....
+[DEBUG 2013-03-28 04:59:37] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:37] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:37] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:37] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:37] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:37] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:37] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:37] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:37] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:37] D:\PHPProject\ei
+[DEBUG 2013-03-28 04:59:37] Total time for dispatching is: 0.23427605628967seconds.
+[DEBUG 2013-03-28 05:00:20] path=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 05:00:20] route=IntroductionAction/web_introduction_show/item_id/3
+[DEBUG 2013-03-28 05:00:20] controller=IntroductionAction
+[DEBUG 2013-03-28 05:00:20] action=web_introduction_show
+[DEBUG 2013-03-28 05:00:20] params=item_id
+[DEBUG 2013-03-28 05:00:20] params=3
+[DEBUG 2013-03-28 05:00:20] controllerfile=app/controllers/IntroductionAction.class.php, action=web_introduction_show
+[DEBUG 2013-03-28 05:00:20] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:20] web_introduction_show function: item_id=3
+[DEBUG 2013-03-28 05:00:20] open connect....
+[DEBUG 2013-03-28 05:00:20]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 05:00:20] close connect....
+[DEBUG 2013-03-28 05:00:20] open connect....
+[DEBUG 2013-03-28 05:00:20] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:20] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:20] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:20] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:20] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:20] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:20] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:20] close connect....
+[DEBUG 2013-03-28 05:00:20] open connect....
+[DEBUG 2013-03-28 05:00:20] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=3 limit 1
+[DEBUG 2013-03-28 05:00:20] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:20] close connect....
+[DEBUG 2013-03-28 05:00:20] open connect....
+[DEBUG 2013-03-28 05:00:20]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:20] close connect....
+[DEBUG 2013-03-28 05:00:20] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:20] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:20] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:20] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:20] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:20] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:20] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:20] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:20] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:20] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:20] Total time for dispatching is: 0.11691188812256seconds.
+[DEBUG 2013-03-28 05:00:22] route=IndexAction
+[DEBUG 2013-03-28 05:00:22] controller=IndexAction
+[DEBUG 2013-03-28 05:00:22] action=main
+[DEBUG 2013-03-28 05:00:22] controllerfile=app/controllers/IndexAction.class.php, action=main
+[DEBUG 2013-03-28 05:00:22] Invoke main function of IndexAction class.
+[DEBUG 2013-03-28 05:00:22] enter web index page.
+[DEBUG 2013-03-28 05:00:22] open connect....
+[DEBUG 2013-03-28 05:00:22]  SELECT item_id FROM tb_item  WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:22]  SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item  WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:22] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:22] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:22] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:22] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:22] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:22] close connect....
+[DEBUG 2013-03-28 05:00:22] open connect....
+[DEBUG 2013-03-28 05:00:22]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 05:00:22] close connect....
+[DEBUG 2013-03-28 05:00:22] open connect....
+[DEBUG 2013-03-28 05:00:22] SELECT count(0) FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:22] row_num=4
+[DEBUG 2013-03-28 05:00:22] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:22] close connect....
+[DEBUG 2013-03-28 05:00:22] open connect....
+[DEBUG 2013-03-28 05:00:22] SELECT count(0) FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:22] row_num=12
+[DEBUG 2013-03-28 05:00:22] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:22] close connect....
+[DEBUG 2013-03-28 05:00:22] open connect....
+[DEBUG 2013-03-28 05:00:22]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 05:00:22]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:22] close connect....
+[DEBUG 2013-03-28 05:00:22] open connect....
+[DEBUG 2013-03-28 05:00:22]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:22] close connect....
+[DEBUG 2013-03-28 05:00:22] open connect....
+[DEBUG 2013-03-28 05:00:22] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:22] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:22] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:22] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:22] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:22] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:22] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:22] close connect....
+[DEBUG 2013-03-28 05:00:22] open connect....
+[DEBUG 2013-03-28 05:00:22]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:22] close connect....
+[DEBUG 2013-03-28 05:00:22] open connect....
+[DEBUG 2013-03-28 05:00:22] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 05:00:22] close connect....
+[DEBUG 2013-03-28 05:00:22] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] Total time for dispatching is: 0.25452613830566seconds.
+[DEBUG 2013-03-28 05:00:23] path=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 05:00:23] route=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 05:00:23] controller=NewsAction
+[DEBUG 2013-03-28 05:00:23] action=web_news_list
+[DEBUG 2013-03-28 05:00:23] params=current_page
+[DEBUG 2013-03-28 05:00:23] params=1
+[DEBUG 2013-03-28 05:00:23] params=item_id
+[DEBUG 2013-03-28 05:00:23] params=4
+[DEBUG 2013-03-28 05:00:23] controllerfile=app/controllers/NewsAction.class.php, action=web_news_list
+[DEBUG 2013-03-28 05:00:23] get_param_value function: count= 4
+[DEBUG 2013-03-28 05:00:23] get_param_value function: count= 4
+[DEBUG 2013-03-28 05:00:23] web_news_list function: item_id=4
+[DEBUG 2013-03-28 05:00:23] open connect....
+[DEBUG 2013-03-28 05:00:23] SELECT count(0) FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:23] row_num=10
+[DEBUG 2013-03-28 05:00:23] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:23] close connect....
+[DEBUG 2013-03-28 05:00:23] open connect....
+[DEBUG 2013-03-28 05:00:23] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:23] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:23] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:23] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:23] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:23] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:23] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:23] close connect....
+[DEBUG 2013-03-28 05:00:23] open connect....
+[DEBUG 2013-03-28 05:00:23] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=4 limit 1
+[DEBUG 2013-03-28 05:00:23] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:23] close connect....
+[DEBUG 2013-03-28 05:00:23] open connect....
+[DEBUG 2013-03-28 05:00:23]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:23] close connect....
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:23] Total time for dispatching is: 0.12677001953125seconds.
+[DEBUG 2013-03-28 05:00:24] path=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 05:00:24] route=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 05:00:24] controller=ProductAction
+[DEBUG 2013-03-28 05:00:24] action=web_product_list
+[DEBUG 2013-03-28 05:00:24] params=item_id
+[DEBUG 2013-03-28 05:00:24] params=5
+[DEBUG 2013-03-28 05:00:24] controllerfile=app/controllers/ProductAction.class.php, action=web_product_list
+[DEBUG 2013-03-28 05:00:24] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:24] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:24] web_product_list function: item_id=5
+[DEBUG 2013-03-28 05:00:24] open connect....
+[DEBUG 2013-03-28 05:00:24] SELECT count(0) FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:24] row_num=12
+[DEBUG 2013-03-28 05:00:24] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:24] close connect....
+[DEBUG 2013-03-28 05:00:24] open connect....
+[DEBUG 2013-03-28 05:00:24] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:24] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:24] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:24] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:24] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:24] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:24] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:24] close connect....
+[DEBUG 2013-03-28 05:00:24] open connect....
+[DEBUG 2013-03-28 05:00:24] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=5 limit 1
+[DEBUG 2013-03-28 05:00:24] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:24] close connect....
+[DEBUG 2013-03-28 05:00:24] open connect....
+[DEBUG 2013-03-28 05:00:24]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:24] close connect....
+[DEBUG 2013-03-28 05:00:24] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:24] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:24] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:24] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:24] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:24] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:24] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:24] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:24] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:24] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:24] Total time for dispatching is: 0.11318492889404seconds.
+[DEBUG 2013-03-28 05:00:25] path=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 05:00:25] route=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 05:00:25] controller=SubjectAction
+[DEBUG 2013-03-28 05:00:25] action=web_subject_list
+[DEBUG 2013-03-28 05:00:25] params=item_id
+[DEBUG 2013-03-28 05:00:25] params=12
+[DEBUG 2013-03-28 05:00:25] controllerfile=app/controllers/SubjectAction.class.php, action=web_subject_list
+[DEBUG 2013-03-28 05:00:25] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:25] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:25] open connect....
+[DEBUG 2013-03-28 05:00:25]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 05:00:25]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:25] close connect....
+[DEBUG 2013-03-28 05:00:25] open connect....
+[DEBUG 2013-03-28 05:00:25] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:25] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:25] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:25] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:25] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:25] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:25] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:25] close connect....
+[DEBUG 2013-03-28 05:00:25] open connect....
+[DEBUG 2013-03-28 05:00:25] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=12 limit 1
+[DEBUG 2013-03-28 05:00:25] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:25] close connect....
+[DEBUG 2013-03-28 05:00:25] open connect....
+[DEBUG 2013-03-28 05:00:25]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:25] close connect....
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] Total time for dispatching is: 0.14613318443298seconds.
+[DEBUG 2013-03-28 05:00:25] path=ContactUsAction/web_contact_us_show/item_id/6
+[DEBUG 2013-03-28 05:00:25] route=ContactUsAction/web_contact_us_show/item_id/6
+[DEBUG 2013-03-28 05:00:25] controller=ContactUsAction
+[DEBUG 2013-03-28 05:00:25] action=web_contact_us_show
+[DEBUG 2013-03-28 05:00:25] params=item_id
+[DEBUG 2013-03-28 05:00:25] params=6
+[DEBUG 2013-03-28 05:00:25] controllerfile=app/controllers/ContactUsAction.class.php, action=web_contact_us_show
+[DEBUG 2013-03-28 05:00:25] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:25] web_contact_us_show function: item_id=6
+[DEBUG 2013-03-28 05:00:25] open connect....
+[DEBUG 2013-03-28 05:00:25] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:25] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:25] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:25] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:25] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:25] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:25] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:25] close connect....
+[DEBUG 2013-03-28 05:00:25] open connect....
+[DEBUG 2013-03-28 05:00:25] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=6 limit 1
+[DEBUG 2013-03-28 05:00:25] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:25] close connect....
+[DEBUG 2013-03-28 05:00:25] open connect....
+[DEBUG 2013-03-28 05:00:25]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:25] close connect....
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:25] Total time for dispatching is: 0.08683705329895seconds.
+[DEBUG 2013-03-28 05:00:26] route=IndexAction
+[DEBUG 2013-03-28 05:00:26] controller=IndexAction
+[DEBUG 2013-03-28 05:00:26] action=main
+[DEBUG 2013-03-28 05:00:26] controllerfile=app/controllers/IndexAction.class.php, action=main
+[DEBUG 2013-03-28 05:00:26] Invoke main function of IndexAction class.
+[DEBUG 2013-03-28 05:00:26] enter web index page.
+[DEBUG 2013-03-28 05:00:26] open connect....
+[DEBUG 2013-03-28 05:00:26]  SELECT item_id FROM tb_item  WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:26]  SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item  WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:26] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:26] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:26] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:26] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:26] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:26] close connect....
+[DEBUG 2013-03-28 05:00:26] open connect....
+[DEBUG 2013-03-28 05:00:26]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 05:00:26] close connect....
+[DEBUG 2013-03-28 05:00:26] open connect....
+[DEBUG 2013-03-28 05:00:26] SELECT count(0) FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:26] row_num=4
+[DEBUG 2013-03-28 05:00:26] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:26] close connect....
+[DEBUG 2013-03-28 05:00:26] open connect....
+[DEBUG 2013-03-28 05:00:26] SELECT count(0) FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:26] row_num=12
+[DEBUG 2013-03-28 05:00:26] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:26] close connect....
+[DEBUG 2013-03-28 05:00:26] open connect....
+[DEBUG 2013-03-28 05:00:26]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 05:00:26]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:26] close connect....
+[DEBUG 2013-03-28 05:00:26] open connect....
+[DEBUG 2013-03-28 05:00:26]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:26] close connect....
+[DEBUG 2013-03-28 05:00:26] open connect....
+[DEBUG 2013-03-28 05:00:26] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:26] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:26] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:26] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:26] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:26] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:26] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:26] close connect....
+[DEBUG 2013-03-28 05:00:26] open connect....
+[DEBUG 2013-03-28 05:00:26]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:26] close connect....
+[DEBUG 2013-03-28 05:00:26] open connect....
+[DEBUG 2013-03-28 05:00:26] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 05:00:26] close connect....
+[DEBUG 2013-03-28 05:00:26] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:26] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:26] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:26] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:26] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:26] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:26] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:26] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:26] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:26] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:26] Total time for dispatching is: 0.22181296348572seconds.
+[DEBUG 2013-03-28 05:00:29] path=NewsAction/web_news_show/item_id/4/news_id/1
+[DEBUG 2013-03-28 05:00:29] route=NewsAction/web_news_show/item_id/4/news_id/1
+[DEBUG 2013-03-28 05:00:29] controller=NewsAction
+[DEBUG 2013-03-28 05:00:29] action=web_news_show
+[DEBUG 2013-03-28 05:00:29] params=item_id
+[DEBUG 2013-03-28 05:00:29] params=4
+[DEBUG 2013-03-28 05:00:29] params=news_id
+[DEBUG 2013-03-28 05:00:29] params=1
+[DEBUG 2013-03-28 05:00:29] controllerfile=app/controllers/NewsAction.class.php, action=web_news_show
+[DEBUG 2013-03-28 05:00:29] get_param_value function: count= 4
+[DEBUG 2013-03-28 05:00:29] get_param_value function: count= 4
+[DEBUG 2013-03-28 05:00:29] web_news_list function: news_id=1
+[DEBUG 2013-03-28 05:00:29] open connect....
+[DEBUG 2013-03-28 05:00:29] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status ='0' AND news_id='1' limit 1
+[DEBUG 2013-03-28 05:00:29] close connect....
+[DEBUG 2013-03-28 05:00:29] open connect....
+[DEBUG 2013-03-28 05:00:29] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:29] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:29] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:29] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:29] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:29] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:29] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:29] close connect....
+[DEBUG 2013-03-28 05:00:29] open connect....
+[DEBUG 2013-03-28 05:00:29] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=4 limit 1
+[DEBUG 2013-03-28 05:00:29] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:29] close connect....
+[DEBUG 2013-03-28 05:00:29] open connect....
+[DEBUG 2013-03-28 05:00:29]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:29] close connect....
+[DEBUG 2013-03-28 05:00:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:29] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:29] Total time for dispatching is: 0.12206697463989seconds.
+[DEBUG 2013-03-28 05:00:31] path=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 05:00:31] route=NewsAction/web_news_list/current_page/1/item_id/4
+[DEBUG 2013-03-28 05:00:31] controller=NewsAction
+[DEBUG 2013-03-28 05:00:31] action=web_news_list
+[DEBUG 2013-03-28 05:00:31] params=current_page
+[DEBUG 2013-03-28 05:00:31] params=1
+[DEBUG 2013-03-28 05:00:31] params=item_id
+[DEBUG 2013-03-28 05:00:31] params=4
+[DEBUG 2013-03-28 05:00:31] controllerfile=app/controllers/NewsAction.class.php, action=web_news_list
+[DEBUG 2013-03-28 05:00:31] get_param_value function: count= 4
+[DEBUG 2013-03-28 05:00:31] get_param_value function: count= 4
+[DEBUG 2013-03-28 05:00:31] web_news_list function: item_id=4
+[DEBUG 2013-03-28 05:00:31] open connect....
+[DEBUG 2013-03-28 05:00:31] SELECT count(0) FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:31] row_num=10
+[DEBUG 2013-03-28 05:00:31] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status ='0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:31] close connect....
+[DEBUG 2013-03-28 05:00:31] open connect....
+[DEBUG 2013-03-28 05:00:31] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:31] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:31] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:31] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:31] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:31] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:31] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:31] close connect....
+[DEBUG 2013-03-28 05:00:31] open connect....
+[DEBUG 2013-03-28 05:00:31] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=4 limit 1
+[DEBUG 2013-03-28 05:00:31] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:31] close connect....
+[DEBUG 2013-03-28 05:00:31] open connect....
+[DEBUG 2013-03-28 05:00:31]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:31] close connect....
+[DEBUG 2013-03-28 05:00:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:31] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:31] Total time for dispatching is: 0.15896892547607seconds.
+[DEBUG 2013-03-28 05:00:32] path=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 05:00:32] route=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 05:00:32] controller=ProductAction
+[DEBUG 2013-03-28 05:00:32] action=web_product_list
+[DEBUG 2013-03-28 05:00:32] params=item_id
+[DEBUG 2013-03-28 05:00:32] params=5
+[DEBUG 2013-03-28 05:00:32] controllerfile=app/controllers/ProductAction.class.php, action=web_product_list
+[DEBUG 2013-03-28 05:00:32] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:32] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:32] web_product_list function: item_id=5
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32] SELECT count(0) FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:32] row_num=12
+[DEBUG 2013-03-28 05:00:32] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:32] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:32] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=5 limit 1
+[DEBUG 2013-03-28 05:00:32] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] Total time for dispatching is: 0.14934206008911seconds.
+[DEBUG 2013-03-28 05:00:32] path=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 05:00:32] route=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 05:00:32] controller=SubjectAction
+[DEBUG 2013-03-28 05:00:32] action=web_subject_list
+[DEBUG 2013-03-28 05:00:32] params=item_id
+[DEBUG 2013-03-28 05:00:32] params=12
+[DEBUG 2013-03-28 05:00:32] controllerfile=app/controllers/SubjectAction.class.php, action=web_subject_list
+[DEBUG 2013-03-28 05:00:32] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:32] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 05:00:32]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:32] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:32] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=12 limit 1
+[DEBUG 2013-03-28 05:00:32] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] Total time for dispatching is: 0.12974286079407seconds.
+[DEBUG 2013-03-28 05:00:32] path=ContactUsAction/web_contact_us_show/item_id/6
+[DEBUG 2013-03-28 05:00:32] route=ContactUsAction/web_contact_us_show/item_id/6
+[DEBUG 2013-03-28 05:00:32] controller=ContactUsAction
+[DEBUG 2013-03-28 05:00:32] action=web_contact_us_show
+[DEBUG 2013-03-28 05:00:32] params=item_id
+[DEBUG 2013-03-28 05:00:32] params=6
+[DEBUG 2013-03-28 05:00:32] controllerfile=app/controllers/ContactUsAction.class.php, action=web_contact_us_show
+[DEBUG 2013-03-28 05:00:32] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:32] web_contact_us_show function: item_id=6
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:32] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:32] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:32] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=6 limit 1
+[DEBUG 2013-03-28 05:00:32] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] open connect....
+[DEBUG 2013-03-28 05:00:32]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:32] close connect....
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:32] Total time for dispatching is: 0.098510980606079seconds.
+[DEBUG 2013-03-28 05:00:33] route=IndexAction
+[DEBUG 2013-03-28 05:00:33] controller=IndexAction
+[DEBUG 2013-03-28 05:00:33] action=main
+[DEBUG 2013-03-28 05:00:33] controllerfile=app/controllers/IndexAction.class.php, action=main
+[DEBUG 2013-03-28 05:00:33] Invoke main function of IndexAction class.
+[DEBUG 2013-03-28 05:00:33] enter web index page.
+[DEBUG 2013-03-28 05:00:33] open connect....
+[DEBUG 2013-03-28 05:00:33]  SELECT item_id FROM tb_item  WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:33]  SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item  WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:33] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:33] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:33] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:33] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:33] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:33] close connect....
+[DEBUG 2013-03-28 05:00:33] open connect....
+[DEBUG 2013-03-28 05:00:33]  SELECT introduction_id, introduction_content, item_id FROM tb_introduction  WHERE item_id='3' limit 1
+[DEBUG 2013-03-28 05:00:33] close connect....
+[DEBUG 2013-03-28 05:00:33] open connect....
+[DEBUG 2013-03-28 05:00:33] SELECT count(0) FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:33] row_num=4
+[DEBUG 2013-03-28 05:00:33] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE flag = '1' AND status = '0' AND item_id='4' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:33] close connect....
+[DEBUG 2013-03-28 05:00:33] open connect....
+[DEBUG 2013-03-28 05:00:33] SELECT count(0) FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:33] row_num=12
+[DEBUG 2013-03-28 05:00:33] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE flag = '1' AND status = '0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:33] close connect....
+[DEBUG 2013-03-28 05:00:33] open connect....
+[DEBUG 2013-03-28 05:00:33]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 05:00:33]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_flag = '0' AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:33] close connect....
+[DEBUG 2013-03-28 05:00:33] open connect....
+[DEBUG 2013-03-28 05:00:33]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:33] close connect....
+[DEBUG 2013-03-28 05:00:33] open connect....
+[DEBUG 2013-03-28 05:00:33] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:33] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:33] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:33] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:33] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:33] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:33] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:33] close connect....
+[DEBUG 2013-03-28 05:00:33] open connect....
+[DEBUG 2013-03-28 05:00:33]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:33] close connect....
+[DEBUG 2013-03-28 05:00:33] open connect....
+[DEBUG 2013-03-28 05:00:33] SELECT news_id, title, content, promulgator, issue_time, click_times, status, flag, pic_url, item_id FROM tb_news WHERE status = '0' AND flag = '2' ORDER BY issue_time DESC  limit 10
+[DEBUG 2013-03-28 05:00:33] close connect....
+[DEBUG 2013-03-28 05:00:33] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:33] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:33] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:33] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:33] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:33] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:33] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:33] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:33] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:33] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:33] Total time for dispatching is: 0.23709607124329seconds.
+[DEBUG 2013-03-28 05:00:36] path=PostAction/web_post_list/item_id/12/subject_id/6/current_page/1
+[DEBUG 2013-03-28 05:00:36] route=PostAction/web_post_list/item_id/12/subject_id/6/current_page/1
+[DEBUG 2013-03-28 05:00:36] controller=PostAction
+[DEBUG 2013-03-28 05:00:36] action=web_post_list
+[DEBUG 2013-03-28 05:00:36] params=item_id
+[DEBUG 2013-03-28 05:00:36] params=12
+[DEBUG 2013-03-28 05:00:36] params=subject_id
+[DEBUG 2013-03-28 05:00:36] params=6
+[DEBUG 2013-03-28 05:00:36] params=current_page
+[DEBUG 2013-03-28 05:00:36] params=1
+[DEBUG 2013-03-28 05:00:36] controllerfile=app/controllers/PostAction.class.php, action=web_post_list
+[DEBUG 2013-03-28 05:00:36] get_param_value function: count= 6
+[DEBUG 2013-03-28 05:00:36] get_param_value function: count= 6
+[DEBUG 2013-03-28 05:00:36] get_param_value function: count= 6
+[DEBUG 2013-03-28 05:00:36] open connect....
+[DEBUG 2013-03-28 05:00:36]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id  AND s.subject_id='6'
+[DEBUG 2013-03-28 05:00:36] close connect....
+[DEBUG 2013-03-28 05:00:36] open connect....
+[DEBUG 2013-03-28 05:00:36]  SELECT COUNT(0) FROM tb_post p, tb_user u  WHERE u.user_id=p.post_user_id AND post_flag = '0'  AND post_subject_id='6' ORDER BY post_issue_time DESC 
+[DEBUG 2013-03-28 05:00:36]  SELECT post_id, post_subject_id, post_user_id, u.user_name, post_content, post_issue_time, post_flag FROM tb_post p, tb_user u  WHERE u.user_id=p.post_user_id AND post_flag = '0'  AND post_subject_id='6' ORDER BY post_issue_time DESC  limit 0, 5
+[DEBUG 2013-03-28 05:00:36] close connect....
+[DEBUG 2013-03-28 05:00:36] open connect....
+[DEBUG 2013-03-28 05:00:36] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:36] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:36] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:36] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:36] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:36] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:36] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:36] close connect....
+[DEBUG 2013-03-28 05:00:36] open connect....
+[DEBUG 2013-03-28 05:00:36] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=12 limit 1
+[DEBUG 2013-03-28 05:00:36] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:36] close connect....
+[DEBUG 2013-03-28 05:00:36] open connect....
+[DEBUG 2013-03-28 05:00:36]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:36] close connect....
+[DEBUG 2013-03-28 05:00:36] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:36] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:36] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:36] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:36] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:36] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:36] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:36] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:36] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:36] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:36] Total time for dispatching is: 0.2571759223938seconds.
+[DEBUG 2013-03-28 05:00:43] path=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 05:00:43] route=ProductAction/web_product_list/item_id/5
+[DEBUG 2013-03-28 05:00:43] controller=ProductAction
+[DEBUG 2013-03-28 05:00:43] action=web_product_list
+[DEBUG 2013-03-28 05:00:43] params=item_id
+[DEBUG 2013-03-28 05:00:43] params=5
+[DEBUG 2013-03-28 05:00:43] controllerfile=app/controllers/ProductAction.class.php, action=web_product_list
+[DEBUG 2013-03-28 05:00:43] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:43] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:43] web_product_list function: item_id=5
+[DEBUG 2013-03-28 05:00:43] open connect....
+[DEBUG 2013-03-28 05:00:43] SELECT count(0) FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC
+[DEBUG 2013-03-28 05:00:43] row_num=12
+[DEBUG 2013-03-28 05:00:43] SELECT product_id, product_name, description, promulgator, issue_time, click_times, status, flag, icon_url, pic_url, item_id FROM tb_product WHERE status ='0' AND item_id='5' ORDER BY issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:43] close connect....
+[DEBUG 2013-03-28 05:00:43] open connect....
+[DEBUG 2013-03-28 05:00:43] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:43] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:43] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:43] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:43] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:43] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:43] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:43] close connect....
+[DEBUG 2013-03-28 05:00:43] open connect....
+[DEBUG 2013-03-28 05:00:43] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=5 limit 1
+[DEBUG 2013-03-28 05:00:43] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:43] close connect....
+[DEBUG 2013-03-28 05:00:44] open connect....
+[DEBUG 2013-03-28 05:00:44]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:44] close connect....
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] Total time for dispatching is: 0.13129997253418seconds.
+[DEBUG 2013-03-28 05:00:44] path=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 05:00:44] route=SubjectAction/web_subject_list/item_id/12
+[DEBUG 2013-03-28 05:00:44] controller=SubjectAction
+[DEBUG 2013-03-28 05:00:44] action=web_subject_list
+[DEBUG 2013-03-28 05:00:44] params=item_id
+[DEBUG 2013-03-28 05:00:44] params=12
+[DEBUG 2013-03-28 05:00:44] controllerfile=app/controllers/SubjectAction.class.php, action=web_subject_list
+[DEBUG 2013-03-28 05:00:44] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:44] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:44] open connect....
+[DEBUG 2013-03-28 05:00:44]  SELECT COUNT(0) FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC
+[DEBUG 2013-03-28 05:00:44]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id AND subject_item_id='12' ORDER BY subject_issue_time DESC limit 0, 5
+[DEBUG 2013-03-28 05:00:44] close connect....
+[DEBUG 2013-03-28 05:00:44] open connect....
+[DEBUG 2013-03-28 05:00:44] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:44] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:44] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:44] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:44] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:44] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:44] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:44] close connect....
+[DEBUG 2013-03-28 05:00:44] open connect....
+[DEBUG 2013-03-28 05:00:44] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=12 limit 1
+[DEBUG 2013-03-28 05:00:44] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:44] close connect....
+[DEBUG 2013-03-28 05:00:44] open connect....
+[DEBUG 2013-03-28 05:00:44]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:44] close connect....
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:44] Total time for dispatching is: 0.11515784263611seconds.
+[DEBUG 2013-03-28 05:00:46] path=PostAction/web_post_list/item_id/12/subject_id/6/current_page/1
+[DEBUG 2013-03-28 05:00:46] route=PostAction/web_post_list/item_id/12/subject_id/6/current_page/1
+[DEBUG 2013-03-28 05:00:46] controller=PostAction
+[DEBUG 2013-03-28 05:00:46] action=web_post_list
+[DEBUG 2013-03-28 05:00:46] params=item_id
+[DEBUG 2013-03-28 05:00:46] params=12
+[DEBUG 2013-03-28 05:00:46] params=subject_id
+[DEBUG 2013-03-28 05:00:46] params=6
+[DEBUG 2013-03-28 05:00:46] params=current_page
+[DEBUG 2013-03-28 05:00:46] params=1
+[DEBUG 2013-03-28 05:00:46] controllerfile=app/controllers/PostAction.class.php, action=web_post_list
+[DEBUG 2013-03-28 05:00:46] get_param_value function: count= 6
+[DEBUG 2013-03-28 05:00:46] get_param_value function: count= 6
+[DEBUG 2013-03-28 05:00:46] get_param_value function: count= 6
+[DEBUG 2013-03-28 05:00:46] open connect....
+[DEBUG 2013-03-28 05:00:46]  SELECT subject_id, subject_topic, subject_user_id, u.user_name, subject_reply_num, subject_content, subject_issue_time, subject_type, subject_flag, subject_item_id FROM tb_subject s, tb_user u  WHERE u.user_id=s.subject_user_id  AND s.subject_id='6'
+[DEBUG 2013-03-28 05:00:46] close connect....
+[DEBUG 2013-03-28 05:00:46] open connect....
+[DEBUG 2013-03-28 05:00:46]  SELECT COUNT(0) FROM tb_post p, tb_user u  WHERE u.user_id=p.post_user_id AND post_flag = '0'  AND post_subject_id='6' ORDER BY post_issue_time DESC 
+[DEBUG 2013-03-28 05:00:46]  SELECT post_id, post_subject_id, post_user_id, u.user_name, post_content, post_issue_time, post_flag FROM tb_post p, tb_user u  WHERE u.user_id=p.post_user_id AND post_flag = '0'  AND post_subject_id='6' ORDER BY post_issue_time DESC  limit 0, 5
+[DEBUG 2013-03-28 05:00:46] close connect....
+[DEBUG 2013-03-28 05:00:46] open connect....
+[DEBUG 2013-03-28 05:00:46] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:46] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:46] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:46] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:46] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:46] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:46] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:46] close connect....
+[DEBUG 2013-03-28 05:00:46] open connect....
+[DEBUG 2013-03-28 05:00:46] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=12 limit 1
+[DEBUG 2013-03-28 05:00:46] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:46] close connect....
+[DEBUG 2013-03-28 05:00:46] open connect....
+[DEBUG 2013-03-28 05:00:46]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:46] close connect....
+[DEBUG 2013-03-28 05:00:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:46] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:46] Total time for dispatching is: 0.13212084770203seconds.
+[DEBUG 2013-03-28 05:00:49] path=ContactUsAction/web_contact_us_show/item_id/6
+[DEBUG 2013-03-28 05:00:49] route=ContactUsAction/web_contact_us_show/item_id/6
+[DEBUG 2013-03-28 05:00:49] controller=ContactUsAction
+[DEBUG 2013-03-28 05:00:49] action=web_contact_us_show
+[DEBUG 2013-03-28 05:00:49] params=item_id
+[DEBUG 2013-03-28 05:00:49] params=6
+[DEBUG 2013-03-28 05:00:49] controllerfile=app/controllers/ContactUsAction.class.php, action=web_contact_us_show
+[DEBUG 2013-03-28 05:00:49] get_param_value function: count= 2
+[DEBUG 2013-03-28 05:00:49] web_contact_us_show function: item_id=6
+[DEBUG 2013-03-28 05:00:49] open connect....
+[DEBUG 2013-03-28 05:00:49] SELECT item_id FROM tb_item WHERE item_up_id= -1 AND item_site='1' limit 1
+[DEBUG 2013-03-28 05:00:49] SELECT item_id, item_type, item_name, item_seq, item_content, item_up_id FROM tb_item WHERE item_status=0 AND item_up_id=2 ORDER BY item_seq ASC
+[DEBUG 2013-03-28 05:00:49] item_id=3    item_name=花店介绍    item_type=1    item_seq=1    item_content=
+[DEBUG 2013-03-28 05:00:49] item_id=4    item_name=鲜花资讯    item_type=2    item_seq=2    item_content=
+[DEBUG 2013-03-28 05:00:49] item_id=5    item_name=鲜花品种    item_type=3    item_seq=3    item_content=
+[DEBUG 2013-03-28 05:00:49] item_id=12    item_name=用户留言    item_type=4    item_seq=4    item_content=
+[DEBUG 2013-03-28 05:00:49] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:49] close connect....
+[DEBUG 2013-03-28 05:00:49] open connect....
+[DEBUG 2013-03-28 05:00:49] SELECT item_id, item_name, item_seq, item_level, item_up_id, item_content, item_reg_time, item_status, item_type, item_site FROM tb_item WHERE item_status=0 AND item_id=6 limit 1
+[DEBUG 2013-03-28 05:00:49] item_id=6    item_name=联系我们    item_type=5    item_seq=5    item_content=
+[DEBUG 2013-03-28 05:00:49] close connect....
+[DEBUG 2013-03-28 05:00:49] open connect....
+[DEBUG 2013-03-28 05:00:49]  SELECT merchant_id, merchant_name, key_word, wap_domain, web_domain, wap_template, web_template, email, linkman, address, telephone, fax, click_times, reg_time,  merchant_seq FROM tb_merchant  WHERE merchant_id='M0001' limit 1
+[DEBUG 2013-03-28 05:00:49] close connect....
+[DEBUG 2013-03-28 05:00:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:49] D:\PHPProject\ei
+[DEBUG 2013-03-28 05:00:49] Total time for dispatching is: 0.11563515663147seconds.
