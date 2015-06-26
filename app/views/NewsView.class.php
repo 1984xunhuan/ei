@@ -14,7 +14,7 @@ class NewsView extends BaseView
     public $item_id;
     
     
-    private $news_list;
+    public $news_list;
     public  $merchant;
     private $menus;
     public  $news;
@@ -23,7 +23,7 @@ class NewsView extends BaseView
     
     public function __construct()
     {
-        
+        $this->page = new Page();
     }
     
     public function set_news_list($news_list)

@@ -49,6 +49,23 @@ class ContactUsAction extends BaseAction
         $this->contact_us_view->display_wap_contact_us_show();
     }
     
+     public function android_contact_us_show()
+    {
+        $item_id         = $this->get_param_value("item_id");
+        //$introduction_id = $this->get_param_value("introduction_id");
+    
+        Log::debug("web_contact_us_show function: item_id=".$item_id);
+    
+        $menus = $this->item_dao->get_wap_index_menu();
+        $this->contact_us_view->set_menus($menus);
+    
+        $this->contact_us_view->item = $this->item_dao->get_item_by_id($item_id);
+    
+        $this->contact_us_view->merchant = $this->merchant_dao->get_merchant();
+    
+         echo json_encode($this->contact_us_view->merchant);
+    }
+    
     public function contact_us_show()
     {
         $item_id         = $this->get_param_value("item_id");

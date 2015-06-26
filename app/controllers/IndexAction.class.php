@@ -62,5 +62,21 @@ class IndexAction extends BaseAction
         $this->index_view->set_menus($menus);
         $this->index_view->display_admin_index();
     }
+    
+    public function android_main()
+    {
+    	  $results = $this->item_dao->get_wap_index_info();
+        $this->index_view->set_results($results);
+        
+        $this->index_view->menus = $this->item_dao->get_wap_index_menu();
+        $this->index_view->merchant = $this->merchant_dao->get_merchant();
+        
+        //var_dump(json_encode($results)); 
+        //var_dump(json_encode($this->index_view)); 
+        //var_dump(json_encode($this->index_view->menus)); 
+        //var_dump(json_encode($this->index_view->merchant)); 
+        
+        echo json_encode($this->index_view->menus);
+    }
 }
 ?>

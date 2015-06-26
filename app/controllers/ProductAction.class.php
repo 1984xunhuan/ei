@@ -57,6 +57,25 @@ class ProductAction extends BaseAction
         $this->product_view->display_wap_product_list();
     }
     
+     public function android_product_list()
+    {
+        $item_id = $this->get_param_value("item_id");
+        $current_page = $this->get_param_value("current_page");
+        $page_size = $this->get_param_value("page_size");
+    
+        Log::debug("android_product_list function: item_id=".$item_id);
+        Log::debug("android_product_list function: current_page=".$current_page);
+        Log::debug("android_product_list function: page_size=".$page_size);
+        
+        $this->product_view->page->page_size = $page_size;        
+    
+        $product_list =  $this->product_dao->get_product_list_by_item_id($item_id, ProductDAO::$ALL_FLAG,  $this->product_view->page, $current_page);
+        $this->product_view->set_product_list($product_list);
+        
+        //echo json_encode($product_list);
+        echo json_encode($this->product_view);
+    }
+    
     public function web_product_show()
     {
         $item_id = $this->get_param_value("item_id");

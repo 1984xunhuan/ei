@@ -57,6 +57,25 @@ class NewsAction extends BaseAction
         $this->news_view->display_wap_news_list();
     }
     
+    public function android_news_list()
+    {
+        $item_id = $this->get_param_value("item_id");
+        $current_page = $this->get_param_value("current_page");
+        $page_size = $this->get_param_value("page_size");
+    
+        Log::debug("web_news_list function: item_id=".$item_id);
+        Log::debug("web_news_list function: current_page=".$current_page);
+        Log::debug("web_news_list function: page_size=".$page_size);
+    
+        $this->news_view->page->page_size = $page_size;
+    
+        $news_list =  $this->news_dao->get_news_list_by_item_id($item_id, NewsDAO::$ALL_FLAG, $this->news_view->page, $current_page); 
+        $this->news_view->set_news_list($news_list);
+    
+         //echo json_encode($news_list);
+         echo json_encode($this->news_view);
+    }
+    
     public function web_news_show()
     {
         $item_id = $this->get_param_value("item_id");

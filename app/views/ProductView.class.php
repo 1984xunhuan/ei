@@ -15,7 +15,7 @@ class ProductView extends BaseView
     public $item_id;
     
     
-    private $product_list;
+    public  $product_list;
     public  $merchant;
     private $menus;
     public  $product;
@@ -24,7 +24,7 @@ class ProductView extends BaseView
     
     public function __construct()
     {
-    
+        $this->page = new Page();
     }
     
     public function set_product_list($product_list)
@@ -40,6 +40,11 @@ class ProductView extends BaseView
     public function set_menus($menus)
     {
         $this->menus = $menus;
+    }
+    
+    public function set_page_size($page_size)
+    {
+        $this->page->page_size = $page_size;
     }
     
     public function display_web_product_list()

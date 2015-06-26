@@ -94,6 +94,53 @@ class UserAction extends BaseAction
         $user_view->display_web_register_success();
     }
     
+    public function android_user_register()
+    {
+       $user_dao = new UserDAO();
+        $user_view = new UserView();
+        
+        $user_name = $_POST["user_name"];
+        
+        if($user_dao->had_registered($user_name))
+        {
+            $user_view->display_web_register_fail();
+            
+            $json = '{"result":0,"remark":"This account have exist in system."}'; 
+        
+            echo $json;
+        
+            return;
+        }
+        
+        $user_view->user_id = $user_dao->get_pk_value("tb_user");
+        $user_view->user_last_active_time = "NOW()";
+        $user_view->user_last_login_time  = "NOW()";
+        $user_view->user_level = "1";
+        $user_view->user_login_ip = Util::get_client_ip_address();
+        $user_view->user_name = $_POST["user_name"];
+        $user_view->user_password = $_POST["user_password"];
+        $user_view->user_reg_ip = Util::get_client_ip_address();
+        $user_view->user_reg_time = "NOW()";
+        $user_view->user_status = "0";
+        
+        $user_type = !empty($_POST["user_type"])?$_POST["user_type"]:null;
+        
+        if($user_type == null || empty($user_type))
+        {
+            $user_type = UserDAO::$REGISTER_USER;
+        }
+        
+        $user_view->user_type = $user_type;      
+        
+        $user_dao->set_user_view($user_view);
+        
+        $user_dao->register_user_info();
+        
+        $json = '{"result":1,"remark":"success"}'; 
+        
+        echo $json;
+    }
+    
     public function user_list()
     {
         $current_page = $this->get_param_value("current_page");
